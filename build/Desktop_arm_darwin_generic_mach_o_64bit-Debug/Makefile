@@ -200,6 +200,30 @@ project_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_autogen.dir/build.make CMakeFiles/project_autogen.dir/build
 .PHONY : project_autogen/fast
 
+lyrics.o: lyrics.cpp.o
+.PHONY : lyrics.o
+
+# target to build an object file
+lyrics.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/lyrics.cpp.o
+.PHONY : lyrics.cpp.o
+
+lyrics.i: lyrics.cpp.i
+.PHONY : lyrics.i
+
+# target to preprocess a source file
+lyrics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/lyrics.cpp.i
+.PHONY : lyrics.cpp.i
+
+lyrics.s: lyrics.cpp.s
+.PHONY : lyrics.s
+
+# target to generate assembly for a file
+lyrics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/lyrics.cpp.s
+.PHONY : lyrics.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -296,6 +320,30 @@ spotify.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/spotify.cpp.s
 .PHONY : spotify.cpp.s
 
+trackview.o: trackview.cpp.o
+.PHONY : trackview.o
+
+# target to build an object file
+trackview.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/trackview.cpp.o
+.PHONY : trackview.cpp.o
+
+trackview.i: trackview.cpp.i
+.PHONY : trackview.i
+
+# target to preprocess a source file
+trackview.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/trackview.cpp.i
+.PHONY : trackview.cpp.i
+
+trackview.s: trackview.cpp.s
+.PHONY : trackview.s
+
+# target to generate assembly for a file
+trackview.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/trackview.cpp.s
+.PHONY : trackview.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -311,6 +359,9 @@ help:
 	@echo "... project_autogen"
 	@echo "... project_autogen_timestamp_deps"
 	@echo "... project"
+	@echo "... lyrics.o"
+	@echo "... lyrics.i"
+	@echo "... lyrics.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -323,6 +374,9 @@ help:
 	@echo "... spotify.o"
 	@echo "... spotify.i"
 	@echo "... spotify.s"
+	@echo "... trackview.o"
+	@echo "... trackview.i"
+	@echo "... trackview.s"
 .PHONY : help
 
 

@@ -104,24 +104,10 @@ CMakeFiles/project.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/main.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mansur/project/main.cpp -o CMakeFiles/project.dir/main.cpp.s
 
-CMakeFiles/project.dir/mainwindow.cpp.o: CMakeFiles/project.dir/flags.make
-CMakeFiles/project.dir/mainwindow.cpp.o: /Users/mansur/project/mainwindow.cpp
-CMakeFiles/project.dir/mainwindow.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project.dir/mainwindow.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/mainwindow.cpp.o -MF CMakeFiles/project.dir/mainwindow.cpp.o.d -o CMakeFiles/project.dir/mainwindow.cpp.o -c /Users/mansur/project/mainwindow.cpp
-
-CMakeFiles/project.dir/mainwindow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/mainwindow.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mansur/project/mainwindow.cpp > CMakeFiles/project.dir/mainwindow.cpp.i
-
-CMakeFiles/project.dir/mainwindow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/mainwindow.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mansur/project/mainwindow.cpp -o CMakeFiles/project.dir/mainwindow.cpp.s
-
 CMakeFiles/project.dir/spotify.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/spotify.cpp.o: /Users/mansur/project/spotify.cpp
 CMakeFiles/project.dir/spotify.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/project.dir/spotify.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project.dir/spotify.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/spotify.cpp.o -MF CMakeFiles/project.dir/spotify.cpp.o.d -o CMakeFiles/project.dir/spotify.cpp.o -c /Users/mansur/project/spotify.cpp
 
 CMakeFiles/project.dir/spotify.cpp.i: cmake_force
@@ -132,26 +118,72 @@ CMakeFiles/project.dir/spotify.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/spotify.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mansur/project/spotify.cpp -o CMakeFiles/project.dir/spotify.cpp.s
 
+CMakeFiles/project.dir/mainwindow.cpp.o: CMakeFiles/project.dir/flags.make
+CMakeFiles/project.dir/mainwindow.cpp.o: /Users/mansur/project/mainwindow.cpp
+CMakeFiles/project.dir/mainwindow.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/project.dir/mainwindow.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/mainwindow.cpp.o -MF CMakeFiles/project.dir/mainwindow.cpp.o.d -o CMakeFiles/project.dir/mainwindow.cpp.o -c /Users/mansur/project/mainwindow.cpp
+
+CMakeFiles/project.dir/mainwindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/mainwindow.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mansur/project/mainwindow.cpp > CMakeFiles/project.dir/mainwindow.cpp.i
+
+CMakeFiles/project.dir/mainwindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/mainwindow.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mansur/project/mainwindow.cpp -o CMakeFiles/project.dir/mainwindow.cpp.s
+
+CMakeFiles/project.dir/trackview.cpp.o: CMakeFiles/project.dir/flags.make
+CMakeFiles/project.dir/trackview.cpp.o: /Users/mansur/project/trackview.cpp
+CMakeFiles/project.dir/trackview.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/project.dir/trackview.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/trackview.cpp.o -MF CMakeFiles/project.dir/trackview.cpp.o.d -o CMakeFiles/project.dir/trackview.cpp.o -c /Users/mansur/project/trackview.cpp
+
+CMakeFiles/project.dir/trackview.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/trackview.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mansur/project/trackview.cpp > CMakeFiles/project.dir/trackview.cpp.i
+
+CMakeFiles/project.dir/trackview.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/trackview.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mansur/project/trackview.cpp -o CMakeFiles/project.dir/trackview.cpp.s
+
+CMakeFiles/project.dir/lyrics.cpp.o: CMakeFiles/project.dir/flags.make
+CMakeFiles/project.dir/lyrics.cpp.o: /Users/mansur/project/lyrics.cpp
+CMakeFiles/project.dir/lyrics.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/project.dir/lyrics.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/lyrics.cpp.o -MF CMakeFiles/project.dir/lyrics.cpp.o.d -o CMakeFiles/project.dir/lyrics.cpp.o -c /Users/mansur/project/lyrics.cpp
+
+CMakeFiles/project.dir/lyrics.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/lyrics.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mansur/project/lyrics.cpp > CMakeFiles/project.dir/lyrics.cpp.i
+
+CMakeFiles/project.dir/lyrics.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/lyrics.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mansur/project/lyrics.cpp -o CMakeFiles/project.dir/lyrics.cpp.s
+
 # Object files for target project
 project_OBJECTS = \
 "CMakeFiles/project.dir/project_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/project.dir/main.cpp.o" \
+"CMakeFiles/project.dir/spotify.cpp.o" \
 "CMakeFiles/project.dir/mainwindow.cpp.o" \
-"CMakeFiles/project.dir/spotify.cpp.o"
+"CMakeFiles/project.dir/trackview.cpp.o" \
+"CMakeFiles/project.dir/lyrics.cpp.o"
 
 # External object files for target project
 project_EXTERNAL_OBJECTS =
 
 project.app/Contents/MacOS/project: CMakeFiles/project.dir/project_autogen/mocs_compilation.cpp.o
 project.app/Contents/MacOS/project: CMakeFiles/project.dir/main.cpp.o
-project.app/Contents/MacOS/project: CMakeFiles/project.dir/mainwindow.cpp.o
 project.app/Contents/MacOS/project: CMakeFiles/project.dir/spotify.cpp.o
+project.app/Contents/MacOS/project: CMakeFiles/project.dir/mainwindow.cpp.o
+project.app/Contents/MacOS/project: CMakeFiles/project.dir/trackview.cpp.o
+project.app/Contents/MacOS/project: CMakeFiles/project.dir/lyrics.cpp.o
 project.app/Contents/MacOS/project: CMakeFiles/project.dir/build.make
 project.app/Contents/MacOS/project: /opt/homebrew/lib/QtWidgets.framework/Versions/A/QtWidgets
 project.app/Contents/MacOS/project: /opt/homebrew/lib/QtGui.framework/Versions/A/QtGui
 project.app/Contents/MacOS/project: /opt/homebrew/lib/QtCore.framework/Versions/A/QtCore
 project.app/Contents/MacOS/project: CMakeFiles/project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable project.app/Contents/MacOS/project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable project.app/Contents/MacOS/project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/project.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

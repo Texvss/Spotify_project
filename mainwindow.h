@@ -3,6 +3,7 @@
 #include <QStringListModel>
 #include <QMainWindow>
 #include "spotify.h"
+#include "trackview.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -20,11 +21,20 @@ public:
 
 
 private slots:
-    void on_listView_clicked(const QModelIndex &index);
 
+    void on_popButton_clicked();
+    void on_rapButton_clicked();
+    void on_rockButton_clicked();
+    void on_randbButton_clicked();
+    void on_searchLine_textChanged(const QString &arg1);
+    void on_searchList_clicked(const QModelIndex &index);
 private:
     Ui::MainWindow *ui;
     QStringListModel *listModel;
+    QStandardItemModel *searchModel;
     Spotify *spotifyData;
+    TrackView *trackView;
+    void showTracks(const QStringList& trackNames);
+    QStringList getTrackNames(const QList<QList<QString>>& filteredData) const;
 };
 #endif // MAINWINDOW_H

@@ -28,3 +28,30 @@ QStringList Spotify::getTrackNames() const {
     }
     return list;
 }
+
+QList<QList<QString>> Spotify::filterByGenre(const QString& genre) const {
+    QList<QList<QString>> filteredData;
+    for (const auto& row : data) {
+        if (row.size() > static_cast<int>(COLUMNS::artist_genres) &&
+            row[static_cast<int>(COLUMNS::artist_genres)].contains(genre, Qt::CaseInsensitive)) {
+            filteredData.append(row);
+        }
+    }
+    return filteredData;
+}
+
+QList<QList<QString>> Spotify::popGenre() const{
+    return filterByGenre("pop");
+}
+
+QList<QList<QString>> Spotify::rapGenre() const{
+    return filterByGenre("rap");
+}
+
+QList<QList<QString>> Spotify::rockGenre() const{
+    return filterByGenre("rock");
+}
+
+QList<QList<QString>> Spotify::randbGenre() const{
+    return filterByGenre("r&b");
+}

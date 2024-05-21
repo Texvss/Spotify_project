@@ -1,0 +1,9 @@
+-rootPath
+/Users/mansur/project
+-cmake-output
+-output-file
+/Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/.qt_plugins/Qt6_QmlPlugins_Imports_project.cmake
+-importPath
+/Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug
+-importPath
+/opt/homebrew/share/qt/qml

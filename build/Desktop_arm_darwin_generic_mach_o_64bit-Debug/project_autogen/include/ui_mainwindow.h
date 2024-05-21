@@ -15,6 +15,7 @@
 #include <QtWidgets/QListView>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
 
@@ -24,9 +25,12 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
-    QListView *listView;
-    QLineEdit *titlelineEdit;
-    QLineEdit *albumlineEdit;
+    QPushButton *popButton;
+    QPushButton *rapButton;
+    QPushButton *rockButton;
+    QPushButton *randbButton;
+    QListView *searchList;
+    QLineEdit *searchLine;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -37,15 +41,35 @@ public:
         MainWindow->resize(800, 600);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
-        listView = new QListView(centralwidget);
-        listView->setObjectName("listView");
-        listView->setGeometry(QRect(0, 0, 241, 441));
-        titlelineEdit = new QLineEdit(centralwidget);
-        titlelineEdit->setObjectName("titlelineEdit");
-        titlelineEdit->setGeometry(QRect(280, 10, 351, 81));
-        albumlineEdit = new QLineEdit(centralwidget);
-        albumlineEdit->setObjectName("albumlineEdit");
-        albumlineEdit->setGeometry(QRect(290, 100, 341, 71));
+        popButton = new QPushButton(centralwidget);
+        popButton->setObjectName("popButton");
+        popButton->setGeometry(QRect(10, 130, 171, 171));
+        rapButton = new QPushButton(centralwidget);
+        rapButton->setObjectName("rapButton");
+        rapButton->setGeometry(QRect(210, 130, 171, 171));
+        rockButton = new QPushButton(centralwidget);
+        rockButton->setObjectName("rockButton");
+        rockButton->setGeometry(QRect(10, 310, 171, 171));
+        randbButton = new QPushButton(centralwidget);
+        randbButton->setObjectName("randbButton");
+        randbButton->setGeometry(QRect(210, 310, 171, 171));
+        searchList = new QListView(centralwidget);
+        searchList->setObjectName("searchList");
+        searchList->setGeometry(QRect(0, 60, 241, 111));
+        searchList->setMouseTracking(true);
+        searchList->setTabletTracking(true);
+        searchList->setAutoFillBackground(true);
+        searchList->setEditTriggers(QAbstractItemView::NoEditTriggers);
+        searchList->setTabKeyNavigation(true);
+        searchList->setDragEnabled(true);
+        searchList->setDragDropOverwriteMode(true);
+        searchList->setAlternatingRowColors(true);
+        searchList->setUniformItemSizes(true);
+        searchLine = new QLineEdit(centralwidget);
+        searchLine->setObjectName("searchLine");
+        searchLine->setGeometry(QRect(2, 0, 241, 61));
+        searchLine->setDragEnabled(false);
+        searchLine->setReadOnly(false);
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -63,6 +87,10 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+        popButton->setText(QCoreApplication::translate("MainWindow", "Pop", nullptr));
+        rapButton->setText(QCoreApplication::translate("MainWindow", "Rap", nullptr));
+        rockButton->setText(QCoreApplication::translate("MainWindow", "Rock", nullptr));
+        randbButton->setText(QCoreApplication::translate("MainWindow", "RandB", nullptr));
     } // retranslateUi
 
 };

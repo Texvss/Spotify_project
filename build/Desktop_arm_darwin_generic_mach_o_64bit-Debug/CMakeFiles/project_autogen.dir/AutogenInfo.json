@@ -28,6 +28,13 @@
 		"/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Platform/Apple-Clang-CXX.cmake",
 		"/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Platform/Apple-Clang.cmake",
 		"/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-3.29/Modules/FindCURL.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-3.29/Modules/FindPackageMessage.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-3.29/Modules/FindPkgConfig.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-3.29/Modules/FindPackageMessage.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-3.29/Modules/SelectLibraryConfigurations.cmake",
 		"/opt/homebrew/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
 		"/opt/homebrew/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
 		"/opt/homebrew/lib/cmake/Qt6/Qt6Config.cmake",
@@ -348,6 +355,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/Users/mansur/project/lyrics.h",
+			"MU",
+			"EWIEGA46WW/moc_lyrics.cpp",
+			null
+		],
+		[
 			"/Users/mansur/project/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
@@ -357,6 +370,12 @@
 			"/Users/mansur/project/spotify.h",
 			"MU",
 			"EWIEGA46WW/moc_spotify.cpp",
+			null
+		],
+		[
+			"/Users/mansur/project/trackview.h",
+			"MU",
+			"EWIEGA46WW/moc_trackview.cpp",
 			null
 		]
 	],
@@ -417,9 +436,11 @@
 	"SETTINGS_FILE" : "/Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/CMakeFiles/project_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "/Users/mansur/project/lyrics.cpp", "MU", null ],
 		[ "/Users/mansur/project/main.cpp", "MU", null ],
 		[ "/Users/mansur/project/mainwindow.cpp", "MU", null ],
-		[ "/Users/mansur/project/spotify.cpp", "MU", null ]
+		[ "/Users/mansur/project/spotify.cpp", "MU", null ],
+		[ "/Users/mansur/project/trackview.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

@@ -14,34 +14,109 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QListView" name="listView">
+   <widget class="QPushButton" name="popButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>171</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pop</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rapButton">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>130</y>
+      <width>171</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Rap</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rockButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>310</y>
+      <width>171</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Rock</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="randbButton">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>310</y>
+      <width>171</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>RandB</string>
+    </property>
+   </widget>
+   <widget class="QListView" name="searchList">
     <property name="geometry">
      <rect>
       <x>0</x>
+      <y>60</y>
+      <width>241</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="tabletTracking">
+     <bool>true</bool>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="tabKeyNavigation">
+     <bool>true</bool>
+    </property>
+    <property name="dragEnabled">
+     <bool>true</bool>
+    </property>
+    <property name="dragDropOverwriteMode">
+     <bool>true</bool>
+    </property>
+    <property name="alternatingRowColors">
+     <bool>true</bool>
+    </property>
+    <property name="uniformItemSizes">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="searchLine">
+    <property name="geometry">
+     <rect>
+      <x>2</x>
       <y>0</y>
       <width>241</width>
-      <height>441</height>
+      <height>61</height>
      </rect>
     </property>
-   </widget>
-   <widget class="QLineEdit" name="titlelineEdit">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>10</y>
-      <width>351</width>
-      <height>81</height>
-     </rect>
+    <property name="dragEnabled">
+     <bool>false</bool>
     </property>
-   </widget>
-   <widget class="QLineEdit" name="albumlineEdit">
-    <property name="geometry">
-     <rect>
-      <x>290</x>
-      <y>100</y>
-      <width>341</width>
-      <height>71</height>
-     </rect>
+    <property name="readOnly">
+     <bool>false</bool>
     </property>
    </widget>
   </widget>
