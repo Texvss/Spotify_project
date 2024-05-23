@@ -107,8 +107,37 @@ void MainWindow::on_hiphopButton_clicked()
         showTracks(trackNames);
         setCentralWidget(trackView);
     }
-
 }
+void MainWindow::on_dancepopButton_clicked()
+{
+    if (spotifyData) {
+        QList<QList<QString>> filteredData = spotifyData->filterByGenre("dance pop");
+        QStringList trackNames = getTrackNames(filteredData);
+        showTracks(trackNames);
+        setCentralWidget(trackView);
+    }
+}
+void MainWindow::on_poprapbutton_clicked()
+{
+    if (spotifyData) {
+        QList<QList<QString>> filteredData = spotifyData->filterByGenre("pop rap");
+        QStringList trackNames = getTrackNames(filteredData);
+        showTracks(trackNames);
+        setCentralWidget(trackView);
+    }
+}
+
+
+void MainWindow::on_urbanconbutton_clicked()
+{
+    if (spotifyData) {
+        QList<QList<QString>> filteredData = spotifyData->filterByGenre("urban contemporary");
+        QStringList trackNames = getTrackNames(filteredData);
+        showTracks(trackNames);
+        setCentralWidget(trackView);
+    }
+}
+
 
 void MainWindow::on_searchLine_textChanged(const QString &text)
 {
@@ -140,6 +169,9 @@ void MainWindow::on_searchList_clicked(const QModelIndex &index)
 {
 
 }
+
+
+
 
 
 

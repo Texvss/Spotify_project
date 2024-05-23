@@ -132,6 +132,45 @@
      <string>Hip Hop</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="dancepopButton">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>130</y>
+      <width>171</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Dance Pop</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="poprapbutton">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>310</y>
+      <width>171</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pop Rap</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="urbanconbutton">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>310</y>
+      <width>171</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Urban Contemporary</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

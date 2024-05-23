@@ -19,6 +19,10 @@ public:
     QList<QList<QString>> rockGenre() const;
     QList<QList<QString>> randbGenre() const;
     QList<QList<QString>> hiphopGenre() const;
+    QList<QList<QString>> dancepopGenre() const;
+    QList<QList<QString>> poprapGenre() const;
+    QList<QList<QString>> urbanconGenre() const;
+
     QList<QList<QString>> data;
 private:
     // QList<QList<QString>> data;

@@ -26,9 +26,13 @@ private slots:
     void on_rapButton_clicked();
     void on_rockButton_clicked();
     void on_randbButton_clicked();
+    void on_hiphopButton_clicked();
+    void on_dancepopButton_clicked();
+    void on_poprapbutton_clicked();
+    void on_urbanconbutton_clicked();
     void on_searchLine_textChanged(const QString &arg1);
     void on_searchList_clicked(const QModelIndex &index);
-    void on_hiphopButton_clicked();
+
 
 private:
     Ui::MainWindow *ui;
