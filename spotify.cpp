@@ -55,3 +55,6 @@ QList<QList<QString>> Spotify::rockGenre() const{
 QList<QList<QString>> Spotify::randbGenre() const{
     return filterByGenre("r&b");
 }
+QList<QList<QString>> Spotify::hiphopGenre() const{
+    return filterByGenre("hip hop");
+}

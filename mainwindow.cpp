@@ -10,7 +10,7 @@
 #include <QRegularExpressionMatch>
 
 
-const QString path = "/Users/mansur/Desktop/playlist_2010to20222Ars.csv";
+const QString path = "C:/Users/Arsentii/Downloads/Telegram Desktop/playlist_2010to20222.csv";
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow), listModel(new QStringListModel), spotifyData(new Spotify(path)), trackView(nullptr)
@@ -99,6 +99,16 @@ void MainWindow::on_randbButton_clicked()
         setCentralWidget(trackView);
     }
 }
+void MainWindow::on_hiphopButton_clicked()
+{
+    if (spotifyData) {
+        QList<QList<QString>> filteredData = spotifyData->filterByGenre("hip hop");
+        QStringList trackNames = getTrackNames(filteredData);
+        showTracks(trackNames);
+        setCentralWidget(trackView);
+    }
+
+}
 
 void MainWindow::on_searchLine_textChanged(const QString &text)
 {
@@ -130,6 +140,9 @@ void MainWindow::on_searchList_clicked(const QModelIndex &index)
 {
 
 }
+
+
+
 
 
 

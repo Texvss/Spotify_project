@@ -28,6 +28,8 @@ private slots:
     void on_randbButton_clicked();
     void on_searchLine_textChanged(const QString &arg1);
     void on_searchList_clicked(const QModelIndex &index);
+    void on_hiphopButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     QStringListModel *listModel;
