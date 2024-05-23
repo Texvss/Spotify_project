@@ -30,6 +30,21 @@ private slots:
     void on_dancepopButton_clicked();
     void on_poprapbutton_clicked();
     void on_urbanconbutton_clicked();
+    void on_trapButton_clicked();
+
+    void on_southernhiphopButton_clicked();
+
+    void on_modernrockButton_clicked();
+
+    void on_canadianpopButton_clicked();
+
+    void on_hippopButton_clicked();
+
+    void on_neoMellowButton_clicked();
+
+    void on_postgrungeButton_clicked();
+
+    void on_edmButton_clicked();
     void on_searchLine_textChanged(const QString &arg1);
     void on_searchList_clicked(const QModelIndex &index);
 

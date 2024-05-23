@@ -22,6 +22,14 @@ public:
     QList<QList<QString>> dancepopGenre() const;
     QList<QList<QString>> poprapGenre() const;
     QList<QList<QString>> urbanconGenre() const;
+    QList<QList<QString>> hippopGenre() const;
+    QList<QList<QString>> canadianpopGenre() const;
+    QList<QList<QString>> neomellowGenre() const;
+    QList<QList<QString>> edmGenre() const;
+    QList<QList<QString>> postgrungeGenre() const;
+    QList<QList<QString>> modernrockGenre() const;
+    QList<QList<QString>> trapGenre() const;
+    QList<QList<QString>> southernhiphopGenre() const;
 
     QList<QList<QString>> data;
 private:

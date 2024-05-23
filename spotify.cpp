@@ -67,3 +67,29 @@ QList<QList<QString>> Spotify::poprapGenre() const{
 QList<QList<QString>> Spotify::urbanconGenre() const{
     return filterByGenre("urban contemporary");
 }
+
+QList<QList<QString>> Spotify::trapGenre() const{
+    return filterByGenre("trap");
+}
+QList<QList<QString>> Spotify::southernhiphopGenre() const{
+    return filterByGenre("southern hip hop");
+}
+QList<QList<QString>> Spotify::modernrockGenre() const{
+    return filterByGenre("modern rock");
+}
+QList<QList<QString>> Spotify::canadianpopGenre() const{
+    return filterByGenre("canadian pop");
+}
+QList<QList<QString>> Spotify::hippopGenre() const{
+    return filterByGenre("hip pop");
+}
+QList<QList<QString>> Spotify::neomellowGenre() const{
+    return filterByGenre("neo mellow");
+}
+QList<QList<QString>> Spotify::postgrungeGenre() const{
+    return filterByGenre("post grunge");
+}
+QList<QList<QString>> Spotify::edmGenre() const{
+    return filterByGenre("edm");
+}
+

@@ -137,6 +137,86 @@ void MainWindow::on_urbanconbutton_clicked()
         setCentralWidget(trackView);
     }
 }
+void MainWindow::on_trapButton_clicked()
+{
+    if (spotifyData) {
+        QList<QList<QString>> filteredData = spotifyData->filterByGenre("trap");
+        QStringList trackNames = getTrackNames(filteredData);
+        showTracks(trackNames);
+        setCentralWidget(trackView);
+    }
+
+}
+void MainWindow::on_southernhiphopButton_clicked()
+{
+    if (spotifyData) {
+        QList<QList<QString>> filteredData = spotifyData->filterByGenre("southern hip hop");
+        QStringList trackNames = getTrackNames(filteredData);
+        showTracks(trackNames);
+        setCentralWidget(trackView);
+    }
+
+}
+void MainWindow::on_modernrockButton_clicked()
+{
+    if (spotifyData) {
+        QList<QList<QString>> filteredData = spotifyData->filterByGenre("modern rock");
+        QStringList trackNames = getTrackNames(filteredData);
+        showTracks(trackNames);
+        setCentralWidget(trackView);
+    }
+
+}
+void MainWindow::on_canadianpopButton_clicked()
+{
+    if (spotifyData) {
+        QList<QList<QString>> filteredData = spotifyData->filterByGenre("canadian pop");
+        QStringList trackNames = getTrackNames(filteredData);
+        showTracks(trackNames);
+        setCentralWidget(trackView);
+    }
+
+}
+void MainWindow::on_hippopButton_clicked()
+{
+    if (spotifyData) {
+        QList<QList<QString>> filteredData = spotifyData->filterByGenre("hip pop");
+        QStringList trackNames = getTrackNames(filteredData);
+        showTracks(trackNames);
+        setCentralWidget(trackView);
+    }
+
+}
+void MainWindow::on_neoMellowButton_clicked()
+{
+    if (spotifyData) {
+        QList<QList<QString>> filteredData = spotifyData->filterByGenre("neo mellow");
+        QStringList trackNames = getTrackNames(filteredData);
+        showTracks(trackNames);
+        setCentralWidget(trackView);
+    }
+
+}
+void MainWindow::on_postgrungeButton_clicked()
+{
+    if (spotifyData) {
+        QList<QList<QString>> filteredData = spotifyData->filterByGenre("post-grunge");
+        QStringList trackNames = getTrackNames(filteredData);
+        showTracks(trackNames);
+        setCentralWidget(trackView);
+    }
+
+}
+void MainWindow::on_edmButton_clicked()
+{
+    if (spotifyData) {
+        QList<QList<QString>> filteredData = spotifyData->filterByGenre("edm");
+        QStringList trackNames = getTrackNames(filteredData);
+        showTracks(trackNames);
+        setCentralWidget(trackView);
+    }
+
+}
 
 
 void MainWindow::on_searchLine_textChanged(const QString &text)
@@ -169,11 +249,6 @@ void MainWindow::on_searchList_clicked(const QModelIndex &index)
 {
 
 }
-
-
-
-
-
 
 
 
