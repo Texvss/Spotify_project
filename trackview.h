@@ -18,6 +18,11 @@ public:
     ~TrackView();
     void genreTracks(const QStringList& tracks);
 
+signals:
+    void backButtonClicked();
+
+private slots:
+    void on_backButton_clicked();
 
 private:
     Ui::TrackView *ui;

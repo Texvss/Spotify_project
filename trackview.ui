@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="editTriggers">
-    <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+    <set>QAbstractItemView::NoEditTriggers</set>
    </property>
    <property name="dragEnabled">
     <bool>true</bool>
@@ -57,7 +57,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string>Back</string>
    </property>
   </widget>
  </widget>

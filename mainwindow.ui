@@ -85,7 +85,7 @@
      <bool>true</bool>
     </property>
     <property name="editTriggers">
-     <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+     <set>QAbstractItemView::NoEditTriggers</set>
     </property>
     <property name="tabKeyNavigation">
      <bool>true</bool>
@@ -282,7 +282,7 @@
      <x>0</x>
      <y>0</y>
      <width>1053</width>
-     <height>25</height>
+     <height>37</height>
     </rect>
    </property>
   </widget>

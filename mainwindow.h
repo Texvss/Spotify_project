@@ -1,7 +1,9 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-#include <QStringListModel>
+
 #include <QMainWindow>
+#include <QStringListModel>
+#include <QStackedWidget>
 #include "spotify.h"
 #include "trackview.h"
 
@@ -18,7 +20,6 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-
 
 private slots:
 
@@ -48,14 +49,19 @@ private slots:
     void on_searchLine_textChanged(const QString &arg1);
     void on_searchList_clicked(const QModelIndex &index);
 
+    void on_backButton_clicked();
+
 
 private:
     Ui::MainWindow *ui;
     QStringListModel *listModel;
     QStandardItemModel *searchModel;
+    QStackedWidget *stackedWidget;  // Новый виджет
     Spotify *spotifyData;
     TrackView *trackView;
-    void showTracks(const QStringList& trackNames);
-    QStringList getTrackNames(const QList<QList<QString>>& filteredData) const;
+    void showTracks(const QStringList &trackNames);
+    QStringList getTrackNames(const QList<QList<QString>> &filteredData) const;
+
 };
 #endif // MAINWINDOW_H
+
