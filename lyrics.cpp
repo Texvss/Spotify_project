@@ -1,19 +1,20 @@
 #include "lyrics.h"
 #include "ui_lyrics.h"
 
-lyrics::lyrics(QWidget *parent)
+Lyrics::Lyrics(QWidget *parent)
     : QWidget(parent)
-    , ui(new Ui::lyrics)
+    , ui(new Ui::Lyrics)
 {
     ui->setupUi(this);
 }
 
-lyrics::~lyrics()
+Lyrics::~Lyrics()
 {
     delete ui;
 }
 
-void lyrics::lyricsText(const QString &text)
+
+void Lyrics::setLyrics(const QString &text)
 {
     ui->lyricsList->setPlainText(text);
 }

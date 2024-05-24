@@ -2,10 +2,13 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QStringListModel>
 #include <QStackedWidget>
+#include <QStringListModel>
 #include "spotify.h"
 #include "trackview.h"
+#include "lyrics.h"
+#include <QProcess>
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -50,18 +53,20 @@ private slots:
     void on_searchList_clicked(const QModelIndex &index);
 
     void on_backButton_clicked();
+    void fetchLyrics(const QString &artistName, const QString &songName);
+    void onLyricsFetched(int exitCode, QProcess::ExitStatus exitStatus);
 
 
 private:
     Ui::MainWindow *ui;
     QStringListModel *listModel;
     QStandardItemModel *searchModel;
-    QStackedWidget *stackedWidget;  // Новый виджет
+    QStackedWidget *stackedWidget; // Новый виджет
     Spotify *spotifyData;
     TrackView *trackView;
     void showTracks(const QStringList &trackNames);
     QStringList getTrackNames(const QList<QList<QString>> &filteredData) const;
-
+    Lyrics *lyricsView;
+    QProcess *process;
 };
 #endif // MAINWINDOW_H
-

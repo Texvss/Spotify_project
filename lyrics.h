@@ -4,20 +4,20 @@
 #include <QWidget>
 
 namespace Ui {
-class lyrics;
+class Lyrics;
 }
 
-class lyrics : public QWidget
+class Lyrics : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit lyrics(QWidget *parent = nullptr);
-    ~lyrics();
-    void lyricsText(const QString &text);
+    explicit Lyrics(QWidget *parent = nullptr);
+    ~Lyrics();
+    void setLyrics(const QString &text);
 
 private:
-    Ui::lyrics *ui;
+    Ui::Lyrics *ui;
 };
 
 #endif // LYRICS_H

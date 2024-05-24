@@ -1,9 +1,9 @@
 #ifndef TRACKVIEW_H
 #define TRACKVIEW_H
 
-#include <QWidget>
 #include <QStandardItemModel>
 #include <QStringListModel>
+#include <QWidget>
 
 namespace Ui {
 class TrackView;
@@ -16,7 +16,7 @@ class TrackView : public QWidget
 public:
     explicit TrackView(QWidget *parent = nullptr);
     ~TrackView();
-    void genreTracks(const QStringList& tracks);
+    void genreTracks(const QStringList &tracks);
 
 signals:
     void backButtonClicked();

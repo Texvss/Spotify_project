@@ -1,0 +1,1 @@
+set(__QT_DEPLOY_TARGET_project_FILE /Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/project.app/Contents/MacOS/project)
