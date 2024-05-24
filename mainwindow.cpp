@@ -55,6 +55,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->edmButton, &QPushButton::clicked, this, &MainWindow::on_edmButton_clicked);
     connect(ui->searchLine, &QLineEdit::textChanged, this, &MainWindow::on_searchLine_textChanged);
     connect(ui->searchList, &QListView::clicked, this, &MainWindow::on_searchList_clicked);
+
     connect(process, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), this, &MainWindow::onLyricsFetched);
     listModel->setStringList(spotifyData->getTrackNames());
     ui->searchLine->setPlaceholderText("Search...");
@@ -257,7 +258,7 @@ void MainWindow::fetchLyrics(const QString &artistName, const QString &songName)
     // qDebug() << "Starting process with arguments:" << "/n" << arguments;
     // QString program = "python3";
     // process->start(program, arguments);
-    process->start("sh",  {"/Users/mansur/PycharmProjects/genius_parser/run.sh eminem stan"});
+    process->start("sh",  {"/Users/mansur/PycharmProjects/genius_parser/run.sh"});
     process->waitForFinished();
     qDebug() << "Results: " << "/n" << process->readAllStandardOutput();
 
