@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QListView>
 #include <QtWidgets/QMainWindow>
@@ -43,6 +44,7 @@ public:
     QPushButton *trapButton;
     QPushButton *postgrungeButton;
     QPushButton *neoMellowButton;
+    QLabel *userLabel;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -55,16 +57,16 @@ public:
         centralwidget->setObjectName("centralwidget");
         popButton = new QPushButton(centralwidget);
         popButton->setObjectName("popButton");
-        popButton->setGeometry(QRect(10, 80, 160, 160));
+        popButton->setGeometry(QRect(90, 125, 160, 160));
         rapButton = new QPushButton(centralwidget);
         rapButton->setObjectName("rapButton");
-        rapButton->setGeometry(QRect(210, 80, 160, 160));
+        rapButton->setGeometry(QRect(290, 125, 160, 160));
         rockButton = new QPushButton(centralwidget);
         rockButton->setObjectName("rockButton");
-        rockButton->setGeometry(QRect(10, 255, 160, 160));
+        rockButton->setGeometry(QRect(90, 300, 160, 160));
         randbButton = new QPushButton(centralwidget);
         randbButton->setObjectName("randbButton");
-        randbButton->setGeometry(QRect(210, 255, 160, 160));
+        randbButton->setGeometry(QRect(290, 300, 160, 160));
         searchList = new QListView(centralwidget);
         searchList->setObjectName("searchList");
         searchList->setGeometry(QRect(10, 40, 401, 111));
@@ -84,40 +86,44 @@ public:
         searchLine->setReadOnly(false);
         hiphopButton = new QPushButton(centralwidget);
         hiphopButton->setObjectName("hiphopButton");
-        hiphopButton->setGeometry(QRect(410, 80, 160, 160));
+        hiphopButton->setGeometry(QRect(490, 125, 160, 160));
         dancepopButton = new QPushButton(centralwidget);
         dancepopButton->setObjectName("dancepopButton");
-        dancepopButton->setGeometry(QRect(610, 80, 160, 160));
+        dancepopButton->setGeometry(QRect(690, 125, 160, 160));
         poprapbutton = new QPushButton(centralwidget);
         poprapbutton->setObjectName("poprapbutton");
-        poprapbutton->setGeometry(QRect(410, 255, 160, 160));
+        poprapbutton->setGeometry(QRect(490, 300, 160, 160));
         urbanconbutton = new QPushButton(centralwidget);
         urbanconbutton->setObjectName("urbanconbutton");
-        urbanconbutton->setGeometry(QRect(610, 255, 160, 160));
+        urbanconbutton->setGeometry(QRect(690, 300, 160, 160));
         southernhiphopButton = new QPushButton(centralwidget);
         southernhiphopButton->setObjectName("southernhiphopButton");
-        southernhiphopButton->setGeometry(QRect(210, 435, 160, 160));
+        southernhiphopButton->setGeometry(QRect(290, 480, 160, 160));
         hippopButton = new QPushButton(centralwidget);
         hippopButton->setObjectName("hippopButton");
-        hippopButton->setGeometry(QRect(10, 615, 160, 160));
+        hippopButton->setGeometry(QRect(90, 660, 160, 160));
         modernrockButton = new QPushButton(centralwidget);
         modernrockButton->setObjectName("modernrockButton");
-        modernrockButton->setGeometry(QRect(410, 435, 160, 160));
+        modernrockButton->setGeometry(QRect(490, 480, 160, 160));
         canadianpopButton = new QPushButton(centralwidget);
         canadianpopButton->setObjectName("canadianpopButton");
-        canadianpopButton->setGeometry(QRect(610, 435, 160, 160));
+        canadianpopButton->setGeometry(QRect(690, 480, 160, 160));
         edmButton = new QPushButton(centralwidget);
         edmButton->setObjectName("edmButton");
-        edmButton->setGeometry(QRect(610, 615, 160, 160));
+        edmButton->setGeometry(QRect(690, 660, 160, 160));
         trapButton = new QPushButton(centralwidget);
         trapButton->setObjectName("trapButton");
-        trapButton->setGeometry(QRect(10, 435, 160, 160));
+        trapButton->setGeometry(QRect(90, 480, 160, 160));
         postgrungeButton = new QPushButton(centralwidget);
         postgrungeButton->setObjectName("postgrungeButton");
-        postgrungeButton->setGeometry(QRect(410, 615, 160, 160));
+        postgrungeButton->setGeometry(QRect(490, 660, 160, 160));
         neoMellowButton = new QPushButton(centralwidget);
         neoMellowButton->setObjectName("neoMellowButton");
-        neoMellowButton->setGeometry(QRect(210, 615, 160, 160));
+        neoMellowButton->setGeometry(QRect(290, 660, 160, 160));
+        userLabel = new QLabel(centralwidget);
+        userLabel->setObjectName("userLabel");
+        userLabel->setGeometry(QRect(790, 0, 221, 31));
+        userLabel->setTextFormat(Qt::RichText);
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -151,6 +157,7 @@ public:
         trapButton->setText(QCoreApplication::translate("MainWindow", "Trap", nullptr));
         postgrungeButton->setText(QCoreApplication::translate("MainWindow", "Post-Grunge", nullptr));
         neoMellowButton->setText(QCoreApplication::translate("MainWindow", "Neo Mellow", nullptr));
+        userLabel->setText(QString());
     } // retranslateUi
 
 };

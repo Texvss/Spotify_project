@@ -17,8 +17,8 @@
    <widget class="QPushButton" name="popButton">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>80</y>
+      <x>90</x>
+      <y>125</y>
       <width>160</width>
       <height>160</height>
      </rect>
@@ -30,8 +30,8 @@
    <widget class="QPushButton" name="rapButton">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>80</y>
+      <x>290</x>
+      <y>125</y>
       <width>160</width>
       <height>160</height>
      </rect>
@@ -43,8 +43,8 @@
    <widget class="QPushButton" name="rockButton">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>255</y>
+      <x>90</x>
+      <y>300</y>
       <width>160</width>
       <height>160</height>
      </rect>
@@ -56,8 +56,8 @@
    <widget class="QPushButton" name="randbButton">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>255</y>
+      <x>290</x>
+      <y>300</y>
       <width>160</width>
       <height>160</height>
      </rect>
@@ -122,8 +122,8 @@
    <widget class="QPushButton" name="hiphopButton">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>80</y>
+      <x>490</x>
+      <y>125</y>
       <width>160</width>
       <height>160</height>
      </rect>
@@ -135,8 +135,8 @@
    <widget class="QPushButton" name="dancepopButton">
     <property name="geometry">
      <rect>
-      <x>610</x>
-      <y>80</y>
+      <x>690</x>
+      <y>125</y>
       <width>160</width>
       <height>160</height>
      </rect>
@@ -148,8 +148,8 @@
    <widget class="QPushButton" name="poprapbutton">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>255</y>
+      <x>490</x>
+      <y>300</y>
       <width>160</width>
       <height>160</height>
      </rect>
@@ -161,8 +161,8 @@
    <widget class="QPushButton" name="urbanconbutton">
     <property name="geometry">
      <rect>
-      <x>610</x>
-      <y>255</y>
+      <x>690</x>
+      <y>300</y>
       <width>160</width>
       <height>160</height>
      </rect>
@@ -174,8 +174,8 @@
    <widget class="QPushButton" name="southernhiphopButton">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>435</y>
+      <x>290</x>
+      <y>480</y>
       <width>160</width>
       <height>160</height>
      </rect>
@@ -187,8 +187,8 @@
    <widget class="QPushButton" name="hippopButton">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>615</y>
+      <x>90</x>
+      <y>660</y>
       <width>160</width>
       <height>160</height>
      </rect>
@@ -200,8 +200,8 @@
    <widget class="QPushButton" name="modernrockButton">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>435</y>
+      <x>490</x>
+      <y>480</y>
       <width>160</width>
       <height>160</height>
      </rect>
@@ -213,8 +213,8 @@
    <widget class="QPushButton" name="canadianpopButton">
     <property name="geometry">
      <rect>
-      <x>610</x>
-      <y>435</y>
+      <x>690</x>
+      <y>480</y>
       <width>160</width>
       <height>160</height>
      </rect>
@@ -226,8 +226,8 @@
    <widget class="QPushButton" name="edmButton">
     <property name="geometry">
      <rect>
-      <x>610</x>
-      <y>615</y>
+      <x>690</x>
+      <y>660</y>
       <width>160</width>
       <height>160</height>
      </rect>
@@ -239,8 +239,8 @@
    <widget class="QPushButton" name="trapButton">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>435</y>
+      <x>90</x>
+      <y>480</y>
       <width>160</width>
       <height>160</height>
      </rect>
@@ -252,8 +252,8 @@
    <widget class="QPushButton" name="postgrungeButton">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>615</y>
+      <x>490</x>
+      <y>660</y>
       <width>160</width>
       <height>160</height>
      </rect>
@@ -265,14 +265,30 @@
    <widget class="QPushButton" name="neoMellowButton">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>615</y>
+      <x>290</x>
+      <y>660</y>
       <width>160</width>
       <height>160</height>
      </rect>
     </property>
     <property name="text">
      <string>Neo Mellow</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="userLabel">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>0</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::RichText</enum>
     </property>
    </widget>
   </widget>

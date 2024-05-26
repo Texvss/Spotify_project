@@ -9,10 +9,15 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-
 find_package(CURL REQUIRED)
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets Core Gui Sql)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Core Gui Sql)
+# find_package(CURL REQUIRED)
+# find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
+# find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
+# find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core Gui Sql REQUIRED)
+# # find_package(Qt${QT_VERSION_MAJOR}  REQUIRED COMPONENTS Core Gui Sql REQUIRED)
+# find_package(Qt${QT_VERSION_MAJOR}  REQUIRED COMPONENTS Sql REQUIRED)
 
 
 set(PROJECT_SOURCES
@@ -31,6 +36,11 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         mainwindow.cpp
         trackview.h trackview.cpp trackview.ui
         lyrics.h lyrics.cpp lyrics.ui
+        login.h login.cpp login.ui
+
+
+
+
 
 
 
@@ -64,7 +74,15 @@ else()
     endif()
 endif()
 
-target_link_libraries(project PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+
+
+
+# target_link_libraries(project PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+# target_link_libraries(project PRIVATE Qt${QT_VERSION_MAJOR}::Sql)
+# target_include_directories(project PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+target_link_libraries(project PRIVATE Qt${QT_VERSION_MAJOR}::Widgets Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Gui Qt${QT_VERSION_MAJOR}::Sql)
+
+target_include_directories(project PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
@@ -90,7 +108,3 @@ install(TARGETS project
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(project)
 endif()
-
-
-
-

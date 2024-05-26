@@ -18,3 +18,9 @@ void Lyrics::setLyrics(const QString &text)
 {
     ui->lyricsList->setPlainText(text);
 }
+
+void Lyrics::on_lyricsBack_clicked()
+{
+    emit backLyricsClicked();
+}
+

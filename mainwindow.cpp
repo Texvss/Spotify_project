@@ -7,8 +7,9 @@
 #include "spotify.h"
 #include "trackview.h"
 
-const QString path = "/Users/mansur/Desktop/playlist_2010to20222Ars.csv";
 
+const QString path = "/Users/mansur/Desktop/playlist_2010to20222Ars.csv";
+// const QString path = "./playlist_2010to20222Ars";
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -19,9 +20,14 @@ MainWindow::MainWindow(QWidget *parent)
     , searchModel(new QStandardItemModel(this))
     ,lyricsView(nullptr)
     , process(new QProcess(this))
+    , login(new Login)
 {
     ui->setupUi(this);
+    this->hide();
+    login->show();
     ui->searchList->setVisible(false);
+    // ui->userLabel->setText(Login::showUsername());
+
     connect(ui->popButton, &QPushButton::clicked, this, &MainWindow::on_popButton_clicked);
     connect(ui->rapButton, &QPushButton::clicked, this, &MainWindow::on_rapButton_clicked);
     connect(ui->rockButton, &QPushButton::clicked, this, &MainWindow::on_rockButton_clicked);
@@ -66,6 +72,18 @@ MainWindow::MainWindow(QWidget *parent)
 
     stackedWidget->addWidget(ui->centralwidget);
     setCentralWidget(stackedWidget);
+
+
+
+    // stackedWidget->addWidget(ui->centralwidget);
+    // setCentralWidget(login);
+
+
+
+    connect(login, &Login::loginSuccess, this, &MainWindow::showMainWindow);
+    connect(login, &Login::signUpSuccess, this, &MainWindow::showMainWindow);
+
+
 }
 
 MainWindow::~MainWindow()
@@ -76,18 +94,34 @@ MainWindow::~MainWindow()
     delete trackView;
     delete searchModel;
     delete stackedWidget;
+    delete login;
 }
+
+
+void MainWindow::showUsername(const QString &username)
+{
+    // currentUsername = username;
+    ui->userLabel->setText("User: " + username);
+}
+
+void MainWindow::showMainWindow()
+{
+    this->show();
+    login->hide();
+    showUsername(login->showUsername());
+}
+
 
 void MainWindow::showTracks(const QStringList &trackNames)
 {
     if (!trackView) {
         trackView = new TrackView(this);
         connect(trackView, &TrackView::backButtonClicked, this, &MainWindow::on_backButton_clicked);
-        stackedWidget->addWidget(trackView); // Add trackView to QStackedWidget
+        stackedWidget->addWidget(trackView);
     }
 
     trackView->genreTracks(trackNames);
-    stackedWidget->setCurrentWidget(trackView); // Switch to trackView
+    stackedWidget->setCurrentWidget(trackView);
 }
 
 QStringList MainWindow::getTrackNames(const QList<QList<QString>> &filteredData) const
@@ -324,3 +358,16 @@ void MainWindow::on_backButton_clicked()
 {
     stackedWidget->setCurrentWidget(ui->centralwidget);
 }
+
+void MainWindow::on_lyricsBack_clicked()
+{
+    this->show();
+}
+
+// void MainWindow::on_registerButton_clicked()
+// {
+//     if (auth)
+//     {
+//         stackedWidget->setCurrentWidget(trackView);
+//     }
+// }

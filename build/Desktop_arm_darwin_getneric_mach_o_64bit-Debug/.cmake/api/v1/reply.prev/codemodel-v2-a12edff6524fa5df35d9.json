@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-e661dcf70d7b9baf4286.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "project",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "project::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-project-Debug-9f56815578a036e37eab.json",
+					"name" : "project",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "project_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-project_autogen-Debug-6d5d1d3bf699525b7e51.json",
+					"name" : "project_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "project_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-project_autogen_timestamp_deps-Debug-5f39963bc2fba0b5b8cc.json",
+					"name" : "project_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug",
+		"source" : "/Users/mansur/Desktop/spotify/Spotify_project"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

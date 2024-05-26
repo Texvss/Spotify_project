@@ -16,11 +16,24 @@
   <widget class="QTextEdit" name="lyricsList">
    <property name="geometry">
     <rect>
-     <x>103</x>
-     <y>63</y>
+     <x>0</x>
+     <y>0</y>
      <width>491</width>
      <height>441</height>
     </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="lyricsBack">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>311</y>
+     <width>121</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back</string>
    </property>
   </widget>
  </widget>
