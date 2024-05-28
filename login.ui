@@ -112,14 +112,17 @@
   <widget class="QLabel" name="picrure">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>30</y>
-     <width>201</width>
-     <height>191</height>
+     <x>30</x>
+     <y>40</y>
+     <width>211</width>
+     <height>171</height>
     </rect>
    </property>
    <property name="text">
     <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../picture.png</pixmap>
    </property>
   </widget>
  </widget>

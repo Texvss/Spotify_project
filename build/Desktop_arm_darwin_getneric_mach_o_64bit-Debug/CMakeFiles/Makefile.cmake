@@ -48,6 +48,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   ".qtc/package-manager/auto-setup.cmake"
   "CMakeFiles/3.29.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.29.2/CMakeSystem.cmake"
+  "/Users/mansur/Desktop/spotify/Spotify_project/src.qrc"
   "/opt/homebrew/Cellar/qt/6.7.0_1/lib/cmake/Qt6/FindWrapAtomic.cmake"
   "/opt/homebrew/Cellar/qt/6.7.0_1/lib/cmake/Qt6/FindWrapOpenGL.cmake"
   "/opt/homebrew/Cellar/qt/6.7.0_1/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake"
@@ -281,6 +282,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   ".qt/info_plist/project/Info.plist"
   "CMakeFiles/project_autogen.dir/AutogenInfo.json"
+  "CMakeFiles/project_autogen.dir/AutoRcc_src_EWIEGA46WW_Info.json"
   ".qt/QtDeploySupport.cmake"
   ".qt/QtDeployTargets.cmake"
   "project.app/Contents/MacOS"

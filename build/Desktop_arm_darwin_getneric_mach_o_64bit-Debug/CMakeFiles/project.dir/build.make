@@ -76,10 +76,18 @@ project_autogen/timestamp: CMakeFiles/project.dir/compiler_depend.ts
 	/Applications/CMake.app/Contents/bin/cmake -E cmake_autogen /Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/CMakeFiles/project_autogen.dir/AutogenInfo.json Debug
 	/Applications/CMake.app/Contents/bin/cmake -E touch /Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/project_autogen/timestamp
 
+project_autogen/EWIEGA46WW/qrc_src.cpp: /Users/mansur/Desktop/spotify/Spotify_project/src.qrc
+project_autogen/EWIEGA46WW/qrc_src.cpp: CMakeFiles/project_autogen.dir/AutoRcc_src_EWIEGA46WW_Info.json
+project_autogen/EWIEGA46WW/qrc_src.cpp: /Users/mansur/Desktop/spotify/Spotify_project/playlist_2010to20222Ars.csv
+project_autogen/EWIEGA46WW/qrc_src.cpp: /opt/homebrew/share/qt/libexec/rcc
+project_autogen/EWIEGA46WW/qrc_src.cpp: /opt/homebrew/share/qt/libexec/rcc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic RCC for src.qrc"
+	/Applications/CMake.app/Contents/bin/cmake -E cmake_autorcc /Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/CMakeFiles/project_autogen.dir/AutoRcc_src_EWIEGA46WW_Info.json Debug
+
 CMakeFiles/project.dir/project_autogen/mocs_compilation.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/project_autogen/mocs_compilation.cpp.o: project_autogen/mocs_compilation.cpp
 CMakeFiles/project.dir/project_autogen/mocs_compilation.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project.dir/project_autogen/mocs_compilation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project.dir/project_autogen/mocs_compilation.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/project_autogen/mocs_compilation.cpp.o -MF CMakeFiles/project.dir/project_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/project.dir/project_autogen/mocs_compilation.cpp.o -c /Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/project_autogen/mocs_compilation.cpp
 
 CMakeFiles/project.dir/project_autogen/mocs_compilation.cpp.i: cmake_force
@@ -93,7 +101,7 @@ CMakeFiles/project.dir/project_autogen/mocs_compilation.cpp.s: cmake_force
 CMakeFiles/project.dir/main.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/main.cpp.o: /Users/mansur/Desktop/spotify/Spotify_project/main.cpp
 CMakeFiles/project.dir/main.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project.dir/main.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/main.cpp.o -MF CMakeFiles/project.dir/main.cpp.o.d -o CMakeFiles/project.dir/main.cpp.o -c /Users/mansur/Desktop/spotify/Spotify_project/main.cpp
 
 CMakeFiles/project.dir/main.cpp.i: cmake_force
@@ -107,7 +115,7 @@ CMakeFiles/project.dir/main.cpp.s: cmake_force
 CMakeFiles/project.dir/spotify.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/spotify.cpp.o: /Users/mansur/Desktop/spotify/Spotify_project/spotify.cpp
 CMakeFiles/project.dir/spotify.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project.dir/spotify.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/project.dir/spotify.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/spotify.cpp.o -MF CMakeFiles/project.dir/spotify.cpp.o.d -o CMakeFiles/project.dir/spotify.cpp.o -c /Users/mansur/Desktop/spotify/Spotify_project/spotify.cpp
 
 CMakeFiles/project.dir/spotify.cpp.i: cmake_force
@@ -121,7 +129,7 @@ CMakeFiles/project.dir/spotify.cpp.s: cmake_force
 CMakeFiles/project.dir/mainwindow.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/mainwindow.cpp.o: /Users/mansur/Desktop/spotify/Spotify_project/mainwindow.cpp
 CMakeFiles/project.dir/mainwindow.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/project.dir/mainwindow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/project.dir/mainwindow.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/mainwindow.cpp.o -MF CMakeFiles/project.dir/mainwindow.cpp.o.d -o CMakeFiles/project.dir/mainwindow.cpp.o -c /Users/mansur/Desktop/spotify/Spotify_project/mainwindow.cpp
 
 CMakeFiles/project.dir/mainwindow.cpp.i: cmake_force
@@ -135,7 +143,7 @@ CMakeFiles/project.dir/mainwindow.cpp.s: cmake_force
 CMakeFiles/project.dir/trackview.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/trackview.cpp.o: /Users/mansur/Desktop/spotify/Spotify_project/trackview.cpp
 CMakeFiles/project.dir/trackview.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/project.dir/trackview.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/project.dir/trackview.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/trackview.cpp.o -MF CMakeFiles/project.dir/trackview.cpp.o.d -o CMakeFiles/project.dir/trackview.cpp.o -c /Users/mansur/Desktop/spotify/Spotify_project/trackview.cpp
 
 CMakeFiles/project.dir/trackview.cpp.i: cmake_force
@@ -149,7 +157,7 @@ CMakeFiles/project.dir/trackview.cpp.s: cmake_force
 CMakeFiles/project.dir/lyrics.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/lyrics.cpp.o: /Users/mansur/Desktop/spotify/Spotify_project/lyrics.cpp
 CMakeFiles/project.dir/lyrics.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/project.dir/lyrics.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/project.dir/lyrics.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/lyrics.cpp.o -MF CMakeFiles/project.dir/lyrics.cpp.o.d -o CMakeFiles/project.dir/lyrics.cpp.o -c /Users/mansur/Desktop/spotify/Spotify_project/lyrics.cpp
 
 CMakeFiles/project.dir/lyrics.cpp.i: cmake_force
@@ -163,7 +171,7 @@ CMakeFiles/project.dir/lyrics.cpp.s: cmake_force
 CMakeFiles/project.dir/login.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/login.cpp.o: /Users/mansur/Desktop/spotify/Spotify_project/login.cpp
 CMakeFiles/project.dir/login.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/project.dir/login.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/project.dir/login.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/login.cpp.o -MF CMakeFiles/project.dir/login.cpp.o.d -o CMakeFiles/project.dir/login.cpp.o -c /Users/mansur/Desktop/spotify/Spotify_project/login.cpp
 
 CMakeFiles/project.dir/login.cpp.i: cmake_force
@@ -174,6 +182,20 @@ CMakeFiles/project.dir/login.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/login.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mansur/Desktop/spotify/Spotify_project/login.cpp -o CMakeFiles/project.dir/login.cpp.s
 
+CMakeFiles/project.dir/project_autogen/EWIEGA46WW/qrc_src.cpp.o: CMakeFiles/project.dir/flags.make
+CMakeFiles/project.dir/project_autogen/EWIEGA46WW/qrc_src.cpp.o: project_autogen/EWIEGA46WW/qrc_src.cpp
+CMakeFiles/project.dir/project_autogen/EWIEGA46WW/qrc_src.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/project.dir/project_autogen/EWIEGA46WW/qrc_src.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/project_autogen/EWIEGA46WW/qrc_src.cpp.o -MF CMakeFiles/project.dir/project_autogen/EWIEGA46WW/qrc_src.cpp.o.d -o CMakeFiles/project.dir/project_autogen/EWIEGA46WW/qrc_src.cpp.o -c /Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/project_autogen/EWIEGA46WW/qrc_src.cpp
+
+CMakeFiles/project.dir/project_autogen/EWIEGA46WW/qrc_src.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/project_autogen/EWIEGA46WW/qrc_src.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/project_autogen/EWIEGA46WW/qrc_src.cpp > CMakeFiles/project.dir/project_autogen/EWIEGA46WW/qrc_src.cpp.i
+
+CMakeFiles/project.dir/project_autogen/EWIEGA46WW/qrc_src.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/project_autogen/EWIEGA46WW/qrc_src.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/project_autogen/EWIEGA46WW/qrc_src.cpp -o CMakeFiles/project.dir/project_autogen/EWIEGA46WW/qrc_src.cpp.s
+
 # Object files for target project
 project_OBJECTS = \
 "CMakeFiles/project.dir/project_autogen/mocs_compilation.cpp.o" \
@@ -182,7 +204,8 @@ project_OBJECTS = \
 "CMakeFiles/project.dir/mainwindow.cpp.o" \
 "CMakeFiles/project.dir/trackview.cpp.o" \
 "CMakeFiles/project.dir/lyrics.cpp.o" \
-"CMakeFiles/project.dir/login.cpp.o"
+"CMakeFiles/project.dir/login.cpp.o" \
+"CMakeFiles/project.dir/project_autogen/EWIEGA46WW/qrc_src.cpp.o"
 
 # External object files for target project
 project_EXTERNAL_OBJECTS =
@@ -194,13 +217,14 @@ project.app/Contents/MacOS/project: CMakeFiles/project.dir/mainwindow.cpp.o
 project.app/Contents/MacOS/project: CMakeFiles/project.dir/trackview.cpp.o
 project.app/Contents/MacOS/project: CMakeFiles/project.dir/lyrics.cpp.o
 project.app/Contents/MacOS/project: CMakeFiles/project.dir/login.cpp.o
+project.app/Contents/MacOS/project: CMakeFiles/project.dir/project_autogen/EWIEGA46WW/qrc_src.cpp.o
 project.app/Contents/MacOS/project: CMakeFiles/project.dir/build.make
 project.app/Contents/MacOS/project: /opt/homebrew/lib/QtWidgets.framework/Versions/A/QtWidgets
 project.app/Contents/MacOS/project: /opt/homebrew/lib/QtGui.framework/Versions/A/QtGui
 project.app/Contents/MacOS/project: /opt/homebrew/lib/QtSql.framework/Versions/A/QtSql
 project.app/Contents/MacOS/project: /opt/homebrew/lib/QtCore.framework/Versions/A/QtCore
 project.app/Contents/MacOS/project: CMakeFiles/project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable project.app/Contents/MacOS/project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable project.app/Contents/MacOS/project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/project.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -211,6 +235,7 @@ CMakeFiles/project.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/project.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/project.dir/clean
 
+CMakeFiles/project.dir/depend: project_autogen/EWIEGA46WW/qrc_src.cpp
 CMakeFiles/project.dir/depend: project_autogen/timestamp
 	cd /Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/mansur/Desktop/spotify/Spotify_project /Users/mansur/Desktop/spotify/Spotify_project /Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug /Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug /Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/CMakeFiles/project.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/project.dir/depend

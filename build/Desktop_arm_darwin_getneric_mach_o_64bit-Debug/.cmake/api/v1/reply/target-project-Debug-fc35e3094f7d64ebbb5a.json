@@ -72,13 +72,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 101,
+				"line" : 103,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 82,
+				"line" : 84,
 				"parent" : 0
 			},
 			{
@@ -228,7 +228,7 @@
 			{
 				"command" : 12,
 				"file" : 1,
-				"line" : 84,
+				"line" : 86,
 				"parent" : 0
 			}
 		]
@@ -342,7 +342,9 @@
 				5,
 				6,
 				8,
-				11
+				11,
+				14,
+				22
 			]
 		}
 	],
@@ -466,7 +468,9 @@
 				5,
 				6,
 				8,
-				11
+				11,
+				14,
+				22
 			]
 		},
 		{
@@ -478,8 +482,10 @@
 				7,
 				10,
 				13,
-				14,
-				15
+				17,
+				18,
+				19,
+				20
 			]
 		},
 		{
@@ -489,14 +495,17 @@
 				3,
 				9,
 				12,
-				16
+				15,
+				16,
+				21
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				17
+				23,
+				24
 			]
 		}
 	],
@@ -575,6 +584,27 @@
 			"sourceGroupIndex" : 2
 		},
 		{
+			"backtrace" : 4,
+			"path" : "login.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "login.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "login.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src.qrc",
+			"sourceGroupIndex" : 2
+		},
+		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/project_autogen/include/ui_mainwindow.h",
@@ -595,13 +625,32 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
+			"path" : "build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/project_autogen/include/ui_login.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
 			"path" : "build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/project_autogen/timestamp",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/project_autogen/EWIEGA46WW/qrc_src.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/project_autogen/timestamp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/project_autogen/EWIEGA46WW/qrc_src.cpp.rule",
 			"sourceGroupIndex" : 3
 		}
 	],

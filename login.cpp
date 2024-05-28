@@ -1,6 +1,8 @@
 #include "login.h"
 #include "ui_login.h"
 #include <QMessageBox>
+#include <QCryptographicHash>
+
 
 Login::Login(QWidget *parent)
     : QWidget(parent)
@@ -9,10 +11,12 @@ Login::Login(QWidget *parent)
     ui->setupUi(this);
 
     QPixmap pix("/Users/mansur/Desktop/projectPic.png");
+    // QPixmap pix("/Users/mansur/Desktop/pic3.png");
+
     ui->picrure->setPixmap(pix);
 
     database = QSqlDatabase::addDatabase("QSQLITE");
-    database.setDatabaseName("/Users/mansur/Desktop/draftDatabase/draft.db");
+    database.setDatabaseName("/Users/mansur/Desktop/spotifyProject/spotifyProject_DB.db");
 
     if (!database.open())
     {
@@ -34,6 +38,7 @@ void Login::on_loginButton_clicked()
     QString username, password;
     username = ui -> usernameLine -> text();
     password = ui -> passwordLine -> text();
+
 
     if (!database.isOpen())
     {
@@ -75,11 +80,14 @@ void Login::on_signupButton_clicked()
     username = ui -> usernameLine -> text();
     password = ui -> passwordLine -> text();
 
+
+
     if (!database.isOpen())
     {
         qDebug() << "Failed to open the database";
         return;
     }
+
     QSqlQuery qry;
     qry.prepare("insert into users (username, password) values ('"+username+"', '"+password+"')");
     qry.bindValue(":username", username);

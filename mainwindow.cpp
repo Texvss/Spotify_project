@@ -9,7 +9,7 @@
 
 
 const QString path = "/Users/mansur/Desktop/playlist_2010to20222Ars.csv";
-// const QString path = "./playlist_2010to20222Ars";
+// const QString path = ":/data/playlist_2010to2022Ars.csv";
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)

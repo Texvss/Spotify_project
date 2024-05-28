@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/mansur/Desktop/spotify/Spotify_project/lyrics.cpp" "CMakeFiles/project.dir/lyrics.cpp.o" "gcc" "CMakeFiles/project.dir/lyrics.cpp.o.d"
   "/Users/mansur/Desktop/spotify/Spotify_project/main.cpp" "CMakeFiles/project.dir/main.cpp.o" "gcc" "CMakeFiles/project.dir/main.cpp.o.d"
   "/Users/mansur/Desktop/spotify/Spotify_project/mainwindow.cpp" "CMakeFiles/project.dir/mainwindow.cpp.o" "gcc" "CMakeFiles/project.dir/mainwindow.cpp.o.d"
+  "/Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/project_autogen/EWIEGA46WW/qrc_src.cpp" "CMakeFiles/project.dir/project_autogen/EWIEGA46WW/qrc_src.cpp.o" "gcc" "CMakeFiles/project.dir/project_autogen/EWIEGA46WW/qrc_src.cpp.o.d"
   "/Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/project_autogen/mocs_compilation.cpp" "CMakeFiles/project.dir/project_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/project.dir/project_autogen/mocs_compilation.cpp.o.d"
   "/Users/mansur/Desktop/spotify/Spotify_project/spotify.cpp" "CMakeFiles/project.dir/spotify.cpp.o" "gcc" "CMakeFiles/project.dir/spotify.cpp.o.d"
   "/Users/mansur/Desktop/spotify/Spotify_project/trackview.cpp" "CMakeFiles/project.dir/trackview.cpp.o" "gcc" "CMakeFiles/project.dir/trackview.cpp.o.d"

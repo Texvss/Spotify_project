@@ -1520,6 +1520,9 @@
 			"path" : "/opt/homebrew/Cellar/qt/6.7.0_1/lib/cmake/Qt6/macos/Info.plist.app.in"
 		},
 		{
+			"path" : "src.qrc"
+		},
+		{
 			"isGenerated" : true,
 			"path" : "build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/.qt/info_plist/project/Info.plist"
 		}

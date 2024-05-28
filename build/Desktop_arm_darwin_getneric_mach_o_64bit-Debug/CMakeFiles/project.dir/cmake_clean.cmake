@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/project.dir/main.cpp.o.d"
   "CMakeFiles/project.dir/mainwindow.cpp.o"
   "CMakeFiles/project.dir/mainwindow.cpp.o.d"
+  "CMakeFiles/project.dir/project_autogen/EWIEGA46WW/qrc_src.cpp.o"
+  "CMakeFiles/project.dir/project_autogen/EWIEGA46WW/qrc_src.cpp.o.d"
   "CMakeFiles/project.dir/project_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/project.dir/project_autogen/mocs_compilation.cpp.o.d"
   "CMakeFiles/project.dir/spotify.cpp.o"
@@ -18,6 +20,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/project.dir/trackview.cpp.o.d"
   "project.app/Contents/MacOS/project"
   "project.pdb"
+  "project_autogen/EWIEGA46WW/qrc_src.cpp"
   "project_autogen/mocs_compilation.cpp"
   "project_autogen/timestamp"
 )

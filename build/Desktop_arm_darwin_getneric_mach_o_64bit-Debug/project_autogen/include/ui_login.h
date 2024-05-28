@@ -94,7 +94,8 @@ public:
 
         picrure = new QLabel(Login);
         picrure->setObjectName("picrure");
-        picrure->setGeometry(QRect(10, 30, 201, 191));
+        picrure->setGeometry(QRect(30, 40, 211, 171));
+        picrure->setPixmap(QPixmap(QString::fromUtf8("../../picture.png")));
 
         retranslateUi(Login);
 

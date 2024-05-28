@@ -143,6 +143,7 @@ project_autogen/timestamp: \
 	/Users/mansur/Desktop/spotify/Spotify_project/mainwindow.h \
 	/Users/mansur/Desktop/spotify/Spotify_project/spotify.cpp \
 	/Users/mansur/Desktop/spotify/Spotify_project/spotify.h \
+	/Users/mansur/Desktop/spotify/Spotify_project/src.qrc \
 	/Users/mansur/Desktop/spotify/Spotify_project/trackview.cpp \
 	/Users/mansur/Desktop/spotify/Spotify_project/trackview.h \
 	/opt/homebrew/Cellar/qt/6.7.0_1/lib/QtCore.framework/Versions/A/Headers/QDeadlineTimer \

@@ -361,7 +361,8 @@
 		"/opt/homebrew/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginTargets-release.cmake",
 		"/opt/homebrew/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginAdditionalTargetInfo.cmake",
 		"/Applications/CMake.app/Contents/share/cmake-3.29/Modules/GNUInstallDirs.cmake",
-		"/opt/homebrew/Cellar/qt/6.7.0_1/lib/cmake/Qt6/macos/Info.plist.app.in"
+		"/opt/homebrew/Cellar/qt/6.7.0_1/lib/cmake/Qt6/macos/Info.plist.app.in",
+		"/Users/mansur/Desktop/spotify/Spotify_project/src.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "/Users/mansur/Desktop/spotify/Spotify_project",
 	"CROSS_CONFIG" : false,

@@ -37,6 +37,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         trackview.h trackview.cpp trackview.ui
         lyrics.h lyrics.cpp lyrics.ui
         login.h login.cpp login.ui
+        src.qrc
 
 
 
