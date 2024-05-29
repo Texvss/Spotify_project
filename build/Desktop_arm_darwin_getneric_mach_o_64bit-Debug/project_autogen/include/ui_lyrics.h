@@ -31,6 +31,7 @@ public:
         lyricsList = new QTextEdit(Lyrics);
         lyricsList->setObjectName("lyricsList");
         lyricsList->setGeometry(QRect(0, 0, 491, 441));
+        lyricsList->setReadOnly(true);
         lyricsBack = new QPushButton(Lyrics);
         lyricsBack->setObjectName("lyricsBack");
         lyricsBack->setGeometry(QRect(530, 311, 121, 61));

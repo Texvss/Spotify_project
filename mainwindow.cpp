@@ -299,7 +299,7 @@ void MainWindow::fetchLyrics(const QString &artistName, const QString &songName)
     // qDebug() << "Starting process with arguments:" << "/n" << arguments;
     // QString program = "python3";
     // process->start(program, arguments);
-    process->start("sh",  {"/Users/mansur/PycharmProjects/genius_parser/run.sh", artistName, songName});
+    process->start("sh",  {":/../../../PycharmProjects/genius_parser/run.sh", artistName, songName});
     process->waitForFinished();
     qDebug() << "Results: " << "/n" << process->readAllStandardOutput();
 
@@ -339,7 +339,7 @@ void MainWindow::on_searchList_clicked(const QModelIndex &index)
     qDebug() << trackName.toLower();
 
     // fetchLyrics(artistName, trackName.toLower());
-    fetchLyrics(artistName, trackName);
+    fetchLyrics(artistName, "Stan");
 }
 
 void MainWindow::onLyricsFetched(int exitCode, QProcess::ExitStatus exitStatus)
