@@ -16,7 +16,7 @@ Login::Login(QWidget *parent)
     ui->picrure->setPixmap(pix);
 
     database = QSqlDatabase::addDatabase("QSQLITE");
-    database.setDatabaseName("/Users/mansur/Desktop/spotifyProject/spotifyProject_DB.db");
+    database.setDatabaseName("/Users/mansur/Desktop/draftDatabase/draft.db");
 
     if (!database.open())
     {
@@ -26,6 +26,7 @@ Login::Login(QWidget *parent)
     {
         ui-> label-> setText("Connected!");
     }
+
 }
 
 Login::~Login()
@@ -79,7 +80,7 @@ void Login::on_signupButton_clicked()
     QString username, password;
     username = ui -> usernameLine -> text();
     password = ui -> passwordLine -> text();
-
+    password = QString(QCryptographicHash::hash(password.toUtf8(), QCryptographicHash::Blake2b_256));
 
 
     if (!database.isOpen())
@@ -110,4 +111,3 @@ QString Login::showUsername()
     username = ui->usernameLine->text();
     return username;
 }
-

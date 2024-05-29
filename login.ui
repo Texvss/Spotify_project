@@ -122,10 +122,15 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../../picture.png</pixmap>
+    <pixmap resource="src.qrc">:/pictures/projectPic.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
    </property>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="src.qrc"/>
+ </resources>
  <connections/>
 </ui>

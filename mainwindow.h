@@ -54,12 +54,15 @@ private slots:
     void onLyricsFetched(int exitCode, QProcess::ExitStatus exitStatus);
     //AUTH
     void showMainWindow();
+    void lyricsBack();
 
 
 
 
 
 
+
+    void on_searchButton_clicked();
 
 private:
     Ui::MainWindow *ui;

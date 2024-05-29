@@ -8,8 +8,8 @@
 #include "trackview.h"
 
 
-const QString path = "/Users/mansur/Desktop/playlist_2010to20222Ars.csv";
-// const QString path = ":/data/playlist_2010to2022Ars.csv";
+
+const QString path = ":/data/playlist_2010to20222Ars.csv";
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -26,6 +26,7 @@ MainWindow::MainWindow(QWidget *parent)
     this->hide();
     login->show();
     ui->searchList->setVisible(false);
+    ui->searchLine-> setVisible(false);
     // ui->userLabel->setText(Login::showUsername());
 
     connect(ui->popButton, &QPushButton::clicked, this, &MainWindow::on_popButton_clicked);
@@ -109,6 +110,12 @@ void MainWindow::showMainWindow()
     this->show();
     login->hide();
     showUsername(login->showUsername());
+}
+
+void MainWindow::lyricsBack()
+{
+    this->show();
+    lyricsView->hide();
 }
 
 
@@ -292,7 +299,7 @@ void MainWindow::fetchLyrics(const QString &artistName, const QString &songName)
     // qDebug() << "Starting process with arguments:" << "/n" << arguments;
     // QString program = "python3";
     // process->start(program, arguments);
-    process->start("sh",  {"/Users/mansur/PycharmProjects/genius_parser/run.sh"});
+    process->start("sh",  {"/Users/mansur/PycharmProjects/genius_parser/run.sh", artistName, songName});
     process->waitForFinished();
     qDebug() << "Results: " << "/n" << process->readAllStandardOutput();
 
@@ -329,6 +336,9 @@ void MainWindow::on_searchList_clicked(const QModelIndex &index)
 {
     QString trackName = searchModel->data(index, Qt::DisplayRole).toString();
     QString artistName = "Eminem";
+    qDebug() << trackName.toLower();
+
+    // fetchLyrics(artistName, trackName.toLower());
     fetchLyrics(artistName, trackName);
 }
 
@@ -357,17 +367,20 @@ void MainWindow::onLyricsFetched(int exitCode, QProcess::ExitStatus exitStatus)
 void MainWindow::on_backButton_clicked()
 {
     stackedWidget->setCurrentWidget(ui->centralwidget);
+    // trackView->hide();
+    // this->show();
 }
 
 void MainWindow::on_lyricsBack_clicked()
 {
-    this->show();
+    // stackedWidget->setCurrentWidget(ui->centralwidget);
+    // this->show();
+    // lyricsView->hide();
 }
 
-// void MainWindow::on_registerButton_clicked()
-// {
-//     if (auth)
-//     {
-//         stackedWidget->setCurrentWidget(trackView);
-//     }
-// }
+void MainWindow::on_searchButton_clicked()
+{
+    ui->searchLine->setVisible(true);
+    ui->searchButton->setVisible(false);
+}
+
