@@ -26,7 +26,7 @@ public:
     void showUsername(const QString &username);
 
 private slots:
-    // PLAYLIST
+    // PLAYLISTS
     void on_popButton_clicked();  // POP
     void on_rapButton_clicked(); // RAP
     void on_rockButton_clicked(); // ROCK
@@ -48,13 +48,12 @@ private slots:
     void on_searchList_clicked(const QModelIndex &index);
     //BACK
     void on_backButton_clicked();
-    void on_lyricsBack_clicked();
     //PARSER
     void fetchLyrics(const QString &artistName, const QString &songName);
     void onLyricsFetched(int exitCode, QProcess::ExitStatus exitStatus);
     //AUTH
     void showMainWindow();
-    void lyricsBack();
+    void backLyricsClicked();
 
 
 
@@ -68,7 +67,7 @@ private:
     Ui::MainWindow *ui;
     QStringListModel *listModel;
     QStandardItemModel *searchModel;
-    QStackedWidget *stackedWidget; // Новый виджет
+    QStackedWidget *stackedWidget;
     Spotify *spotifyData;
     TrackView *trackView;
     void showTracks(const QStringList &trackNames);

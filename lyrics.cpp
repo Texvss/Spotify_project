@@ -22,6 +22,5 @@ void Lyrics::setLyrics(const QString &text)
 void Lyrics::on_lyricsBack_clicked()
 {
     emit backLyricsClicked();
-    this->hide();
 }
 

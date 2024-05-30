@@ -112,7 +112,7 @@ void MainWindow::showMainWindow()
     showUsername(login->showUsername());
 }
 
-void MainWindow::lyricsBack()
+void MainWindow::backLyricsClicked()
 {
     this->show();
     lyricsView->hide();
@@ -299,7 +299,8 @@ void MainWindow::fetchLyrics(const QString &artistName, const QString &songName)
     // qDebug() << "Starting process with arguments:" << "/n" << arguments;
     // QString program = "python3";
     // process->start(program, arguments);
-    process->start("sh",  {":/../../../PycharmProjects/genius_parser/run.sh", artistName, songName});
+    // process->start("sh",  {"/Users/mansur/PycharmProjects/genius_parser/run.sh", artistName, songName});
+    process->start("sh",  {"/Users/mansur/PycharmProjects/genius_parser/run.sh", artistName, songName});
     process->waitForFinished();
     qDebug() << "Results: " << "/n" << process->readAllStandardOutput();
 
@@ -335,11 +336,17 @@ void MainWindow::on_searchLine_textChanged(const QString &text)
 void MainWindow::on_searchList_clicked(const QModelIndex &index)
 {
     QString trackName = searchModel->data(index, Qt::DisplayRole).toString();
-    QString artistName = "Eminem";
-    qDebug() << trackName.toLower();
-
-    // fetchLyrics(artistName, trackName.toLower());
-    fetchLyrics(artistName, "Stan");
+    // QString trackName = ui ->searchLine -> text();
+    QString artistName;
+    for (const auto &row : spotifyData->data) {
+        if (row[static_cast<int>(COLUMNS::track_name)].compare(trackName, Qt::CaseInsensitive) == 0) {
+            artistName = row[static_cast<int>(COLUMNS::artist_name)];
+            break;
+        }
+    }
+    qDebug() << trackName;
+    qDebug() << artistName;
+    fetchLyrics(artistName, trackName);
 }
 
 void MainWindow::onLyricsFetched(int exitCode, QProcess::ExitStatus exitStatus)
@@ -371,12 +378,6 @@ void MainWindow::on_backButton_clicked()
     // this->show();
 }
 
-void MainWindow::on_lyricsBack_clicked()
-{
-    // stackedWidget->setCurrentWidget(ui->centralwidget);
-    // this->show();
-    // lyricsView->hide();
-}
 
 void MainWindow::on_searchButton_clicked()
 {

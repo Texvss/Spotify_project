@@ -17,7 +17,6 @@ Login::Login(QWidget *parent)
 
     database = QSqlDatabase::addDatabase("QSQLITE");
     database.setDatabaseName("/Users/mansur/Desktop/draftDatabase/draft.db");
-
     if (!database.open())
     {
         ui->label->setText("Failed!!!");

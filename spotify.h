@@ -28,9 +28,8 @@ enum class COLUMNS {
     tempo,
     duration_ms,
     time_signature,
-    pop,
-    rap,
-    rock
+    clusters,
+    s_clusters
 };
 class Spotify
 {
