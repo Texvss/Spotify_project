@@ -45,6 +45,8 @@ public:
     QPushButton *postgrungeButton;
     QPushButton *neoMellowButton;
     QLabel *userLabel;
+    QPushButton *searchButton;
+    QPushButton *likedButton;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -69,7 +71,7 @@ public:
         randbButton->setGeometry(QRect(290, 300, 160, 160));
         searchList = new QListView(centralwidget);
         searchList->setObjectName("searchList");
-        searchList->setGeometry(QRect(10, 40, 401, 111));
+        searchList->setGeometry(QRect(10, 60, 401, 111));
         searchList->setMouseTracking(true);
         searchList->setTabletTracking(true);
         searchList->setAutoFillBackground(true);
@@ -81,7 +83,7 @@ public:
         searchList->setUniformItemSizes(true);
         searchLine = new QLineEdit(centralwidget);
         searchLine->setObjectName("searchLine");
-        searchLine->setGeometry(QRect(10, 0, 400, 40));
+        searchLine->setGeometry(QRect(10, 20, 400, 40));
         searchLine->setDragEnabled(false);
         searchLine->setReadOnly(false);
         hiphopButton = new QPushButton(centralwidget);
@@ -124,6 +126,12 @@ public:
         userLabel->setObjectName("userLabel");
         userLabel->setGeometry(QRect(790, 0, 221, 31));
         userLabel->setTextFormat(Qt::RichText);
+        searchButton = new QPushButton(centralwidget);
+        searchButton->setObjectName("searchButton");
+        searchButton->setGeometry(QRect(20, 20, 100, 32));
+        likedButton = new QPushButton(centralwidget);
+        likedButton->setObjectName("likedButton");
+        likedButton->setGeometry(QRect(560, 70, 100, 32));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -158,6 +166,8 @@ public:
         postgrungeButton->setText(QCoreApplication::translate("MainWindow", "Post-Grunge", nullptr));
         neoMellowButton->setText(QCoreApplication::translate("MainWindow", "Neo Mellow", nullptr));
         userLabel->setText(QString());
+        searchButton->setText(QCoreApplication::translate("MainWindow", "Search!", nullptr));
+        likedButton->setText(QCoreApplication::translate("MainWindow", "Liked", nullptr));
     } // retranslateUi
 
 };

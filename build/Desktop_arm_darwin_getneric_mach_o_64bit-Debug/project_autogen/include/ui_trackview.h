@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QListView>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
@@ -20,6 +21,8 @@ QT_BEGIN_NAMESPACE
 class Ui_TrackView
 {
 public:
+    QWidget *widget;
+    QHBoxLayout *horizontalLayout;
     QListView *trackView;
     QPushButton *backButton;
 
@@ -28,9 +31,14 @@ public:
         if (TrackView->objectName().isEmpty())
             TrackView->setObjectName("TrackView");
         TrackView->resize(840, 483);
-        trackView = new QListView(TrackView);
+        widget = new QWidget(TrackView);
+        widget->setObjectName("widget");
+        widget->setGeometry(QRect(330, 20, 491, 481));
+        horizontalLayout = new QHBoxLayout(widget);
+        horizontalLayout->setObjectName("horizontalLayout");
+        horizontalLayout->setContentsMargins(0, 0, 0, 0);
+        trackView = new QListView(widget);
         trackView->setObjectName("trackView");
-        trackView->setGeometry(QRect(20, 40, 361, 471));
         trackView->setEditTriggers(QAbstractItemView::NoEditTriggers);
         trackView->setDragEnabled(true);
         trackView->setDragDropOverwriteMode(true);
@@ -39,9 +47,14 @@ public:
         trackView->setUniformItemSizes(false);
         trackView->setWordWrap(false);
         trackView->setSelectionRectVisible(false);
-        backButton = new QPushButton(TrackView);
+
+        horizontalLayout->addWidget(trackView);
+
+        backButton = new QPushButton(widget);
         backButton->setObjectName("backButton");
-        backButton->setGeometry(QRect(479, 251, 141, 61));
+
+        horizontalLayout->addWidget(backButton);
+
 
         retranslateUi(TrackView);
 
