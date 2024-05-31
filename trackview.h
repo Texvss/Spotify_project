@@ -19,6 +19,7 @@ public:
     explicit TrackView(QWidget *parent = nullptr);
     ~TrackView();
     void genreTracks(const QStringList &tracks);
+    void setUsername(const QString &username);
 
 signals:
     void backButtonClicked();
@@ -37,6 +38,9 @@ private:
     QStringListModel *model;
     QMenu *contextMenu;
     Liked *likedTracks;
+    QString username;
 };
+
+
 
 #endif // TRACKVIEW_H

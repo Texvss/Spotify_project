@@ -80,10 +80,7 @@ project_autogen/EWIEGA46WW/qrc_src.cpp: /Users/mansur/Desktop/spotify/Spotify_pr
 project_autogen/EWIEGA46WW/qrc_src.cpp: CMakeFiles/project_autogen.dir/AutoRcc_src_EWIEGA46WW_Info.json
 project_autogen/EWIEGA46WW/qrc_src.cpp: /Users/mansur/Desktop/spotify/Spotify_project/projectPic.png
 project_autogen/EWIEGA46WW/qrc_src.cpp: /Users/mansur/Desktop/spotify/Spotify_project/spotifyProject_DB.db
-project_autogen/EWIEGA46WW/qrc_src.cpp: /Users/mansur/Desktop/spotify/Spotify_project/draft.db
 project_autogen/EWIEGA46WW/qrc_src.cpp: /Users/mansur/Desktop/spotify/Spotify_project/playlist_2010to20222Ars.csv
-project_autogen/EWIEGA46WW/qrc_src.cpp: /Users/mansur/Desktop/spotify/Spotify_project/parser.py
-project_autogen/EWIEGA46WW/qrc_src.cpp: /Users/mansur/Desktop/spotify/Spotify_project/bash.sh
 project_autogen/EWIEGA46WW/qrc_src.cpp: /opt/homebrew/share/qt/libexec/rcc
 project_autogen/EWIEGA46WW/qrc_src.cpp: /opt/homebrew/share/qt/libexec/rcc
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic RCC for src.qrc"

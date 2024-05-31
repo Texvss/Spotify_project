@@ -1084,9 +1084,6 @@ CMakeFiles/project.dir/project_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/include/QtSql/qtsqlglobal.h \
   /opt/homebrew/include/QtSql/qtsql-config.h \
   /opt/homebrew/include/QtSql/qtsqlexports.h \
-  /opt/homebrew/include/QtCore/qtmochelpers.h \
-  /Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/project_autogen/EWIEGA46WW/moc_login.cpp \
-  /Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/project_autogen/EWIEGA46WW/../../../../login.h \
   /opt/homebrew/lib/QtSql.framework/Headers/QtSql \
   /opt/homebrew/include/QtSql/QtSqlDepends \
   /opt/homebrew/include/QtCore/QtCore \
@@ -1488,8 +1485,17 @@ CMakeFiles/project.dir/project_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/lib/QtSql.framework/Headers/qsqlresult.h \
   /opt/homebrew/lib/QtSql.framework/Headers/qsqltablemodel.h \
   /opt/homebrew/lib/QtSql.framework/Headers/qtsqlversion.h \
+  /opt/homebrew/include/QtCore/qtmochelpers.h \
+  /Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/project_autogen/EWIEGA46WW/moc_login.cpp \
+  /Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/project_autogen/EWIEGA46WW/../../../../login.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QtDebug \
   /Users/mansur/Desktop/spotify/Spotify_project/liked.h \
+  /Users/mansur/Desktop/spotify/Spotify_project/trackview.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QStandardItemModel \
+  /opt/homebrew/lib/QtGui.framework/Headers/qstandarditemmodel.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QStringListModel \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QMenu \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qmenu.h \
   /Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/project_autogen/EWIEGA46WW/moc_lyrics.cpp \
   /Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/project_autogen/EWIEGA46WW/../../../../lyrics.h \
   /Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/project_autogen/EWIEGA46WW/moc_mainwindow.cpp \
@@ -1498,16 +1504,10 @@ CMakeFiles/project.dir/project_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qmainwindow.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QStackedWidget \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qstackedwidget.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QStringListModel \
   /Users/mansur/Desktop/spotify/Spotify_project/spotify.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QList \
   /opt/homebrew/lib/QtCore.framework/Headers/QString \
   /opt/homebrew/lib/QtCore.framework/Headers/QStringList \
-  /Users/mansur/Desktop/spotify/Spotify_project/trackview.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/QStandardItemModel \
-  /opt/homebrew/lib/QtGui.framework/Headers/qstandarditemmodel.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QMenu \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qmenu.h \
   /Users/mansur/Desktop/spotify/Spotify_project/lyrics.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QProcess \
   /Users/mansur/Desktop/spotify/Spotify_project/login.h \

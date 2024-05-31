@@ -24,7 +24,6 @@ MainWindow::MainWindow(QWidget *parent)
     , liked(nullptr)
 {
     ui->setupUi(this);
-    this->hide();
     login->show();
     ui->searchList->setVisible(false);
     ui->searchLine-> setVisible(false);
@@ -74,10 +73,10 @@ MainWindow::MainWindow(QWidget *parent)
 
     stackedWidget->addWidget(ui->centralwidget);
     setCentralWidget(stackedWidget);
+    this -> hide();
 
 
-
-    // stackedWidget->addWidget(ui->centralwidget);
+    // stackedWidget->addWidget();
     // setCentralWidget(login);
 
 
@@ -104,12 +103,15 @@ void MainWindow::showUsername(const QString &username)
 {
     // currentUsername = username;
     ui->userLabel->setText("User: " + username);
+    this->username = username;
+
 }
 
 void MainWindow::showMainWindow()
 {
     this->show();
     login->hide();
+    // trackView->hide();
     showUsername(login->showUsername());
 }
 
@@ -397,6 +399,10 @@ void MainWindow::on_likedButton_clicked()
         liked= new Liked(this);
         stackedWidget->addWidget(liked);
     }
+    liked->loadPlaylist(username);
+    liked->show();
     stackedWidget->setCurrentWidget(liked);
+    liked->loadPlaylist(username);
+    liked->show();
 }
 

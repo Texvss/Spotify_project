@@ -79,5 +79,6 @@ private:
     QProcess *process;
     Login *login;
     Liked *liked;
+    QString username;
 };
 #endif // MAINWINDOW_H

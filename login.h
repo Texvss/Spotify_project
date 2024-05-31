@@ -6,6 +6,7 @@
 #include <QtDebug>
 #include <QSqlDatabase>
 #include <liked.h>
+#include "trackview.h"
 
 
 namespace Ui {
@@ -35,6 +36,7 @@ private:
     QSqlDatabase database;
     Liked *likedTracks;
     QString username;
+    TrackView *trackView;
 };
 
 #endif // LOGIN_H

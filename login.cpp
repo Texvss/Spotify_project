@@ -7,6 +7,7 @@
 Login::Login(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::Login)
+    // , trackView(new TrackView(this))
 {
     ui->setupUi(this);
 
@@ -60,6 +61,7 @@ void Login::on_loginButton_clicked()
         if (count == 1)
         {
             ui -> label -> setText("username and password is correct");
+            // trackView->setUsername(username);
             emit loginSuccess();
         }
         if (count > 1)

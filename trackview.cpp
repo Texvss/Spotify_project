@@ -7,7 +7,7 @@ TrackView::TrackView(QWidget *parent)
     , ui(new Ui::TrackView)
     , model(new QStringListModel(this))
     , contextMenu(new QMenu(this))
-    , likedTracks(nullptr)
+    , likedTracks(new Liked(this))
 {
     ui->setupUi(this);
     connect(ui->backButton, &QPushButton::clicked, this, &TrackView::on_backButton_clicked);
@@ -17,7 +17,8 @@ TrackView::TrackView(QWidget *parent)
     contextMenu -> addAction("Lyrics");
     contextMenu -> addAction("Artist");
 
-    connect(addToPlaylistAction, &QAction::triggered, this, &TrackView::addToLiked);
+    // connect(addToPlaylistAction, &QAction::triggered, this, &TrackView::addToLiked);
+    likedTracks->hide();
 
 }
 
@@ -29,6 +30,12 @@ TrackView::~TrackView()
 void TrackView::genreTracks(const QStringList &tracks)
 {
     model->setStringList(tracks);
+}
+
+void TrackView::setUsername(const QString &username)
+{
+    this->username = username;
+    likedTracks->loadPlaylist(username);
 }
 
 void TrackView::on_backButton_clicked()
@@ -45,19 +52,31 @@ void TrackView::on_trackView_doubleClicked(const QModelIndex &index)
 
 void TrackView::addToLiked()
 {
+    // QModelIndex currentIndex = ui->trackView->currentIndex();
+    // if (currentIndex.isValid()) {
+    //     QString track = model->data(currentIndex, Qt::DisplayRole).toString();
+    //     qDebug() << "Adding track to playlist:" << track;
+
+
+    //     QStringList trackDetails = track.split(" - ");
+    //     if (trackDetails.size() == 2) {
+    //         likedTracks->addTrack(trackDetails.at(0), trackDetails.at(1));
+    //     }
+    // }
+    // else {
+    //     qDebug() << "No valid index selected.";
+    // }
+
     QModelIndex currentIndex = ui->trackView->currentIndex();
     if (currentIndex.isValid()) {
         QString track = model->data(currentIndex, Qt::DisplayRole).toString();
         qDebug() << "Adding track to playlist:" << track;
 
-
         QStringList trackDetails = track.split(" - ");
         if (trackDetails.size() == 2) {
             likedTracks->addTrack(trackDetails.at(0), trackDetails.at(1));
         }
-    }
-    else {
+    } else {
         qDebug() << "No valid index selected.";
     }
 }
-
