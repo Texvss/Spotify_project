@@ -1,9 +1,6 @@
 #ifndef LOGIN_H
 #define LOGIN_H
 
-#include <QWidget>
-#include <QtSql>
-#include <QtDebug>
 #include <QSqlDatabase>
 #include <liked.h>
 #include "trackview.h"
@@ -28,7 +25,6 @@ signals:
 
 private slots:
     void on_loginButton_clicked();
-
     void on_signupButton_clicked();
 
 private:
@@ -40,3 +36,5 @@ private:
 };
 
 #endif // LOGIN_H
+
+
