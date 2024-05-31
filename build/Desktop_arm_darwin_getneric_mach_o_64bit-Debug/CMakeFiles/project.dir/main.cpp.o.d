@@ -1090,11 +1090,30 @@ CMakeFiles/project.dir/main.cpp.o: \
   /opt/homebrew/lib/QtGui.framework/Headers/qstandarditemmodel.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QWidget \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qwidget.h \
-  /Users/mansur/Desktop/spotify/Spotify_project/lyrics.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QProcess \
-  /opt/homebrew/lib/QtCore.framework/Headers/qprocess.h \
-  /opt/homebrew/include/QtCore/qiodevice.h \
-  /Users/mansur/Desktop/spotify/Spotify_project/login.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QMenu \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qmenu.h \
+  /Users/mansur/Desktop/spotify/Spotify_project/liked.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QTableWidget \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qtablewidget.h \
+  /opt/homebrew/include/QtWidgets/qtableview.h \
+  /opt/homebrew/include/QtWidgets/qabstractitemview.h \
+  /opt/homebrew/include/QtWidgets/qabstractscrollarea.h \
+  /opt/homebrew/include/QtCore/qitemselectionmodel.h \
+  /opt/homebrew/include/QtWidgets/qabstractitemdelegate.h \
+  /opt/homebrew/include/QtWidgets/qstyleoption.h \
+  /opt/homebrew/include/QtWidgets/qabstractspinbox.h \
+  /opt/homebrew/include/QtGui/qvalidator.h \
+  /opt/homebrew/include/QtCore/qregularexpression.h \
+  /opt/homebrew/include/QtWidgets/qslider.h \
+  /opt/homebrew/include/QtWidgets/qabstractslider.h \
+  /opt/homebrew/include/QtWidgets/qstyle.h \
+  /opt/homebrew/include/QtWidgets/qtabbar.h \
+  /opt/homebrew/include/QtWidgets/qrubberband.h \
+  /opt/homebrew/lib/QtSql.framework/Headers/QSqlDatabase \
+  /opt/homebrew/lib/QtSql.framework/Headers/qsqldatabase.h \
+  /opt/homebrew/include/QtSql/qtsqlglobal.h \
+  /opt/homebrew/include/QtSql/qtsql-config.h \
+  /opt/homebrew/include/QtSql/qtsqlexports.h \
   /opt/homebrew/lib/QtSql.framework/Headers/QtSql \
   /opt/homebrew/include/QtSql/QtSqlDepends \
   /opt/homebrew/include/QtCore/QtCore \
@@ -1139,6 +1158,7 @@ CMakeFiles/project.dir/main.cpp.o: \
   /opt/homebrew/lib/QtCore.framework/Headers/qbindingstorage.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qbitarray.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qbuffer.h \
+  /opt/homebrew/include/QtCore/qiodevice.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qbytearray.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qbytearrayalgorithms.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qbytearraylist.h \
@@ -1152,7 +1172,6 @@ CMakeFiles/project.dir/main.cpp.o: \
   /opt/homebrew/include/QtCore/qdatetime.h \
   /opt/homebrew/include/QtCore/qcalendar.h \
   /opt/homebrew/include/QtCore/qcborcommon.h \
-  /opt/homebrew/include/QtCore/qregularexpression.h \
   /opt/homebrew/include/QtCore/qurl.h \
   /opt/homebrew/include/QtCore/quuid.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qcborcommon.h \
@@ -1309,6 +1328,7 @@ CMakeFiles/project.dir/main.cpp.o: \
   /opt/homebrew/include/QtCore/qplugin.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qpoint.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qpointer.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qprocess.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qprocessordetection.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qpromise.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qproperty.h \
@@ -1460,10 +1480,6 @@ CMakeFiles/project.dir/main.cpp.o: \
   /opt/homebrew/include/QtCore/q23functional.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qyieldcpu.h \
   /opt/homebrew/lib/QtSql.framework/Headers/qtsqlglobal.h \
-  /opt/homebrew/include/QtSql/qtsql-config.h \
-  /opt/homebrew/include/QtSql/qtsqlexports.h \
-  /opt/homebrew/lib/QtSql.framework/Headers/qsqldatabase.h \
-  /opt/homebrew/include/QtSql/qtsqlglobal.h \
   /opt/homebrew/lib/QtSql.framework/Headers/qsqldriver.h \
   /opt/homebrew/lib/QtSql.framework/Headers/qsqldriverplugin.h \
   /opt/homebrew/include/QtCore/qfactoryinterface.h \
@@ -1477,19 +1493,7 @@ CMakeFiles/project.dir/main.cpp.o: \
   /opt/homebrew/lib/QtSql.framework/Headers/qsqlrecord.h \
   /opt/homebrew/lib/QtSql.framework/Headers/qsqlrelationaldelegate.h \
   /opt/homebrew/include/QtWidgets/qstyleditemdelegate.h \
-  /opt/homebrew/include/QtWidgets/qabstractitemdelegate.h \
-  /opt/homebrew/include/QtWidgets/qstyleoption.h \
-  /opt/homebrew/include/QtWidgets/qabstractspinbox.h \
-  /opt/homebrew/include/QtGui/qvalidator.h \
-  /opt/homebrew/include/QtWidgets/qslider.h \
-  /opt/homebrew/include/QtWidgets/qabstractslider.h \
-  /opt/homebrew/include/QtWidgets/qstyle.h \
-  /opt/homebrew/include/QtWidgets/qtabbar.h \
-  /opt/homebrew/include/QtWidgets/qrubberband.h \
   /opt/homebrew/include/QtWidgets/qlistview.h \
-  /opt/homebrew/include/QtWidgets/qabstractitemview.h \
-  /opt/homebrew/include/QtWidgets/qabstractscrollarea.h \
-  /opt/homebrew/include/QtCore/qitemselectionmodel.h \
   /opt/homebrew/include/QtWidgets/qcombobox.h \
   /opt/homebrew/include/QtSql/qsqldriver.h \
   /opt/homebrew/include/QtSql/qsqlrelationaltablemodel.h \
@@ -1500,5 +1504,7 @@ CMakeFiles/project.dir/main.cpp.o: \
   /opt/homebrew/lib/QtSql.framework/Headers/qsqlresult.h \
   /opt/homebrew/lib/QtSql.framework/Headers/qsqltablemodel.h \
   /opt/homebrew/lib/QtSql.framework/Headers/qtsqlversion.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QtDebug \
-  /opt/homebrew/lib/QtSql.framework/Headers/QSqlDatabase
+  /Users/mansur/Desktop/spotify/Spotify_project/lyrics.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QProcess \
+  /Users/mansur/Desktop/spotify/Spotify_project/login.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QtDebug

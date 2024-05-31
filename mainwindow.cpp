@@ -8,8 +8,8 @@
 #include "trackview.h"
 
 
-const QString path = "/Users/mansur/Desktop/playlist_2010to20222Ars.csv";
-// const QString path = ":/data/playlist_2010to2022Ars.csv";
+
+const QString path = ":/data/playlist_2010to20222Ars.csv";
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -21,11 +21,12 @@ MainWindow::MainWindow(QWidget *parent)
     ,lyricsView(nullptr)
     , process(new QProcess(this))
     , login(new Login)
+    , liked(nullptr)
 {
     ui->setupUi(this);
-    this->hide();
     login->show();
     ui->searchList->setVisible(false);
+    ui->searchLine-> setVisible(false);
     // ui->userLabel->setText(Login::showUsername());
 
     connect(ui->popButton, &QPushButton::clicked, this, &MainWindow::on_popButton_clicked);
@@ -72,10 +73,10 @@ MainWindow::MainWindow(QWidget *parent)
 
     stackedWidget->addWidget(ui->centralwidget);
     setCentralWidget(stackedWidget);
+    this -> hide();
 
 
-
-    // stackedWidget->addWidget(ui->centralwidget);
+    // stackedWidget->addWidget();
     // setCentralWidget(login);
 
 
@@ -102,13 +103,22 @@ void MainWindow::showUsername(const QString &username)
 {
     // currentUsername = username;
     ui->userLabel->setText("User: " + username);
+    this->username = username;
+
 }
 
 void MainWindow::showMainWindow()
 {
     this->show();
     login->hide();
+    // trackView->hide();
     showUsername(login->showUsername());
+}
+
+void MainWindow::backLyricsClicked()
+{
+    this->show();
+    lyricsView->hide();
 }
 
 
@@ -292,7 +302,11 @@ void MainWindow::fetchLyrics(const QString &artistName, const QString &songName)
     // qDebug() << "Starting process with arguments:" << "/n" << arguments;
     // QString program = "python3";
     // process->start(program, arguments);
-    process->start("sh",  {"/Users/mansur/PycharmProjects/genius_parser/run.sh"});
+    // process->start("sh",  {"/Users/mansur/PycharmProjects/genius_parser/run.sh", artistName, songName});
+    process->start("sh",  {"/Users/mansur/PycharmProjects/genius_parser/run.sh", artistName, songName});
+    // for (size_t);
+    qDebug() << songName.split(" ");
+    qDebug() << songName.split(" ").size();
     process->waitForFinished();
     qDebug() << "Results: " << "/n" << process->readAllStandardOutput();
 
@@ -328,7 +342,17 @@ void MainWindow::on_searchLine_textChanged(const QString &text)
 void MainWindow::on_searchList_clicked(const QModelIndex &index)
 {
     QString trackName = searchModel->data(index, Qt::DisplayRole).toString();
-    QString artistName = "Eminem";
+    // QString trackName = ui ->searchLine -> text();
+    QString artistName;
+    for (const auto &row : spotifyData->data) {
+        if (row[static_cast<int>(COLUMNS::track_name)].compare(trackName, Qt::CaseInsensitive) == 0) {
+            artistName = row[static_cast<int>(COLUMNS::artist_name)];
+            break;
+        }
+    }
+
+    qDebug() << trackName;
+    // qDebug() << artistName;
     fetchLyrics(artistName, trackName);
 }
 
@@ -357,17 +381,28 @@ void MainWindow::onLyricsFetched(int exitCode, QProcess::ExitStatus exitStatus)
 void MainWindow::on_backButton_clicked()
 {
     stackedWidget->setCurrentWidget(ui->centralwidget);
+    // trackView->hide();
+    // this->show();
 }
 
-void MainWindow::on_lyricsBack_clicked()
+
+void MainWindow::on_searchButton_clicked()
 {
-    this->show();
+    ui->searchLine->setVisible(true);
+    ui->searchButton->setVisible(false);
 }
 
-// void MainWindow::on_registerButton_clicked()
-// {
-//     if (auth)
-//     {
-//         stackedWidget->setCurrentWidget(trackView);
-//     }
-// }
+
+void MainWindow::on_likedButton_clicked()
+{
+    if (!liked) {
+        liked= new Liked(this);
+        stackedWidget->addWidget(liked);
+    }
+    liked->loadPlaylist(username);
+    liked->show();
+    stackedWidget->setCurrentWidget(liked);
+    liked->loadPlaylist(username);
+    liked->show();
+}
+

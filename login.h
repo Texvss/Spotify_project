@@ -1,10 +1,9 @@
 #ifndef LOGIN_H
 #define LOGIN_H
 
-#include <QWidget>
-#include <QtSql>
-#include <QtDebug>
 #include <QSqlDatabase>
+#include <liked.h>
+#include "trackview.h"
 
 
 namespace Ui {
@@ -26,12 +25,16 @@ signals:
 
 private slots:
     void on_loginButton_clicked();
-
     void on_signupButton_clicked();
 
 private:
     Ui::Login *ui;
     QSqlDatabase database;
+    Liked *likedTracks;
+    QString username;
+    TrackView *trackView;
 };
 
 #endif // LOGIN_H
+
+
