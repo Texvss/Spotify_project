@@ -30,7 +30,7 @@
    <property name="geometry">
     <rect>
      <x>260</x>
-     <y>40</y>
+     <y>30</y>
      <width>271</width>
      <height>181</height>
     </rect>
@@ -122,10 +122,15 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../../picture.png</pixmap>
+    <pixmap resource="src.qrc">:/pictures/projectPic.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
    </property>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="src.qrc"/>
+ </resources>
  <connections/>
 </ui>

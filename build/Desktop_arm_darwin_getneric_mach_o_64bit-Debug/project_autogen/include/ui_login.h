@@ -28,7 +28,7 @@ public:
     QGroupBox *groupBox;
     QPushButton *loginButton;
     QPushButton *signupButton;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout;
     QLabel *usernameLabel;
@@ -48,27 +48,27 @@ public:
         label->setGeometry(QRect(40, 230, 381, 41));
         groupBox = new QGroupBox(Login);
         groupBox->setObjectName("groupBox");
-        groupBox->setGeometry(QRect(260, 40, 271, 181));
+        groupBox->setGeometry(QRect(260, 30, 271, 181));
         loginButton = new QPushButton(groupBox);
         loginButton->setObjectName("loginButton");
         loginButton->setGeometry(QRect(120, 140, 100, 32));
         signupButton = new QPushButton(groupBox);
         signupButton->setObjectName("signupButton");
         signupButton->setGeometry(QRect(0, 140, 100, 32));
-        widget = new QWidget(groupBox);
-        widget->setObjectName("widget");
-        widget->setGeometry(QRect(0, 40, 202, 58));
-        verticalLayout = new QVBoxLayout(widget);
+        layoutWidget = new QWidget(groupBox);
+        layoutWidget->setObjectName("layoutWidget");
+        layoutWidget->setGeometry(QRect(0, 40, 202, 58));
+        verticalLayout = new QVBoxLayout(layoutWidget);
         verticalLayout->setObjectName("verticalLayout");
         verticalLayout->setContentsMargins(0, 0, 0, 0);
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName("horizontalLayout");
-        usernameLabel = new QLabel(widget);
+        usernameLabel = new QLabel(layoutWidget);
         usernameLabel->setObjectName("usernameLabel");
 
         horizontalLayout->addWidget(usernameLabel);
 
-        usernameLine = new QLineEdit(widget);
+        usernameLine = new QLineEdit(layoutWidget);
         usernameLine->setObjectName("usernameLine");
 
         horizontalLayout->addWidget(usernameLine);
@@ -78,12 +78,12 @@ public:
 
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName("horizontalLayout_2");
-        passwordLabel = new QLabel(widget);
+        passwordLabel = new QLabel(layoutWidget);
         passwordLabel->setObjectName("passwordLabel");
 
         horizontalLayout_2->addWidget(passwordLabel);
 
-        passwordLine = new QLineEdit(widget);
+        passwordLine = new QLineEdit(layoutWidget);
         passwordLine->setObjectName("passwordLine");
         passwordLine->setEchoMode(QLineEdit::Password);
 
@@ -95,7 +95,8 @@ public:
         picrure = new QLabel(Login);
         picrure->setObjectName("picrure");
         picrure->setGeometry(QRect(30, 40, 211, 171));
-        picrure->setPixmap(QPixmap(QString::fromUtf8("../../picture.png")));
+        picrure->setPixmap(QPixmap(QString::fromUtf8(":/pictures/projectPic.png")));
+        picrure->setScaledContents(true);
 
         retranslateUi(Login);
 

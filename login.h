@@ -2,9 +2,9 @@
 #define LOGIN_H
 
 #include <QSqlDatabase>
-#include <QWidget>
-#include <QtDebug>
-#include <QtSql>
+#include <liked.h>
+#include "trackview.h"
+
 
 namespace Ui {
 class Login;
@@ -30,6 +30,9 @@ private slots:
 private:
     Ui::Login *ui;
     QSqlDatabase database;
+    Liked *likedTracks;
+    QString username;
+    TrackView *trackView;
 };
 
 #endif // LOGIN_H
