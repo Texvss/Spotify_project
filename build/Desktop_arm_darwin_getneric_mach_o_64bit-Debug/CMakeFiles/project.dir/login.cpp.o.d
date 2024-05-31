@@ -1486,6 +1486,12 @@ CMakeFiles/project.dir/login.cpp.o: \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QTableWidget \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qtablewidget.h \
   /opt/homebrew/include/QtWidgets/qtableview.h \
+  /Users/mansur/Desktop/spotify/Spotify_project/trackview.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QStandardItemModel \
+  /opt/homebrew/lib/QtGui.framework/Headers/qstandarditemmodel.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QStringListModel \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QMenu \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qmenu.h \
   /Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/project_autogen/include/ui_login.h \
   /opt/homebrew/include/QtWidgets/QApplication \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qapplication.h \

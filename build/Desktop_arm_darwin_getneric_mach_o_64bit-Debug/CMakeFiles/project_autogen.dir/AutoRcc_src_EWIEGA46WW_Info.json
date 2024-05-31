@@ -11,10 +11,7 @@
 	[
 		"/Users/mansur/Desktop/spotify/Spotify_project/projectPic.png",
 		"/Users/mansur/Desktop/spotify/Spotify_project/spotifyProject_DB.db",
-		"/Users/mansur/Desktop/spotify/Spotify_project/draft.db",
-		"/Users/mansur/Desktop/spotify/Spotify_project/playlist_2010to20222Ars.csv",
-		"/Users/mansur/Desktop/spotify/Spotify_project/parser.py",
-		"/Users/mansur/Desktop/spotify/Spotify_project/bash.sh"
+		"/Users/mansur/Desktop/spotify/Spotify_project/playlist_2010to20222Ars.csv"
 	],
 	"LOCK_FILE" : "/Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/CMakeFiles/project_autogen.dir/AutoRcc_src_EWIEGA46WW_Lock.lock",
 	"MULTI_CONFIG" : false,

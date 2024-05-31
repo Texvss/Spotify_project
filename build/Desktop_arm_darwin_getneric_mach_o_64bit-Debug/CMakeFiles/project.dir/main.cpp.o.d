@@ -1114,11 +1114,6 @@ CMakeFiles/project.dir/main.cpp.o: \
   /opt/homebrew/include/QtSql/qtsqlglobal.h \
   /opt/homebrew/include/QtSql/qtsql-config.h \
   /opt/homebrew/include/QtSql/qtsqlexports.h \
-  /Users/mansur/Desktop/spotify/Spotify_project/lyrics.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QProcess \
-  /opt/homebrew/lib/QtCore.framework/Headers/qprocess.h \
-  /opt/homebrew/include/QtCore/qiodevice.h \
-  /Users/mansur/Desktop/spotify/Spotify_project/login.h \
   /opt/homebrew/lib/QtSql.framework/Headers/QtSql \
   /opt/homebrew/include/QtSql/QtSqlDepends \
   /opt/homebrew/include/QtCore/QtCore \
@@ -1163,6 +1158,7 @@ CMakeFiles/project.dir/main.cpp.o: \
   /opt/homebrew/lib/QtCore.framework/Headers/qbindingstorage.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qbitarray.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qbuffer.h \
+  /opt/homebrew/include/QtCore/qiodevice.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qbytearray.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qbytearrayalgorithms.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qbytearraylist.h \
@@ -1332,6 +1328,7 @@ CMakeFiles/project.dir/main.cpp.o: \
   /opt/homebrew/include/QtCore/qplugin.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qpoint.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qpointer.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qprocess.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qprocessordetection.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qpromise.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qproperty.h \
@@ -1507,4 +1504,7 @@ CMakeFiles/project.dir/main.cpp.o: \
   /opt/homebrew/lib/QtSql.framework/Headers/qsqlresult.h \
   /opt/homebrew/lib/QtSql.framework/Headers/qsqltablemodel.h \
   /opt/homebrew/lib/QtSql.framework/Headers/qtsqlversion.h \
+  /Users/mansur/Desktop/spotify/Spotify_project/lyrics.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QProcess \
+  /Users/mansur/Desktop/spotify/Spotify_project/login.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QtDebug

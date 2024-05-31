@@ -2,13 +2,8 @@
     <qresource prefix="/data">
         <file>playlist_2010to20222Ars.csv</file>
         <file>spotifyProject_DB.db</file>
-        <file>draft.db</file>
     </qresource>
     <qresource prefix="/pictures">
         <file>projectPic.png</file>
-    </qresource>
-    <qresource prefix="/pythonScript">
-        <file>parser.py</file>
-        <file>bash.sh</file>
     </qresource>
 </RCC>
