@@ -4,7 +4,6 @@ import argparse
 
 def genius_parser(artist_name, song_name):
     artist_name = artist_name.capitalize()
-    artist_name = artist_name.replace(" ", "-")
     song_name = song_name.replace(" ", "-")
     url = (f'https://genius.com/{artist_name}-{song_name}-lyrics')
     response = requests.get(url)
@@ -28,7 +27,6 @@ def genius_parser(artist_name, song_name):
 
     song_text = lyrics_container.get_text(strip=True, separator='\n')
     return song_text
-    # return artist_name
 parser = argparse.ArgumentParser(
                     prog='genius_parser',
                     description='Programme parse lyrics from genius.com',

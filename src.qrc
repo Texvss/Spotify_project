@@ -1,5 +1,9 @@
 <RCC>
     <qresource prefix="/data">
         <file>playlist_2010to20222Ars.csv</file>
+        <file>spotifyProject_DB.db</file>
+    </qresource>
+    <qresource prefix="/pictures">
+        <file>projectPic.png</file>
     </qresource>
 </RCC>

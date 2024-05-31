@@ -1,21 +1,77 @@
 project_autogen/timestamp: \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeCXXCompiler.cmake.in \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeCXXInformation.cmake \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeCompilerIdDetection.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeDetermineCompileFeatures.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeDetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeFindBinUtils.cmake \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeGenericSystem.cmake \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeParseImplicitIncludeInfo.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeParseImplicitLinkInfo.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeParseLibraryArchitecture.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeSystem.cmake.in \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeTestCompilerCommon.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeUnixFindMake.cmake \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CheckCXXCompilerFlag.cmake \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CheckCXXSourceCompiles.cmake \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CheckIncludeFileCXX.cmake \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CheckLibraryExists.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/ADSP-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/AppleClang-CXX.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/Borland-DetermineCompiler.cmake \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/Clang-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/Clang.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/Cray-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/CrayClang-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/GHS-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/GNU.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/IAR-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/Intel-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/MSVC-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/OrangeC-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/PGI-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/PathScale-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/SCO-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/TI-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/TIClang-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/Tasking-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/Watcom-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/FindCURL.cmake \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/FindOpenGL.cmake \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake \
@@ -24,13 +80,16 @@ project_autogen/timestamp: \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/FindThreads.cmake \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/FindVulkan.cmake \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/GNUInstallDirs.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Internal/CheckFlagCommonConfig.cmake \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Internal/FeatureTesting.cmake \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/MacroAddFileDependencies.cmake \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Platform/Apple-AppleClang-CXX.cmake \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Platform/Apple-Clang-CXX.cmake \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Platform/Apple-Clang.cmake \
+	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Platform/Darwin-Determine-CXX.cmake \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Platform/Darwin-Initialize.cmake \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Platform/Darwin.cmake \
 	/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Platform/UnixPaths.cmake \
@@ -134,6 +193,8 @@ project_autogen/timestamp: \
 	/Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/CMakeFiles/3.29.2/CMakeCXXCompiler.cmake \
 	/Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/CMakeFiles/3.29.2/CMakeSystem.cmake \
 	/Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/project_autogen/moc_predefs.h \
+	/Users/mansur/Desktop/spotify/Spotify_project/liked.cpp \
+	/Users/mansur/Desktop/spotify/Spotify_project/liked.h \
 	/Users/mansur/Desktop/spotify/Spotify_project/login.cpp \
 	/Users/mansur/Desktop/spotify/Spotify_project/login.h \
 	/Users/mansur/Desktop/spotify/Spotify_project/lyrics.cpp \
@@ -467,7 +528,9 @@ project_autogen/timestamp: \
 	/opt/homebrew/Cellar/qt/6.7.0_1/lib/QtSql.framework/Versions/A/Headers/qtsqlglobal.h \
 	/opt/homebrew/Cellar/qt/6.7.0_1/lib/QtSql.framework/Versions/A/Headers/qtsqlversion.h \
 	/opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/QMainWindow \
+	/opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/QMenu \
 	/opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/QStackedWidget \
+	/opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/QTableWidget \
 	/opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/QWidget \
 	/opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/qabstractitemdelegate.h \
 	/opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/qabstractitemview.h \
@@ -478,6 +541,7 @@ project_autogen/timestamp: \
 	/opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/qframe.h \
 	/opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/qlistview.h \
 	/opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/qmainwindow.h \
+	/opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/qmenu.h \
 	/opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/qrubberband.h \
 	/opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/qsizepolicy.h \
 	/opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/qslider.h \
@@ -486,6 +550,8 @@ project_autogen/timestamp: \
 	/opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/qstyleditemdelegate.h \
 	/opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/qstyleoption.h \
 	/opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/qtabbar.h \
+	/opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/qtableview.h \
+	/opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/qtablewidget.h \
 	/opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/qtabwidget.h \
 	/opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/qtwidgets-config.h \
 	/opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsexports.h \
@@ -712,6 +778,7 @@ project_autogen/timestamp: \
 	/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-release.cmake \
 	/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake \
 	/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake \
+	/Users/mansur/Desktop/spotify/Spotify_project/liked.ui \
 	/Users/mansur/Desktop/spotify/Spotify_project/login.ui \
 	/Users/mansur/Desktop/spotify/Spotify_project/lyrics.ui \
 	/Users/mansur/Desktop/spotify/Spotify_project/mainwindow.ui \
