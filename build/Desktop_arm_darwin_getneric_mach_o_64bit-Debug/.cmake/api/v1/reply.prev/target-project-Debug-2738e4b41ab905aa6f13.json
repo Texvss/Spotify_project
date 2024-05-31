@@ -72,13 +72,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 103,
+				"line" : 104,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 84,
+				"line" : 85,
 				"parent" : 0
 			},
 			{
@@ -228,7 +228,7 @@
 			{
 				"command" : 12,
 				"file" : 1,
-				"line" : 86,
+				"line" : 87,
 				"parent" : 0
 			}
 		]
@@ -344,7 +344,8 @@
 				8,
 				11,
 				14,
-				22
+				18,
+				26
 			]
 		}
 	],
@@ -470,7 +471,8 @@
 				8,
 				11,
 				14,
-				22
+				18,
+				26
 			]
 		},
 		{
@@ -483,9 +485,11 @@
 				10,
 				13,
 				17,
-				18,
-				19,
-				20
+				20,
+				21,
+				22,
+				23,
+				24
 			]
 		},
 		{
@@ -497,15 +501,16 @@
 				12,
 				15,
 				16,
-				21
+				19,
+				25
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				23,
-				24
+				27,
+				28
 			]
 		}
 	],
@@ -605,6 +610,22 @@
 			"sourceGroupIndex" : 2
 		},
 		{
+			"backtrace" : 4,
+			"path" : "liked.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "liked.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "liked.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/project_autogen/include/ui_mainwindow.h",
@@ -626,6 +647,12 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/project_autogen/include/ui_login.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/project_autogen/include/ui_liked.h",
 			"sourceGroupIndex" : 1
 		},
 		{

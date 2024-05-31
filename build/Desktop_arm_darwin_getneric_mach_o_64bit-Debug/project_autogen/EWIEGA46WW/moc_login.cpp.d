@@ -94,6 +94,7 @@
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/syslimits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/wait.h \
+  /Users/mansur/Desktop/spotify/Spotify_project/liked.h \
   /opt/homebrew/Cellar/qt/6.7.0_1/lib/QtCore.framework/Versions/A/Headers/QDeadlineTimer \
   /opt/homebrew/Cellar/qt/6.7.0_1/lib/QtCore.framework/Versions/A/Headers/QHash \
   /opt/homebrew/Cellar/qt/6.7.0_1/lib/QtCore.framework/Versions/A/Headers/QList \
@@ -410,6 +411,7 @@
   /opt/homebrew/Cellar/qt/6.7.0_1/lib/QtSql.framework/Versions/A/Headers/qtsqlexports.h \
   /opt/homebrew/Cellar/qt/6.7.0_1/lib/QtSql.framework/Versions/A/Headers/qtsqlglobal.h \
   /opt/homebrew/Cellar/qt/6.7.0_1/lib/QtSql.framework/Versions/A/Headers/qtsqlversion.h \
+  /opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/QTableWidget \
   /opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/QWidget \
   /opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/qabstractitemdelegate.h \
   /opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/qabstractitemview.h \
@@ -426,6 +428,8 @@
   /opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/qstyleditemdelegate.h \
   /opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/qstyleoption.h \
   /opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/qtabbar.h \
+  /opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/qtableview.h \
+  /opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/qtablewidget.h \
   /opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/qtabwidget.h \
   /opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/qtwidgets-config.h \
   /opt/homebrew/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsexports.h \

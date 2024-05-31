@@ -371,6 +371,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/Users/mansur/Desktop/spotify/Spotify_project/liked.h",
+			"MU",
+			"EWIEGA46WW/moc_liked.cpp",
+			null
+		],
+		[
 			"/Users/mansur/Desktop/spotify/Spotify_project/login.h",
 			"MU",
 			"EWIEGA46WW/moc_login.cpp",
@@ -461,6 +467,7 @@
 	"SETTINGS_FILE" : "/Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/CMakeFiles/project_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "/Users/mansur/Desktop/spotify/Spotify_project/liked.cpp", "MU", null ],
 		[ "/Users/mansur/Desktop/spotify/Spotify_project/login.cpp", "MU", null ],
 		[
 			"/Users/mansur/Desktop/spotify/Spotify_project/lyrics.cpp",

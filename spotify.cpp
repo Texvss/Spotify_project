@@ -79,7 +79,6 @@ QList<QList<QString>> Spotify::urbanconGenre() const
 {
     return filterByGenre("urban contemporary");
 }
-
 QList<QList<QString>> Spotify::trapGenre() const
 {
     return filterByGenre("trap");

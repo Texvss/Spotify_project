@@ -9,6 +9,7 @@
 #include "lyrics.h"
 #include <QProcess>
 #include "login.h"
+#include "liked.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -63,6 +64,8 @@ private slots:
 
     void on_searchButton_clicked();
 
+    void on_likedButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     QStringListModel *listModel;
@@ -75,5 +78,6 @@ private:
     Lyrics *lyricsView;
     QProcess *process;
     Login *login;
+    Liked *liked;
 };
 #endif // MAINWINDOW_H

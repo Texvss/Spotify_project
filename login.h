@@ -5,6 +5,7 @@
 #include <QtSql>
 #include <QtDebug>
 #include <QSqlDatabase>
+#include <liked.h>
 
 
 namespace Ui {
@@ -32,6 +33,8 @@ private slots:
 private:
     Ui::Login *ui;
     QSqlDatabase database;
+    Liked *likedTracks;
+    QString username;
 };
 
 #endif // LOGIN_H

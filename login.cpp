@@ -68,7 +68,7 @@ void Login::on_loginButton_clicked()
         }
         if (count < 1)
         {
-            ui -> label -> setText("username and password is incorrect");
+            ui -> label -> setText("Username or Password is incorrect");
         }
     }
 }

@@ -4,6 +4,8 @@
 #include <QStandardItemModel>
 #include <QStringListModel>
 #include <QWidget>
+#include <QMenu>
+#include <liked.h>
 
 namespace Ui {
 class TrackView;
@@ -20,13 +22,21 @@ public:
 
 signals:
     void backButtonClicked();
+    void addToPlaylistClicked(const QString &track, const QString &artist);
+
 
 private slots:
     void on_backButton_clicked();
 
+    void on_trackView_doubleClicked(const QModelIndex &index);
+
+    void addToLiked();
+
 private:
     Ui::TrackView *ui;
     QStringListModel *model;
+    QMenu *contextMenu;
+    Liked *likedTracks;
 };
 
 #endif // TRACKVIEW_H

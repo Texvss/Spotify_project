@@ -21,6 +21,7 @@ MainWindow::MainWindow(QWidget *parent)
     ,lyricsView(nullptr)
     , process(new QProcess(this))
     , login(new Login)
+    , liked(nullptr)
 {
     ui->setupUi(this);
     this->hide();
@@ -301,6 +302,9 @@ void MainWindow::fetchLyrics(const QString &artistName, const QString &songName)
     // process->start(program, arguments);
     // process->start("sh",  {"/Users/mansur/PycharmProjects/genius_parser/run.sh", artistName, songName});
     process->start("sh",  {"/Users/mansur/PycharmProjects/genius_parser/run.sh", artistName, songName});
+    // for (size_t);
+    qDebug() << songName.split(" ");
+    qDebug() << songName.split(" ").size();
     process->waitForFinished();
     qDebug() << "Results: " << "/n" << process->readAllStandardOutput();
 
@@ -344,8 +348,9 @@ void MainWindow::on_searchList_clicked(const QModelIndex &index)
             break;
         }
     }
+
     qDebug() << trackName;
-    qDebug() << artistName;
+    // qDebug() << artistName;
     fetchLyrics(artistName, trackName);
 }
 
@@ -383,5 +388,15 @@ void MainWindow::on_searchButton_clicked()
 {
     ui->searchLine->setVisible(true);
     ui->searchButton->setVisible(false);
+}
+
+
+void MainWindow::on_likedButton_clicked()
+{
+    if (!liked) {
+        liked= new Liked(this);
+        stackedWidget->addWidget(liked);
+    }
+    stackedWidget->setCurrentWidget(liked);
 }
 

@@ -46,6 +46,7 @@ public:
     QPushButton *neoMellowButton;
     QLabel *userLabel;
     QPushButton *searchButton;
+    QPushButton *likedButton;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -128,6 +129,9 @@ public:
         searchButton = new QPushButton(centralwidget);
         searchButton->setObjectName("searchButton");
         searchButton->setGeometry(QRect(20, 20, 100, 32));
+        likedButton = new QPushButton(centralwidget);
+        likedButton->setObjectName("likedButton");
+        likedButton->setGeometry(QRect(560, 70, 100, 32));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -163,6 +167,7 @@ public:
         neoMellowButton->setText(QCoreApplication::translate("MainWindow", "Neo Mellow", nullptr));
         userLabel->setText(QString());
         searchButton->setText(QCoreApplication::translate("MainWindow", "Search!", nullptr));
+        likedButton->setText(QCoreApplication::translate("MainWindow", "Liked", nullptr));
     } // retranslateUi
 
 };

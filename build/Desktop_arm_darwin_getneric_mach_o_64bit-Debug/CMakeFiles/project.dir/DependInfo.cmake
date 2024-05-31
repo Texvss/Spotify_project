@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "project_autogen/timestamp" "custom" "project_autogen/deps"
+  "/Users/mansur/Desktop/spotify/Spotify_project/liked.cpp" "CMakeFiles/project.dir/liked.cpp.o" "gcc" "CMakeFiles/project.dir/liked.cpp.o.d"
   "/Users/mansur/Desktop/spotify/Spotify_project/login.cpp" "CMakeFiles/project.dir/login.cpp.o" "gcc" "CMakeFiles/project.dir/login.cpp.o.d"
   "/Users/mansur/Desktop/spotify/Spotify_project/lyrics.cpp" "CMakeFiles/project.dir/lyrics.cpp.o" "gcc" "CMakeFiles/project.dir/lyrics.cpp.o.d"
   "/Users/mansur/Desktop/spotify/Spotify_project/main.cpp" "CMakeFiles/project.dir/main.cpp.o" "gcc" "CMakeFiles/project.dir/main.cpp.o.d"
