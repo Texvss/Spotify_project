@@ -85,7 +85,7 @@
      <bool>true</bool>
     </property>
     <property name="editTriggers">
-     <set>QAbstractItemView::NoEditTriggers</set>
+     <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
     </property>
     <property name="tabKeyNavigation">
      <bool>true</bool>
@@ -288,7 +288,7 @@
      <string/>
     </property>
     <property name="textFormat">
-     <enum>Qt::RichText</enum>
+     <enum>Qt::TextFormat::RichText</enum>
     </property>
    </widget>
   </widget>
@@ -298,7 +298,7 @@
      <x>0</x>
      <y>0</y>
      <width>1053</width>
-     <height>37</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>

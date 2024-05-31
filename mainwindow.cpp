@@ -7,7 +7,7 @@
 #include "spotify.h"
 #include "trackview.h"
 
-const QString path = "/Users/ivanovmichael/Downloads/NORMAL PLAYLIST.csv";
+const QString path = ":/data/playlist_2010to20222Ars.csv";
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)

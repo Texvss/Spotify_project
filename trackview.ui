@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="editTriggers">
-    <set>QAbstractItemView::NoEditTriggers</set>
+    <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
    </property>
    <property name="dragEnabled">
     <bool>true</bool>

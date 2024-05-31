@@ -8,12 +8,10 @@ Login::Login(QWidget *parent)
     , ui(new Ui::Login)
 {
     ui->setupUi(this);
-
-    QPixmap pix("/Users/mansur/Desktop/projectPic.png");
-    ui->picrure->setPixmap(pix);
+    //this->setStyleSheet("QWidget { background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #4C4C4C, stop:1 black); }");
 
     database = QSqlDatabase::addDatabase("QSQLITE");
-    database.setDatabaseName("/Users/ivanovmichael/Downloads/draft.db");
+    database.setDatabaseName("C:/Users/Arsentii/Desktop/draft.db");
 
     if (!database.open()) {
         ui->label->setText("Failed!!!");

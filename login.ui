@@ -6,125 +6,214 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>558</width>
-    <height>374</height>
+    <width>1094</width>
+    <height>740</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>230</y>
-     <width>381</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>[+] Status</string>
-   </property>
-  </widget>
-  <widget class="QGroupBox" name="groupBox">
-   <property name="geometry">
-    <rect>
-     <x>260</x>
-     <y>40</y>
-     <width>271</width>
-     <height>181</height>
-    </rect>
-   </property>
-   <property name="title">
-    <string>Sign in:</string>
-   </property>
-   <widget class="QPushButton" name="loginButton">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>140</y>
-      <width>100</width>
-      <height>32</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Log in</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="signupButton">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>140</y>
-      <width>100</width>
-      <height>32</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Sign up</string>
-    </property>
-   </widget>
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>40</y>
-      <width>202</width>
-      <height>58</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="1">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
-        <widget class="QLabel" name="usernameLabel">
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Policy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>250</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
          <property name="text">
-          <string>Username:</string>
+          <string>Welcome</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="usernameLine"/>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Policy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>250</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
        </item>
       </layout>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Orientation::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Policy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="usernameLabel">
+       <property name="text">
+        <string>Username:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="usernameLine"/>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Orientation::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Policy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>10</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="passwordLabel">
+       <property name="text">
+        <string>Password:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="passwordLine">
+       <property name="echoMode">
+        <enum>QLineEdit::EchoMode::Password</enum>
+       </property>
+      </widget>
      </item>
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
-        <widget class="QLabel" name="passwordLabel">
+        <widget class="QPushButton" name="loginButton">
          <property name="text">
-          <string>Password:</string>
+          <string>Log in</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="passwordLine">
-         <property name="echoMode">
-          <enum>QLineEdit::Password</enum>
+        <widget class="QPushButton" name="signupButton">
+         <property name="text">
+          <string>Sign up</string>
          </property>
         </widget>
        </item>
       </layout>
      </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Orientation::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Policy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>[+] Status</string>
+       </property>
+      </widget>
+     </item>
     </layout>
-   </widget>
-  </widget>
-  <widget class="QLabel" name="picrure">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>40</y>
-     <width>211</width>
-     <height>171</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>../../picture.png</pixmap>
-   </property>
-  </widget>
+   </item>
+   <item row="0" column="1">
+    <spacer name="verticalSpacer_4">
+     <property name="orientation">
+      <enum>Qt::Orientation::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Policy::Fixed</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>70</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="2">
+    <spacer name="horizontalSpacer_4">
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="0">
+    <spacer name="horizontalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="1">
+    <spacer name="verticalSpacer_5">
+     <property name="orientation">
+      <enum>Qt::Orientation::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>
