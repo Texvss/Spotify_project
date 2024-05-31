@@ -36,7 +36,7 @@
     </rect>
    </property>
    <property name="title">
-    <string>Sign in:</string>
+    <string/>
    </property>
    <widget class="QPushButton" name="loginButton">
     <property name="geometry">

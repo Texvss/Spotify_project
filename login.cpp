@@ -13,7 +13,7 @@ Login::Login(QWidget *parent)
     ui->picrure->setPixmap(pix);
 
     database = QSqlDatabase::addDatabase("QSQLITE");
-    database.setDatabaseName("/Users/ivanovmichael/Downloads/draft.db");
+    database.setDatabaseName("/Users/ivanovmichael/Downloads/БАЗА ПАРОЛЕЙ.db");
 
     if (!database.open()) {
         ui->label->setText("Failed!!!");

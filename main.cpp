@@ -13,14 +13,14 @@ int main(int argc, char *argv[])
         QString username = login.showUsername();
         login.hide();
         w.show();
-        w.showUsername(username); // передаем имя пользователя
+        w.showUsername(username);
     });
 
     QObject::connect(&login, &Login::signUpSuccess, [&w, &login](){
         QString username = login.showUsername();
         login.hide();
         w.show();
-        w.showUsername(username); // передаем имя пользователя
+        w.showUsername(username);
     });
 
     login.show();
