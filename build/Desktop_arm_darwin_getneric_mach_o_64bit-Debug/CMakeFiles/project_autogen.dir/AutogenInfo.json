@@ -345,8 +345,24 @@
 		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets.cmake",
 		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets-release.cmake",
 		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginAdditionalTargetInfo.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Sql/Qt6SqlConfigVersion.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Sql/Qt6SqlConfigVersionImpl.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Sql/Qt6SqlConfig.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Sql/Qt6SqlDependencies.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Sql/Qt6SqlTargets.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Sql/Qt6SqlTargets-release.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Sql/Qt6SqlAdditionalTargetInfo.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Sql/Qt6SqlVersionlessTargets.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Sql/Qt6SqlPlugins.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginConfig.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginTargets.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginTargets-release.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginAdditionalTargetInfo.cmake",
 		"/Applications/CMake.app/Contents/share/cmake-3.29/Modules/GNUInstallDirs.cmake",
-		"/opt/homebrew/Cellar/qt/6.7.0_1/lib/cmake/Qt6/macos/Info.plist.app.in"
+		"/opt/homebrew/Cellar/qt/6.7.0_1/lib/cmake/Qt6/macos/Info.plist.app.in",
+		"/Users/mansur/Desktop/spotify/Spotify_project/src.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "/Users/mansur/Desktop/spotify/Spotify_project",
 	"CROSS_CONFIG" : false,
@@ -354,6 +370,12 @@
 	"DEP_FILE_RULE_NAME" : "project_autogen/timestamp",
 	"HEADERS" : 
 	[
+		[
+			"/Users/mansur/Desktop/spotify/Spotify_project/login.h",
+			"MU",
+			"EWIEGA46WW/moc_login.cpp",
+			null
+		],
 		[
 			"/Users/mansur/Desktop/spotify/Spotify_project/lyrics.h",
 			"MU",
@@ -382,7 +404,7 @@
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/project_autogen/include",
 	"MOC_COMPILATION_FILE" : "/Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/project_autogen/mocs_compilation.cpp",
-	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_SQL_LIB", "QT_WIDGETS_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
 		[
@@ -392,6 +414,7 @@
 	],
 	"MOC_INCLUDES" : 
 	[
+		"/Users/mansur/Desktop/spotify/Spotify_project",
 		"/opt/homebrew/lib/QtCore.framework/Headers",
 		"/opt/homebrew/lib/QtCore.framework",
 		"/opt/homebrew/share/qt/mkspecs/macx-clang",
@@ -400,6 +423,8 @@
 		"/opt/homebrew/lib/QtWidgets.framework",
 		"/opt/homebrew/lib/QtGui.framework/Headers",
 		"/opt/homebrew/lib/QtGui.framework",
+		"/opt/homebrew/lib/QtSql.framework/Headers",
+		"/opt/homebrew/lib/QtSql.framework",
 		"/usr/include",
 		"/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include"
 	],
@@ -436,6 +461,7 @@
 	"SETTINGS_FILE" : "/Users/mansur/Desktop/spotify/Spotify_project/build/Desktop_arm_darwin_getneric_mach_o_64bit-Debug/CMakeFiles/project_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "/Users/mansur/Desktop/spotify/Spotify_project/login.cpp", "MU", null ],
 		[
 			"/Users/mansur/Desktop/spotify/Spotify_project/lyrics.cpp",
 			"MU",

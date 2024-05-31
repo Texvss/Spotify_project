@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/data">
+        <file>playlist_2010to20222Ars.csv</file>
+    </qresource>
+</RCC>

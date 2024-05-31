@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QTextEdit>
 #include <QtWidgets/QWidget>
 
@@ -20,6 +21,7 @@ class Ui_Lyrics
 {
 public:
     QTextEdit *lyricsList;
+    QPushButton *lyricsBack;
 
     void setupUi(QWidget *Lyrics)
     {
@@ -28,7 +30,10 @@ public:
         Lyrics->resize(785, 577);
         lyricsList = new QTextEdit(Lyrics);
         lyricsList->setObjectName("lyricsList");
-        lyricsList->setGeometry(QRect(103, 63, 491, 441));
+        lyricsList->setGeometry(QRect(0, 0, 491, 441));
+        lyricsBack = new QPushButton(Lyrics);
+        lyricsBack->setObjectName("lyricsBack");
+        lyricsBack->setGeometry(QRect(530, 311, 121, 61));
 
         retranslateUi(Lyrics);
 
@@ -38,6 +43,7 @@ public:
     void retranslateUi(QWidget *Lyrics)
     {
         Lyrics->setWindowTitle(QCoreApplication::translate("Lyrics", "Form", nullptr));
+        lyricsBack->setText(QCoreApplication::translate("Lyrics", "Back", nullptr));
     } // retranslateUi
 
 };

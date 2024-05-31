@@ -16,6 +16,12 @@ public:
     ~Lyrics();
     void setLyrics(const QString &text);
 
+signals:
+    void backLyricsClicked();
+
+private slots:
+    void on_lyricsBack_clicked();
+
 private:
     Ui::Lyrics *ui;
 };
