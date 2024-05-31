@@ -1,11 +1,10 @@
 #ifndef LOGIN_H
 #define LOGIN_H
 
-#include <QWidget>
-#include <QtSql>
-#include <QtDebug>
 #include <QSqlDatabase>
-
+#include <QWidget>
+#include <QtDebug>
+#include <QtSql>
 
 namespace Ui {
 class Login;
@@ -26,7 +25,6 @@ signals:
 
 private slots:
     void on_loginButton_clicked();
-
     void on_signupButton_clicked();
 
 private:
@@ -35,3 +33,5 @@ private:
 };
 
 #endif // LOGIN_H
+
+
