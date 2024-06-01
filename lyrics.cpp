@@ -18,6 +18,12 @@ void Lyrics::setLyrics(const QString &text)
     ui->lyricsList->setPlainText(text);
 }
 
+void Lyrics::setHeaderAndLyrics(const QString &header, const QString &text)
+{
+    ui->trackInfo->setText(header);
+    ui->lyricsList->setPlainText(text);
+}
+
 void Lyrics::on_lyricsBack_clicked()
 {
     emit backLyricsClicked();

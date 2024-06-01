@@ -73,5 +73,7 @@ private:
     Login *login;
     Liked *liked;
     QString username;
+    QString currentArtist;  // Переменная для текущего артиста
+    QString currentTrack;   // Переменная для текущего трека
 };
 #endif // MAINWINDOW_H

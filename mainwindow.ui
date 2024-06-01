@@ -18,7 +18,7 @@
     <property name="geometry">
      <rect>
       <x>90</x>
-      <y>125</y>
+      <y>170</y>
       <width>160</width>
       <height>160</height>
      </rect>
@@ -31,7 +31,7 @@
     <property name="geometry">
      <rect>
       <x>290</x>
-      <y>125</y>
+      <y>170</y>
       <width>160</width>
       <height>160</height>
      </rect>
@@ -44,7 +44,7 @@
     <property name="geometry">
      <rect>
       <x>90</x>
-      <y>300</y>
+      <y>340</y>
       <width>160</width>
       <height>160</height>
      </rect>
@@ -57,7 +57,7 @@
     <property name="geometry">
      <rect>
       <x>290</x>
-      <y>300</y>
+      <y>340</y>
       <width>160</width>
       <height>160</height>
      </rect>
@@ -123,7 +123,7 @@
     <property name="geometry">
      <rect>
       <x>490</x>
-      <y>125</y>
+      <y>170</y>
       <width>160</width>
       <height>160</height>
      </rect>
@@ -136,7 +136,7 @@
     <property name="geometry">
      <rect>
       <x>690</x>
-      <y>125</y>
+      <y>170</y>
       <width>160</width>
       <height>160</height>
      </rect>
@@ -149,7 +149,7 @@
     <property name="geometry">
      <rect>
       <x>490</x>
-      <y>300</y>
+      <y>340</y>
       <width>160</width>
       <height>160</height>
      </rect>
@@ -162,7 +162,7 @@
     <property name="geometry">
      <rect>
       <x>690</x>
-      <y>300</y>
+      <y>340</y>
       <width>160</width>
       <height>160</height>
      </rect>
@@ -175,7 +175,7 @@
     <property name="geometry">
      <rect>
       <x>290</x>
-      <y>480</y>
+      <y>510</y>
       <width>160</width>
       <height>160</height>
      </rect>
@@ -188,7 +188,7 @@
     <property name="geometry">
      <rect>
       <x>90</x>
-      <y>660</y>
+      <y>680</y>
       <width>160</width>
       <height>160</height>
      </rect>
@@ -201,7 +201,7 @@
     <property name="geometry">
      <rect>
       <x>490</x>
-      <y>480</y>
+      <y>510</y>
       <width>160</width>
       <height>160</height>
      </rect>
@@ -214,7 +214,7 @@
     <property name="geometry">
      <rect>
       <x>690</x>
-      <y>480</y>
+      <y>510</y>
       <width>160</width>
       <height>160</height>
      </rect>
@@ -227,7 +227,7 @@
     <property name="geometry">
      <rect>
       <x>690</x>
-      <y>660</y>
+      <y>680</y>
       <width>160</width>
       <height>160</height>
      </rect>
@@ -240,7 +240,7 @@
     <property name="geometry">
      <rect>
       <x>90</x>
-      <y>480</y>
+      <y>510</y>
       <width>160</width>
       <height>160</height>
      </rect>
@@ -253,7 +253,7 @@
     <property name="geometry">
      <rect>
       <x>490</x>
-      <y>660</y>
+      <y>680</y>
       <width>160</width>
       <height>160</height>
      </rect>
@@ -266,7 +266,7 @@
     <property name="geometry">
      <rect>
       <x>290</x>
-      <y>660</y>
+      <y>680</y>
       <width>160</width>
       <height>160</height>
      </rect>
@@ -291,19 +291,6 @@
      <enum>Qt::RichText</enum>
     </property>
    </widget>
-   <widget class="QPushButton" name="searchButton">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>20</y>
-      <width>100</width>
-      <height>32</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Search!</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="likedButton">
     <property name="geometry">
      <rect>
@@ -317,6 +304,26 @@
      <string>Liked</string>
     </property>
    </widget>
+   <zorder>rockButton</zorder>
+   <zorder>randbButton</zorder>
+   <zorder>searchList</zorder>
+   <zorder>searchLine</zorder>
+   <zorder>hiphopButton</zorder>
+   <zorder>dancepopButton</zorder>
+   <zorder>poprapbutton</zorder>
+   <zorder>urbanconbutton</zorder>
+   <zorder>southernhiphopButton</zorder>
+   <zorder>hippopButton</zorder>
+   <zorder>modernrockButton</zorder>
+   <zorder>canadianpopButton</zorder>
+   <zorder>edmButton</zorder>
+   <zorder>trapButton</zorder>
+   <zorder>postgrungeButton</zorder>
+   <zorder>neoMellowButton</zorder>
+   <zorder>userLabel</zorder>
+   <zorder>likedButton</zorder>
+   <zorder>rapButton</zorder>
+   <zorder>popButton</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

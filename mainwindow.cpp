@@ -44,8 +44,6 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->searchList, &QListView::clicked, this, &MainWindow::on_searchList_clicked);
 
     connect(process, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), this, &MainWindow::onLyricsFetched);
-
-    // Подключение сигнала backLyricsClicked к слоту on_backButton_clicked
     connect(lyricsView, &Lyrics::backLyricsClicked, this, &MainWindow::on_backButton_clicked);
 
     listModel->setStringList(spotifyData->getTrackNames());
@@ -54,7 +52,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->searchList->setStyleSheet("QListView { padding: 5px; border: 1px solid gray; border-radius: 5px; }");
 
     stackedWidget->addWidget(ui->centralwidget);
-    stackedWidget->addWidget(lyricsView); // Добавление lyricsView в stackedWidget
+    stackedWidget->addWidget(lyricsView);
     setCentralWidget(stackedWidget);
 }
 
@@ -242,8 +240,12 @@ void MainWindow::on_edmButton_clicked()
 
 void MainWindow::fetchLyrics(const QString &artistName, const QString &songName)
 {
+    QStringList arguments;
+    arguments << artistName << songName;
+
+    qDebug() << "Fetching lyrics for:" << artistName << "-" << songName;
     process->start("sh",
-                   {"/Users/ivanovmichael/PycharmProjects/parser/run.sh", artistName, songName});
+                   QStringList() << "/Users/ivanovmichael/PycharmProjects/parser/run.sh" << arguments);
     process->waitForFinished();
     qDebug() << "Results: "
              << "/n" << process->readAllStandardOutput();
@@ -258,14 +260,6 @@ void MainWindow::on_searchLine_textChanged(const QString &text)
         for (const auto &row : spotifyData->data) {
             if (row[static_cast<int>(COLUMNS::track_name)].contains(text, Qt::CaseInsensitive)) {
                 QString displayText = row[static_cast<int>(COLUMNS::track_name)];
-                searchModel->appendRow(new QStandardItem(displayText));
-                ui->searchList->setModel(searchModel);
-            } else if (row[static_cast<int>(COLUMNS::artist_name)].contains(text, Qt::CaseInsensitive)) {
-                QString displayText = row[static_cast<int>(COLUMNS::artist_name)];
-                searchModel->appendRow(new QStandardItem(displayText));
-                ui->searchList->setModel(searchModel);
-            } else if (row[static_cast<int>(COLUMNS::album)].contains(text, Qt::CaseInsensitive)) {
-                QString displayText = row[static_cast<int>(COLUMNS::album)];
                 searchModel->appendRow(new QStandardItem(displayText));
                 ui->searchList->setModel(searchModel);
             }
@@ -286,6 +280,9 @@ void MainWindow::on_searchList_clicked(const QModelIndex &index)
         }
     }
 
+    currentArtist = artistName;
+    currentTrack = trackName;
+
     fetchLyrics(artistName, trackName);
 }
 
@@ -297,8 +294,11 @@ void MainWindow::onLyricsFetched(int exitCode, QProcess::ExitStatus exitStatus)
         QString lyrics = process->readAllStandardOutput();
         qDebug() << "Lyrics fetched:" << lyrics;
 
-        lyricsView->setLyrics(lyrics);
-        stackedWidget->setCurrentWidget(lyricsView); // Переключение на lyricsView
+        QString header = currentArtist + " - " + currentTrack;
+
+        lyricsView->setHeaderAndLyrics(header, lyrics);
+
+        stackedWidget->setCurrentWidget(lyricsView);
     } else {
         QString errorOutput = process->readAllStandardError();
         qDebug() << "Failed to fetch lyrics. Error:" << errorOutput;
