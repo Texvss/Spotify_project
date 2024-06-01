@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1295</width>
+    <width>1325</width>
     <height>740</height>
    </rect>
   </property>
@@ -88,7 +88,7 @@ background: rgba(16, 16, 16, 150);</string>
             <property name="sizeHint" stdset="0">
              <size>
               <width>20</width>
-              <height>0</height>
+              <height>20</height>
              </size>
             </property>
            </spacer>
@@ -338,6 +338,9 @@ background-color: #717072;</string>
     <spacer name="verticalSpacer_7">
      <property name="orientation">
       <enum>Qt::Orientation::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Policy::Expanding</enum>
      </property>
      <property name="sizeHint" stdset="0">
       <size>
