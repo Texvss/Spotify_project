@@ -56,6 +56,19 @@
     <string/>
    </property>
   </widget>
+  <widget class="QPushButton" name="likedButton">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>230</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Liked</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

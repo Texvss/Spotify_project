@@ -48,8 +48,10 @@ MainWindow::MainWindow(QWidget *parent)
 
     listModel->setStringList(spotifyData->getTrackNames());
     ui->searchLine->setPlaceholderText("Search...");
-    ui->searchLine->setStyleSheet("QLineEdit { padding: 5px; border: 1px solid gray; border-radius: 5px; }");
+    ui->searchLine->setStyleSheet("border: 2px solid black;border-radius: 5px;background-color: #717072;");
     ui->searchList->setStyleSheet("QListView { padding: 5px; border: 1px solid gray; border-radius: 5px; }");
+    ui->likedButton->setStyleSheet("QPushButton:!hover{border: 2px solid black;border-radius: 5px;background-color: #717072;color:white;}"
+                                  "QPushButton:hover{border: 2px solid black;border-radius: 5px;background-color: #33322e;color:#c0c0c0;}");
 
     stackedWidget->addWidget(ui->centralwidget);
     stackedWidget->addWidget(lyricsView);
