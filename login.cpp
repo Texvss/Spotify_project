@@ -3,12 +3,18 @@
 #include <QMessageBox>
 #include "ui_login.h"
 
+
 Login::Login(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::Login)
 {
     ui->setupUi(this);
-    //this->setStyleSheet("QWidget { background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #4C4C4C, stop:1 black); }");
+    ui->loginButton->setStyleSheet("QPushButton:!hover{border: 2px solid black;border-radius: 5px;background-color: #717072;color:white;}"
+                                   "QPushButton:hover{border: 2px solid black;border-radius: 5px;background-color: #33322e;color:#c0c0c0;}");
+    ui->signupButton->setStyleSheet("QPushButton:!hover{border: 2px solid black;border-radius: 5px;background-color: #717072;color:white;}"
+                                    "QPushButton:hover{border: 2px solid black;border-radius: 5px;background-color: #33322e;color:#c0c0c0;}");
+
+
 
     database = QSqlDatabase::addDatabase("QSQLITE");
     database.setDatabaseName("C:/Users/Arsentii/Desktop/draft.db");
