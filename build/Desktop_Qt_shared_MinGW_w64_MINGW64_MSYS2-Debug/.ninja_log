@@ -1,0 +1,27 @@
+# ninja log v6
+245	5055	7389496822140769	CMakeFiles/project.dir/login.cpp.obj	26ea5452232f9921
+1764	1873	7389442794311334	C:/Users/Arsentii/Desktop/SpotifySamiy/build/Desktop_Qt_shared_MinGW_w64_MINGW64_MSYS2-Debug/project_autogen/EWIEGA46WW/qrc_src.cpp	e7e8fd52da0474ec
+1876	7586	7389442794430058	CMakeFiles/project.dir/main.cpp.obj	8b8b35795edaea5
+1879	5852	7389442794450051	CMakeFiles/project.dir/spotify.cpp.obj	65d56276be55e494
+5812	6018	7389496877806915	project.exe	ef5dfdd1870a97cb
+39	233	7389496820083130	project_autogen/timestamp	61514a1a9f977146
+39	233	7389496820083130	C:/Users/Arsentii/Desktop/SpotifySamiy/build/Desktop_Qt_shared_MinGW_w64_MINGW64_MSYS2-Debug/project_autogen/timestamp	61514a1a9f977146
+39	233	7389496820083130	C:/Users/Arsentii/Desktop/SpotifySamiy/build/Desktop_Qt_shared_MinGW_w64_MINGW64_MSYS2-Debug/project_autogen/mocs_compilation.cpp	61514a1a9f977146
+1904	3327	7389442794703938	CMakeFiles/project.dir/project_autogen/EWIEGA46WW/qrc_src.cpp.obj	380104cb76801ceb
+234	5811	7389496822040922	CMakeFiles/project.dir/mainwindow.cpp.obj	529b4de9425ff485
+1764	1873	7389442794311334	project_autogen/EWIEGA46WW/qrc_src.cpp	e7e8fd52da0474ec
+241	2371	7389496822105756	CMakeFiles/project.dir/lyrics.cpp.obj	c9ce00722c26866b
+1874	8065	7389442794400882	CMakeFiles/project.dir/project_autogen/mocs_compilation.cpp.obj	34873a09c31b7a04
+39	233	7389496820083130	project_autogen/mocs_compilation.cpp	61514a1a9f977146
+248	4516	7389496822180777	CMakeFiles/project.dir/liked.cpp.obj	49ae13e03536015c
+237	4696	7389496822063695	CMakeFiles/project.dir/trackview.cpp.obj	3b6508b7dcae2460
+35	221	7389497170533844	project_autogen/timestamp	61514a1a9f977146
+35	221	7389497170533844	project_autogen/mocs_compilation.cpp	61514a1a9f977146
+35	221	7389497170533844	C:/Users/Arsentii/Desktop/SpotifySamiy/build/Desktop_Qt_shared_MinGW_w64_MINGW64_MSYS2-Debug/project_autogen/timestamp	61514a1a9f977146
+35	221	7389497170533844	C:/Users/Arsentii/Desktop/SpotifySamiy/build/Desktop_Qt_shared_MinGW_w64_MINGW64_MSYS2-Debug/project_autogen/mocs_compilation.cpp	61514a1a9f977146
+228	2567	7389497172471361	CMakeFiles/project.dir/lyrics.cpp.obj	c9ce00722c26866b
+235	4535	7389497172540213	CMakeFiles/project.dir/liked.cpp.obj	49ae13e03536015c
+225	4717	7389497172441409	CMakeFiles/project.dir/trackview.cpp.obj	3b6508b7dcae2460
+231	5018	7389497172501352	CMakeFiles/project.dir/login.cpp.obj	26ea5452232f9921
+222	5927	7389497172411297	CMakeFiles/project.dir/mainwindow.cpp.obj	529b4de9425ff485
+5927	6119	7389497229449598	project.exe	ef5dfdd1870a97cb

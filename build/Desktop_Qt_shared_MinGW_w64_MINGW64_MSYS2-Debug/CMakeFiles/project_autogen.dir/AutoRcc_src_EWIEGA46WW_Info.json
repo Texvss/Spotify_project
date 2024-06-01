@@ -1,0 +1,26 @@
+{
+	"BUILD_DIR" : "C:/Users/Arsentii/Desktop/SpotifySamiy/build/Desktop_Qt_shared_MinGW_w64_MINGW64_MSYS2-Debug/project_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/Arsentii/Desktop/SpotifySamiy/build/Desktop_Qt_shared_MinGW_w64_MINGW64_MSYS2-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/Arsentii/Desktop/SpotifySamiy/build/Desktop_Qt_shared_MinGW_w64_MINGW64_MSYS2-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/Arsentii/Desktop/SpotifySamiy",
+	"CMAKE_SOURCE_DIR" : "C:/Users/Arsentii/Desktop/SpotifySamiy",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Ninja",
+	"INCLUDE_DIR" : "C:/Users/Arsentii/Desktop/SpotifySamiy/build/Desktop_Qt_shared_MinGW_w64_MINGW64_MSYS2-Debug/project_autogen/include",
+	"INPUTS" : 
+	[
+		"C:/Users/Arsentii/Desktop/SpotifySamiy/projectPic.png",
+		"C:/Users/Arsentii/Desktop/SpotifySamiy/spotifyProject_DB.db"
+	],
+	"LOCK_FILE" : "C:/Users/Arsentii/Desktop/SpotifySamiy/build/Desktop_Qt_shared_MinGW_w64_MINGW64_MSYS2-Debug/CMakeFiles/project_autogen.dir/AutoRcc_src_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "src" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_src.cpp",
+	"RCC_EXECUTABLE" : "C:/msys64/mingw64/share/qt6/bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "C:/Users/Arsentii/Desktop/SpotifySamiy/build/Desktop_Qt_shared_MinGW_w64_MINGW64_MSYS2-Debug/CMakeFiles/project_autogen.dir/AutoRcc_src_EWIEGA46WW_Used.txt",
+	"SOURCE" : "C:/Users/Arsentii/Desktop/SpotifySamiy/src.qrc",
+	"USE_BETTER_GRAPH" : false,
+	"VERBOSITY" : 0
+}
