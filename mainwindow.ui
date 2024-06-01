@@ -117,7 +117,7 @@ background-color: #717072;</string>
                   </property>
                   <property name="sizeHint" stdset="0">
                    <size>
-                    <width>140</width>
+                    <width>148</width>
                     <height>20</height>
                    </size>
                   </property>
@@ -214,10 +214,16 @@ color:#717072;
                <layout class="QHBoxLayout" name="horizontalLayout_3">
                 <item>
                  <widget class="QListView" name="searchList">
+                  <property name="minimumSize">
+                   <size>
+                    <width>410</width>
+                    <height>100</height>
+                   </size>
+                  </property>
                   <property name="maximumSize">
                    <size>
                     <width>410</width>
-                    <height>50</height>
+                    <height>100</height>
                    </size>
                   </property>
                   <property name="mouseTracking">
@@ -313,7 +319,7 @@ color:#717072;
          <enum>QLayout::SizeConstraint::SetMinimumSize</enum>
         </property>
         <property name="topMargin">
-         <number>30</number>
+         <number>10</number>
         </property>
         <property name="rightMargin">
          <number>0</number>
@@ -450,8 +456,7 @@ color:#717072;
            </size>
           </property>
           <property name="styleSheet">
-           <string notr="true">border: 2px solid white;
-border-radius: 5px; </string>
+           <string notr="true"/>
           </property>
           <property name="text">
            <string/>

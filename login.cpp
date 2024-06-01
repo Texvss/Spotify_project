@@ -10,21 +10,21 @@ Login::Login(QWidget *parent)
     // , trackView(new TrackView(this))
 {
     ui->setupUi(this);
-    ui->loginButton->setStyleSheet("QPushButton:!hover{border: 2px solid black;border-radius: 5px;background-color: #717072;color:white;}"
-                                   "QPushButton:hover{border: 2px solid black;border-radius: 5px;background-color: #33322e;color:#c0c0c0;}");
-    ui->signupButton->setStyleSheet("QPushButton:!hover{border: 2px solid black;border-radius: 5px;background-color: #717072;color:white;}"
-                                    "QPushButton:hover{border: 2px solid black;border-radius: 5px;background-color: #33322e;color:#c0c0c0;}");
+    ui->loginButton->setStyleSheet("QPushButton:!hover{border: 1px solid black;border-radius: 5px;background-color: #717072;color:white;}"
+                                   "QPushButton:hover{border: 1px solid black;border-radius: 5px;background-color: #33322e;color:#c0c0c0;}");
+    ui->signupButton->setStyleSheet("QPushButton:!hover{border: 1px solid black;border-radius: 5px;background-color: #717072;color:white;}"
+                                    "QPushButton:hover{border: 1px solid black;border-radius: 5px;background-color: #33322e;color:#c0c0c0;}");
 
 
     database = QSqlDatabase::addDatabase("QSQLITE");
     database.setDatabaseName("C:/Users/Arsentii/Desktop/draft.db");
 
     if (!database.open()) {
-        ui->CheBu->setStyleSheet("background-color:#b83030;border: 2px solid black;border-radius: 5px;");
+        ui->CheBu->setStyleSheet("background-color:#b83030;border: 1px solid black;border-radius: 5px;");
     }
     else
     {
-        ui-> CheBu-> setStyleSheet("background-color:#016e0e;border: 2px solid black;border-radius: 5px;");
+        ui-> CheBu-> setStyleSheet("background-color:#016e0e;border: 1px solid black;border-radius: 5px;");
     }
 
 }

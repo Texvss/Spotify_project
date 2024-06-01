@@ -7,7 +7,7 @@
 #include "spotify.h"
 #include "trackview.h"
 
-const QString path = "/Users/ivanovmichael/Downloads/NORMAL PLAYLIST.csv";
+const QString path = "C:/Users/Arsentii/OneDrive - НИУ Высшая школа экономики/playlist_2010to20222P.csv";
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -48,10 +48,10 @@ MainWindow::MainWindow(QWidget *parent)
 
     listModel->setStringList(spotifyData->getTrackNames());
     ui->searchLine->setPlaceholderText("Search...");
-    ui->searchLine->setStyleSheet("border: 2px solid black;border-radius: 5px;background-color: #717072;");
+    ui->searchLine->setStyleSheet("border: 1px solid black;border-radius: 5px;background-color: #717072;");
     ui->searchList->setStyleSheet("QListView { padding: 5px; border: 1px solid gray; border-radius: 5px; }");
-    ui->likedButton->setStyleSheet("QPushButton:!hover{border: 2px solid black;border-radius: 5px;background-color: #717072;color:white;}"
-                                  "QPushButton:hover{border: 2px solid black;border-radius: 5px;background-color: #33322e;color:#c0c0c0;}");
+    ui->likedButton->setStyleSheet("QPushButton:!hover{border: 1px solid black;border-radius: 5px;background-color: #717072;color:white;}"
+                                  "QPushButton:hover{border: 1px solid black;border-radius: 5px;background-color: #33322e;color:#c0c0c0;}");
 
     stackedWidget->addWidget(ui->centralwidget);
     stackedWidget->addWidget(lyricsView);
