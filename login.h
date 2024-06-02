@@ -2,9 +2,7 @@
 #define LOGIN_H
 
 #include <QSqlDatabase>
-#include <liked.h>
 #include "trackview.h"
-
 
 namespace Ui {
 class Login;
@@ -36,5 +34,3 @@ private:
 };
 
 #endif // LOGIN_H
-
-

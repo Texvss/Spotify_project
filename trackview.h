@@ -1,15 +1,14 @@
 #ifndef TRACKVIEW_H
 #define TRACKVIEW_H
 
-#include <QStandardItemModel>
-#include <QStringListModel>
 #include <QWidget>
+#include <QStringListModel>
 #include <QMenu>
-#include <liked.h>
+#include "liked.h"
 
-namespace Ui {
-class TrackView;
-}
+QT_BEGIN_NAMESPACE
+namespace Ui { class TrackView; }
+QT_END_NAMESPACE
 
 class TrackView : public QWidget
 {
@@ -23,24 +22,18 @@ public:
 
 signals:
     void backButtonClicked();
-    void addToPlaylistClicked(const QString &track, const QString &artist);
-
 
 private slots:
     void on_backButton_clicked();
-
     void on_trackView_doubleClicked(const QModelIndex &index);
-
     void addToLiked();
 
 private:
     Ui::TrackView *ui;
     QStringListModel *model;
     QMenu *contextMenu;
-    Liked *likedTracks;
+    Liked *liked;
     QString username;
 };
-
-
 
 #endif // TRACKVIEW_H

@@ -15,7 +15,7 @@ public:
     explicit Lyrics(QWidget *parent = nullptr);
     ~Lyrics();
     void setLyrics(const QString &text);
-    void setHeaderAndLyrics(const QString &header, const QString &text);  // Новый метод
+    void setHeaderAndLyrics(const QString &header, const QString &text);
 
 signals:
     void backLyricsClicked();

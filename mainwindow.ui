@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1053</width>
-    <height>897</height>
+    <width>1054</width>
+    <height>937</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,10 +21,10 @@
     <item>
      <spacer name="horizontalSpacer_6">
       <property name="orientation">
-       <enum>Qt::Orientation::Horizontal</enum>
+       <enum>Qt::Vertical</enum>
       </property>
       <property name="sizeType">
-       <enum>QSizePolicy::Policy::Fixed</enum>
+       <enum>QSizePolicy::Fixed</enum>
       </property>
       <property name="sizeHint" stdset="0">
        <size>
@@ -41,10 +41,10 @@
         <item>
          <spacer name="horizontalSpacer">
           <property name="orientation">
-           <enum>Qt::Orientation::Horizontal</enum>
+           <enum>Qt::Vertical</enum>
           </property>
           <property name="sizeType">
-           <enum>QSizePolicy::Policy::Fixed</enum>
+           <enum>QSizePolicy::Fixed</enum>
           </property>
           <property name="sizeHint" stdset="0">
            <size>
@@ -56,10 +56,13 @@
         </item>
         <item>
          <layout class="QVBoxLayout" name="verticalLayout">
+          <property name="spacing">
+           <number>-1</number>
+          </property>
           <item>
            <spacer name="verticalSpacer">
             <property name="orientation">
-             <enum>Qt::Orientation::Vertical</enum>
+             <enum>Qt::Vertical</enum>
             </property>
             <property name="sizeHint" stdset="0">
              <size>
@@ -71,8 +74,14 @@
           </item>
           <item>
            <layout class="QVBoxLayout" name="verticalLayout_3">
+            <property name="spacing">
+             <number>-1</number>
+            </property>
             <item>
              <layout class="QVBoxLayout" name="verticalLayout_2">
+              <property name="spacing">
+               <number>0</number>
+              </property>
               <item>
                <layout class="QHBoxLayout" name="horizontalLayout_2">
                 <item>
@@ -80,24 +89,36 @@
                   <property name="minimumSize">
                    <size>
                     <width>230</width>
-                    <height>0</height>
+                    <height>30</height>
                    </size>
                   </property>
                   <property name="maximumSize">
                    <size>
-                    <width>230</width>
-                    <height>16777215</height>
+                    <width>250</width>
+                    <height>50</height>
                    </size>
                   </property>
                   <property name="font">
                    <font>
-                    <pointsize>11</pointsize>
+                    <pointsize>13</pointsize>
                    </font>
+                  </property>
+                  <property name="mouseTracking">
+                   <bool>true</bool>
+                  </property>
+                  <property name="tabletTracking">
+                   <bool>false</bool>
+                  </property>
+                  <property name="statusTip">
+                   <string/>
                   </property>
                   <property name="styleSheet">
                    <string notr="true">border: 2px solid black;
 border-radius: 5px;
 background-color: #717072;</string>
+                  </property>
+                  <property name="cursorPosition">
+                   <number>0</number>
                   </property>
                   <property name="dragEnabled">
                    <bool>false</bool>
@@ -110,10 +131,10 @@ background-color: #717072;</string>
                 <item>
                  <spacer name="horizontalSpacer_3">
                   <property name="orientation">
-                   <enum>Qt::Orientation::Horizontal</enum>
+                   <enum>Qt::Vertical</enum>
                   </property>
                   <property name="sizeType">
-                   <enum>QSizePolicy::Policy::Fixed</enum>
+                   <enum>QSizePolicy::Fixed</enum>
                   </property>
                   <property name="sizeHint" stdset="0">
                    <size>
@@ -127,19 +148,19 @@ background-color: #717072;</string>
                  <widget class="QPushButton" name="likedButton">
                   <property name="minimumSize">
                    <size>
-                    <width>40</width>
-                    <height>0</height>
+                    <width>70</width>
+                    <height>30</height>
                    </size>
                   </property>
                   <property name="maximumSize">
                    <size>
-                    <width>100</width>
-                    <height>16777215</height>
+                    <width>150</width>
+                    <height>30</height>
                    </size>
                   </property>
                   <property name="font">
                    <font>
-                    <pointsize>11</pointsize>
+                    <pointsize>13</pointsize>
                     <bold>true</bold>
                    </font>
                   </property>
@@ -151,10 +172,10 @@ background-color: #717072;</string>
                 <item>
                  <spacer name="horizontalSpacer_4">
                   <property name="orientation">
-                   <enum>Qt::Orientation::Horizontal</enum>
+                   <enum>Qt::Vertical</enum>
                   </property>
                   <property name="sizeType">
-                   <enum>QSizePolicy::Policy::Fixed</enum>
+                   <enum>QSizePolicy::Fixed</enum>
                   </property>
                   <property name="sizeHint" stdset="0">
                    <size>
@@ -169,13 +190,13 @@ background-color: #717072;</string>
                   <property name="minimumSize">
                    <size>
                     <width>150</width>
-                    <height>0</height>
+                    <height>30</height>
                    </size>
                   </property>
                   <property name="maximumSize">
                    <size>
-                    <width>150</width>
-                    <height>16777215</height>
+                    <width>200</width>
+                    <height>30</height>
                    </size>
                   </property>
                   <property name="styleSheet">
@@ -188,17 +209,17 @@ color:#717072;
                    <string/>
                   </property>
                   <property name="textFormat">
-                   <enum>Qt::TextFormat::RichText</enum>
+                   <enum>Qt::PlainText</enum>
                   </property>
                  </widget>
                 </item>
                 <item>
                  <spacer name="horizontalSpacer_8">
                   <property name="orientation">
-                   <enum>Qt::Orientation::Horizontal</enum>
+                   <enum>Qt::Vertical</enum>
                   </property>
                   <property name="sizeType">
-                   <enum>QSizePolicy::Policy::Fixed</enum>
+                   <enum>QSizePolicy::Fixed</enum>
                   </property>
                   <property name="sizeHint" stdset="0">
                    <size>
@@ -212,6 +233,9 @@ color:#717072;
               </item>
               <item>
                <layout class="QHBoxLayout" name="horizontalLayout_3">
+                <property name="spacing">
+                 <number>-1</number>
+                </property>
                 <item>
                  <widget class="QListView" name="searchList">
                   <property name="minimumSize">
@@ -236,7 +260,7 @@ color:#717072;
                    <bool>true</bool>
                   </property>
                   <property name="editTriggers">
-                   <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+                   <set>QAbstractItemView::NoEditTriggers</set>
                   </property>
                   <property name="tabKeyNavigation">
                    <bool>true</bool>
@@ -258,14 +282,14 @@ color:#717072;
                 <item>
                  <spacer name="horizontalSpacer_5">
                   <property name="orientation">
-                   <enum>Qt::Orientation::Horizontal</enum>
+                   <enum>Qt::Vertical</enum>
                   </property>
                   <property name="sizeType">
-                   <enum>QSizePolicy::Policy::Fixed</enum>
+                   <enum>QSizePolicy::Fixed</enum>
                   </property>
                   <property name="sizeHint" stdset="0">
                    <size>
-                    <width>478</width>
+                    <width>600</width>
                     <height>20</height>
                    </size>
                   </property>
@@ -280,10 +304,10 @@ color:#717072;
           <item>
            <spacer name="verticalSpacer_2">
             <property name="orientation">
-             <enum>Qt::Orientation::Vertical</enum>
+             <enum>Qt::Vertical</enum>
             </property>
             <property name="sizeType">
-             <enum>QSizePolicy::Policy::Fixed</enum>
+             <enum>QSizePolicy::Fixed</enum>
             </property>
             <property name="sizeHint" stdset="0">
              <size>
@@ -298,10 +322,10 @@ color:#717072;
         <item>
          <spacer name="horizontalSpacer_2">
           <property name="orientation">
-           <enum>Qt::Orientation::Horizontal</enum>
+           <enum>Qt::Vertical</enum>
           </property>
           <property name="sizeType">
-           <enum>QSizePolicy::Policy::Fixed</enum>
+           <enum>QSizePolicy::Fixed</enum>
           </property>
           <property name="sizeHint" stdset="0">
            <size>
@@ -316,7 +340,7 @@ color:#717072;
       <item>
        <layout class="QGridLayout" name="gridLayout_2">
         <property name="sizeConstraint">
-         <enum>QLayout::SizeConstraint::SetMinimumSize</enum>
+         <enum>QLayout::SetDefaultConstraint</enum>
         </property>
         <property name="topMargin">
          <number>10</number>
@@ -887,10 +911,10 @@ color:#717072;
     <item>
      <spacer name="horizontalSpacer_7">
       <property name="orientation">
-       <enum>Qt::Orientation::Horizontal</enum>
+       <enum>Qt::Vertical</enum>
       </property>
       <property name="sizeType">
-       <enum>QSizePolicy::Policy::Fixed</enum>
+       <enum>QSizePolicy::Fixed</enum>
       </property>
       <property name="sizeHint" stdset="0">
        <size>
@@ -907,8 +931,8 @@ color:#717072;
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1053</width>
-     <height>25</height>
+     <width>1054</width>
+     <height>37</height>
     </rect>
    </property>
   </widget>
