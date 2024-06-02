@@ -20,11 +20,11 @@ Login::Login(QWidget *parent)
     database.setDatabaseName("C:/Users/Arsentii/Desktop/draft.db");
 
     if (!database.open()) {
-        ui->CheBu->setStyleSheet("background-color:#b83030;border: 1px solid black;border-radius: 5px;");
+        ui->CheBu->setStyleSheet("background-color:#b83030;border: 1px solid black;border-radius: 10px;");
     }
     else
     {
-        ui-> CheBu-> setStyleSheet("background-color:#016e0e;border: 1px solid black;border-radius: 5px;");
+        ui-> CheBu-> setStyleSheet("background-color:#016e0e;border: 1px solid black;border-radius: 10px;");
     }
 
 }
