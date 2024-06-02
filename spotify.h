@@ -5,7 +5,8 @@
 #include <QStringList>
 
 enum class COLUMNS {
-    tplaylist_url,
+    index,
+    playlist_url,
     year,
     track_id,
     track_name,
@@ -28,18 +29,18 @@ enum class COLUMNS {
     tempo,
     duration_ms,
     time_signature,
-    pop,
-    rap,
-    rock
+    clusters,
+    s_clusters
 };
+
 class Spotify
 {
 public:
-    Spotify(
-        const QString & = "/Users/mansur/Desktop/playlist_2010to20222Ars.csv");
+    Spotify(const QString & = ":/data/clusters_50.csv");
     QList<QString> operator[](int i);
     QStringList getTrackNames() const;
     QList<QList<QString>> filterByGenre(const QString &genre) const;
+    QList<QList<QString>> filterByCluster(int cluster) const;
     QList<QList<QString>> popGenre() const;
     QList<QList<QString>> rapGenre() const;
     QList<QList<QString>> rockGenre() const;

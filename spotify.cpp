@@ -1,33 +1,38 @@
 #include "spotify.h"
-#include <QDebug>
 #include <QFile>
 #include <QTextStream>
+
 Spotify::Spotify(const QString &path)
 {
     QFile file(path);
-    file.open(QFile::ReadOnly | QFile::Text);
-    if (file.isOpen()) {
-        qDebug() << "Opened";
+    if (file.open(QFile::ReadOnly | QFile::Text)) {
+        QTextStream stream(&file);
+        QString line = stream.readLine(); // Read the header line
+        while (!stream.atEnd()) {
+            line = stream.readLine();
+            QList<QString> list = line.split(";");
+            // Remove leading empty elements due to extra semicolon in header
+            if (!list.isEmpty() && list.first().isEmpty()) {
+                list.removeFirst();
+            }
+            data.append(list);
+        }
+        file.close();
     }
-    QTextStream stream(&file);
-    QString line = stream.readLine();
-    qDebug() << line;
-    while (!stream.atEnd()) {
-        line = stream.readLine();
-        QList<QString> list = line.split(";");
-        data.append(list);
-    }
-    file.close();
 }
+
 QList<QString> Spotify::operator[](int i)
 {
     return data[i];
 }
+
 QStringList Spotify::getTrackNames() const
 {
     QStringList list;
-    for (int i = 0; i < data.size(); i++) {
-        list << data[i][static_cast<int>(COLUMNS::track_name)];
+    for (const auto &row : data) {
+        if (row.size() > static_cast<int>(COLUMNS::track_name)) {
+            list << row[static_cast<int>(COLUMNS::track_name)];
+        }
     }
     return list;
 }
@@ -43,6 +48,21 @@ QList<QList<QString>> Spotify::filterByGenre(const QString &genre) const
     }
     return filteredData;
 }
+
+QList<QList<QString>> Spotify::filterByCluster(int cluster) const
+{
+    QList<QList<QString>> filteredData;
+    for (const auto &row : data) {
+        if (row.size() > static_cast<int>(COLUMNS::s_clusters)) {
+            int rowCluster = row[static_cast<int>(COLUMNS::s_clusters)].toInt();
+            if (rowCluster == cluster) {
+                filteredData.append(row);
+            }
+        }
+    }
+    return filteredData;
+}
+
 
 QList<QList<QString>> Spotify::popGenre() const
 {

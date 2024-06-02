@@ -6,299 +6,672 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1053</width>
-    <height>897</height>
+    <width>870</width>
+    <height>736</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="popButton">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>125</y>
-      <width>160</width>
-      <height>160</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Pop</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="rapButton">
-    <property name="geometry">
-     <rect>
-      <x>290</x>
-      <y>125</y>
-      <width>160</width>
-      <height>160</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Rap</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="rockButton">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>300</y>
-      <width>160</width>
-      <height>160</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Rock</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="randbButton">
-    <property name="geometry">
-     <rect>
-      <x>290</x>
-      <y>300</y>
-      <width>160</width>
-      <height>160</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>RandB</string>
-    </property>
-   </widget>
-   <widget class="QListView" name="searchList">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>40</y>
-      <width>401</width>
-      <height>111</height>
-     </rect>
-    </property>
-    <property name="mouseTracking">
-     <bool>true</bool>
-    </property>
-    <property name="tabletTracking">
-     <bool>true</bool>
-    </property>
-    <property name="autoFillBackground">
-     <bool>true</bool>
-    </property>
-    <property name="editTriggers">
-     <set>QAbstractItemView::NoEditTriggers</set>
-    </property>
-    <property name="tabKeyNavigation">
-     <bool>true</bool>
-    </property>
-    <property name="dragEnabled">
-     <bool>true</bool>
-    </property>
-    <property name="dragDropOverwriteMode">
-     <bool>true</bool>
-    </property>
-    <property name="alternatingRowColors">
-     <bool>true</bool>
-    </property>
-    <property name="uniformItemSizes">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="searchLine">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>0</y>
-      <width>400</width>
-      <height>40</height>
-     </rect>
-    </property>
-    <property name="dragEnabled">
-     <bool>false</bool>
-    </property>
-    <property name="readOnly">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="hiphopButton">
-    <property name="geometry">
-     <rect>
-      <x>490</x>
-      <y>125</y>
-      <width>160</width>
-      <height>160</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Hip Hop</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="dancepopButton">
-    <property name="geometry">
-     <rect>
-      <x>690</x>
-      <y>125</y>
-      <width>160</width>
-      <height>160</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Dance Pop</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="poprapbutton">
-    <property name="geometry">
-     <rect>
-      <x>490</x>
-      <y>300</y>
-      <width>160</width>
-      <height>160</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Pop Rap</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="urbanconbutton">
-    <property name="geometry">
-     <rect>
-      <x>690</x>
-      <y>300</y>
-      <width>160</width>
-      <height>160</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Urban Contemporary</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="southernhiphopButton">
-    <property name="geometry">
-     <rect>
-      <x>290</x>
-      <y>480</y>
-      <width>160</width>
-      <height>160</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Southern Hip Hop</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="hippopButton">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>660</y>
-      <width>160</width>
-      <height>160</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Hip Pop</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="modernrockButton">
-    <property name="geometry">
-     <rect>
-      <x>490</x>
-      <y>480</y>
-      <width>160</width>
-      <height>160</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Modern Rock</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="canadianpopButton">
-    <property name="geometry">
-     <rect>
-      <x>690</x>
-      <y>480</y>
-      <width>160</width>
-      <height>160</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Canadian Pop</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="edmButton">
-    <property name="geometry">
-     <rect>
-      <x>690</x>
-      <y>660</y>
-      <width>160</width>
-      <height>160</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Edm</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="trapButton">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>480</y>
-      <width>160</width>
-      <height>160</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Trap</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="postgrungeButton">
-    <property name="geometry">
-     <rect>
-      <x>490</x>
-      <y>660</y>
-      <width>160</width>
-      <height>160</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Post-Grunge</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="neoMellowButton">
-    <property name="geometry">
-     <rect>
-      <x>290</x>
-      <y>660</y>
-      <width>160</width>
-      <height>160</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Neo Mellow</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="userLabel">
-    <property name="geometry">
-     <rect>
-      <x>790</x>
-      <y>0</y>
-      <width>221</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::RichText</enum>
-    </property>
-   </widget>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLineEdit" name="searchLine">
+          <property name="maximumSize">
+           <size>
+            <width>960</width>
+            <height>33</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: #696969;
+color: white; 
+border: 2px solid black;
+border-radius: 5px; 
+padding: 5px;</string>
+          </property>
+          <property name="dragEnabled">
+           <bool>false</bool>
+          </property>
+          <property name="readOnly">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="userLabel">
+          <property name="maximumSize">
+           <size>
+            <width>240</width>
+            <height>33</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="textFormat">
+           <enum>Qt::RichText</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QListView" name="searchList">
+        <property name="maximumSize">
+         <size>
+          <width>960</width>
+          <height>458</height>
+         </size>
+        </property>
+        <property name="mouseTracking">
+         <bool>true</bool>
+        </property>
+        <property name="tabletTracking">
+         <bool>true</bool>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <property name="tabKeyNavigation">
+         <bool>true</bool>
+        </property>
+        <property name="dragEnabled">
+         <bool>true</bool>
+        </property>
+        <property name="dragDropOverwriteMode">
+         <bool>true</bool>
+        </property>
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
+        <property name="uniformItemSizes">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <layout class="QGridLayout" name="gridLayout">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetDefaultConstraint</enum>
+        </property>
+        <property name="horizontalSpacing">
+         <number>1</number>
+        </property>
+        <property name="verticalSpacing">
+         <number>25</number>
+        </property>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="rockButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset theme=":/pictures/rock_button.png"/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>200</width>
+            <height>200</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="postgrungeButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset theme=":/pictures/post_grunge_button.png"/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>200</width>
+            <height>200</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QPushButton" name="neoMellowButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset theme=":/pictures/neo_mellow_button.png"/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>200</width>
+            <height>200</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QPushButton" name="hiphopButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset theme=":/pictures/new_hip_hop_button.png"/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>200</width>
+            <height>200</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QPushButton" name="randbButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset theme=":/pictures/RnB_button.png"/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>200</width>
+            <height>200</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QPushButton" name="trapButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset theme=":/pictures/trap_button.png"/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>200</width>
+            <height>200</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="popButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset theme=":/pictures/pop_button.png"/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>200</width>
+            <height>200</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QPushButton" name="edmButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset theme=":/pictures/EDM_button.png"/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>200</width>
+            <height>200</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QPushButton" name="hippopButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset theme=":/pictures/hip_pop_button.png"/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>200</width>
+            <height>200</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QPushButton" name="modernrockButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset theme=":/pictures/modern_rock_button.png"/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>200</width>
+            <height>200</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="rapButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset theme=":/pictures/rap_button.png"/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>200</width>
+            <height>200</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QPushButton" name="urbanconbutton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset theme=":/pictures/Urban_button.png"/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>200</width>
+            <height>200</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QPushButton" name="dancepopButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset theme=":/pictures/dance_pop_button.png"/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>200</width>
+            <height>200</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QPushButton" name="southernhiphopButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset theme=":/pictures/south_hip_hop_button.png"/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>200</width>
+            <height>200</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="poprapbutton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset theme=":/pictures/pop_rap_button.png"/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>200</width>
+            <height>200</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3">
+         <widget class="QPushButton" name="canadianpopButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset theme=":/pictures/can_pop_button.png"/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>200</width>
+            <height>200</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1053</width>
-     <height>37</height>
+     <width>870</width>
+     <height>24</height>
     </rect>
    </property>
   </widget>

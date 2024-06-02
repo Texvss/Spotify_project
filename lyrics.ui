@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>785</width>
+    <width>1095</width>
     <height>577</height>
    </rect>
   </property>
@@ -16,24 +16,34 @@
   <widget class="QTextEdit" name="lyricsList">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>491</width>
-     <height>441</height>
+     <x>60</x>
+     <y>90</y>
+     <width>471</width>
+     <height>401</height>
     </rect>
    </property>
   </widget>
   <widget class="QPushButton" name="lyricsBack">
    <property name="geometry">
     <rect>
-     <x>530</x>
-     <y>311</y>
+     <x>600</x>
+     <y>460</y>
      <width>121</width>
      <height>61</height>
     </rect>
    </property>
    <property name="text">
     <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QListView" name="clusterList">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>10</y>
+     <width>421</width>
+     <height>401</height>
+    </rect>
    </property>
   </widget>
  </widget>

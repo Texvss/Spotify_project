@@ -1,5 +1,26 @@
 <RCC>
     <qresource prefix="/data">
         <file>playlist_2010to20222Ars.csv</file>
+        <file>clusters_50.csv</file>
+    </qresource>
+    <qresource prefix="/pictures">
+        <file>app_logo.png</file>
+        <file>can_pop_button.png</file>
+        <file>dance_pop_button.png</file>
+        <file>EDM_button.png</file>
+        <file>hip_hop_button.png</file>
+        <file>hip_pop_button.png</file>
+        <file>modern_rock_button.png</file>
+        <file>neo_mellow_button.png</file>
+        <file>pop_button.png</file>
+        <file>pop_rap_button.png</file>
+        <file>post_grunge_button.png</file>
+        <file>rap_button.png</file>
+        <file>RnB_button.png</file>
+        <file>rock_button.png</file>
+        <file>south_hip_hop_button.png</file>
+        <file>trap_button.png</file>
+        <file>Urban_button.png</file>
+        <file>new_hip_hop_button.png</file>
     </qresource>
 </RCC>

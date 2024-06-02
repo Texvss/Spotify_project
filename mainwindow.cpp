@@ -7,9 +7,8 @@
 #include "spotify.h"
 #include "trackview.h"
 
+const QString path = ":/data/clusters_50.csv";
 
-const QString path = "/Users/mansur/Desktop/playlist_2010to20222Ars.csv";
-// const QString path = ":/data/playlist_2010to2022Ars.csv";
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -18,16 +17,17 @@ MainWindow::MainWindow(QWidget *parent)
     , trackView(nullptr)
     , stackedWidget(new QStackedWidget(this))
     , searchModel(new QStandardItemModel(this))
-    ,lyricsView(nullptr)
+    , lyricsView(nullptr)
     , process(new QProcess(this))
     , login(new Login)
 {
     ui->setupUi(this);
+    this->setStyleSheet("QWidget { background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #4C4C4C, stop:1 black); }");
     this->hide();
     login->show();
     ui->searchList->setVisible(false);
-    // ui->userLabel->setText(Login::showUsername());
 
+    // Add connections for buttons
     connect(ui->popButton, &QPushButton::clicked, this, &MainWindow::on_popButton_clicked);
     connect(ui->rapButton, &QPushButton::clicked, this, &MainWindow::on_rapButton_clicked);
     connect(ui->rockButton, &QPushButton::clicked, this, &MainWindow::on_rockButton_clicked);
@@ -37,27 +37,12 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->poprapbutton, &QPushButton::clicked, this, &MainWindow::on_poprapbutton_clicked);
     connect(ui->urbanconbutton, &QPushButton::clicked, this, &MainWindow::on_urbanconbutton_clicked);
     connect(ui->trapButton, &QPushButton::clicked, this, &MainWindow::on_trapButton_clicked);
-    connect(ui->southernhiphopButton,
-            &QPushButton::clicked,
-            this,
-            &MainWindow::on_southernhiphopButton_clicked);
-    connect(ui->modernrockButton,
-            &QPushButton::clicked,
-            this,
-            &MainWindow::on_modernrockButton_clicked);
-    connect(ui->canadianpopButton,
-            &QPushButton::clicked,
-            this,
-            &MainWindow::on_canadianpopButton_clicked);
+    connect(ui->southernhiphopButton, &QPushButton::clicked, this, &MainWindow::on_southernhiphopButton_clicked);
+    connect(ui->modernrockButton, &QPushButton::clicked, this, &MainWindow::on_modernrockButton_clicked);
+    connect(ui->canadianpopButton, &QPushButton::clicked, this, &MainWindow::on_canadianpopButton_clicked);
     connect(ui->hippopButton, &QPushButton::clicked, this, &MainWindow::on_hippopButton_clicked);
-    connect(ui->neoMellowButton,
-            &QPushButton::clicked,
-            this,
-            &MainWindow::on_neoMellowButton_clicked);
-    connect(ui->postgrungeButton,
-            &QPushButton::clicked,
-            this,
-            &MainWindow::on_postgrungeButton_clicked);
+    connect(ui->neoMellowButton, &QPushButton::clicked, this, &MainWindow::on_neoMellowButton_clicked);
+    connect(ui->postgrungeButton, &QPushButton::clicked, this, &MainWindow::on_postgrungeButton_clicked);
     connect(ui->edmButton, &QPushButton::clicked, this, &MainWindow::on_edmButton_clicked);
     connect(ui->searchLine, &QLineEdit::textChanged, this, &MainWindow::on_searchLine_textChanged);
     connect(ui->searchList, &QListView::clicked, this, &MainWindow::on_searchList_clicked);
@@ -65,26 +50,14 @@ MainWindow::MainWindow(QWidget *parent)
     connect(process, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), this, &MainWindow::onLyricsFetched);
     listModel->setStringList(spotifyData->getTrackNames());
     ui->searchLine->setPlaceholderText("Search...");
-    ui->searchLine->setStyleSheet(
-        "QLineEdit { padding: 5px; border: 1px solid gray; border-radius: 5px; }");
-    ui->searchList->setStyleSheet(
-        "QListView { padding: 5px; border: 1px solid gray; border-radius: 5px; }");
 
     stackedWidget->addWidget(ui->centralwidget);
     setCentralWidget(stackedWidget);
 
-
-
-    // stackedWidget->addWidget(ui->centralwidget);
-    // setCentralWidget(login);
-
-
-
     connect(login, &Login::loginSuccess, this, &MainWindow::showMainWindow);
     connect(login, &Login::signUpSuccess, this, &MainWindow::showMainWindow);
-
-
 }
+
 
 MainWindow::~MainWindow()
 {
@@ -96,7 +69,6 @@ MainWindow::~MainWindow()
     delete stackedWidget;
     delete login;
 }
-
 
 void MainWindow::showUsername(const QString &username)
 {
@@ -111,11 +83,10 @@ void MainWindow::showMainWindow()
     showUsername(login->showUsername());
 }
 
-
 void MainWindow::showTracks(const QStringList &trackNames)
 {
     if (!trackView) {
-        trackView = new TrackView(this);
+        trackView = new TrackView(this, spotifyData); // Pass Spotify instance here
         connect(trackView, &TrackView::backButtonClicked, this, &MainWindow::on_backButton_clicked);
         stackedWidget->addWidget(trackView);
     }
@@ -123,6 +94,7 @@ void MainWindow::showTracks(const QStringList &trackNames)
     trackView->genreTracks(trackNames);
     stackedWidget->setCurrentWidget(trackView);
 }
+
 
 QStringList MainWindow::getTrackNames(const QList<QList<QString>> &filteredData) const
 {
@@ -141,6 +113,7 @@ void MainWindow::on_popButton_clicked()
         QList<QList<QString>> filteredData = spotifyData->filterByGenre("pop");
         QStringList trackNames = getTrackNames(filteredData);
         showTracks(trackNames);
+        setWindowTitle("Genre");
     }
 }
 
@@ -281,7 +254,6 @@ void MainWindow::on_edmButton_clicked()
 
 void MainWindow::fetchLyrics(const QString &artistName, const QString &songName)
 {
-
     // QStringList arguments;
     // arguments << "/Users/mansur/PycharmProjects/genius_parser/.venv/bin/activate";
     // process->start("source", arguments);
@@ -292,12 +264,11 @@ void MainWindow::fetchLyrics(const QString &artistName, const QString &songName)
     // qDebug() << "Starting process with arguments:" << "/n" << arguments;
     // QString program = "python3";
     // process->start(program, arguments);
-    process->start("sh",  {"/Users/mansur/PycharmProjects/genius_parser/run.sh"});
-    process->waitForFinished();
-    qDebug() << "Results: " << "/n" << process->readAllStandardOutput();
-
+    // process->start("sh", {"/Users/mansur/PycharmProjects/genius_parser/run.sh"});
+    // process->waitForFinished();
+    // qDebug() << "Results: "
+    //          << "/n" << process->readAllStandardOutput();
 }
-
 
 void MainWindow::on_searchLine_textChanged(const QString &text)
 {
@@ -334,7 +305,8 @@ void MainWindow::on_searchList_clicked(const QModelIndex &index)
 
 void MainWindow::onLyricsFetched(int exitCode, QProcess::ExitStatus exitStatus)
 {
-    qDebug() << "Process finished with exit code:" << "/n" << exitCode << "and exit status:" << exitStatus;
+    qDebug() << "Process finished with exit code:"
+             << "/n" << exitCode << "and exit status:" << exitStatus;
 
     if (exitStatus == QProcess::NormalExit && exitCode == 0) {
         QString lyrics = process->readAllStandardOutput();
@@ -348,7 +320,8 @@ void MainWindow::onLyricsFetched(int exitCode, QProcess::ExitStatus exitStatus)
         setCentralWidget(lyricsView);
     } else {
         QString errorOutput = process->readAllStandardError();
-        qDebug() << "Failed to fetch lyrics. Error:" << "/n" << errorOutput;
+        qDebug() << "Failed to fetch lyrics. Error:"
+                 << "/n" << errorOutput;
 
         QMessageBox::critical(this, "Error", "Failed to fetch lyrics");
     }

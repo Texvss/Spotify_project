@@ -1,11 +1,10 @@
 #ifndef LOGIN_H
 #define LOGIN_H
 
-#include <QWidget>
-#include <QtSql>
-#include <QtDebug>
 #include <QSqlDatabase>
-
+#include <QWidget>
+#include <QtDebug>
+#include <QtSql>
 
 namespace Ui {
 class Login;
