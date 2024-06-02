@@ -200,6 +200,30 @@ project_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_autogen.dir/build.make CMakeFiles/project_autogen.dir/build
 .PHONY : project_autogen/fast
 
+liked.o: liked.cpp.o
+.PHONY : liked.o
+
+# target to build an object file
+liked.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/liked.cpp.o
+.PHONY : liked.cpp.o
+
+liked.i: liked.cpp.i
+.PHONY : liked.i
+
+# target to preprocess a source file
+liked.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/liked.cpp.i
+.PHONY : liked.cpp.i
+
+liked.s: liked.cpp.s
+.PHONY : liked.s
+
+# target to generate assembly for a file
+liked.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/liked.cpp.s
+.PHONY : liked.cpp.s
+
 login.o: login.cpp.o
 .PHONY : login.o
 
@@ -407,6 +431,9 @@ help:
 	@echo "... project_autogen"
 	@echo "... project_autogen_timestamp_deps"
 	@echo "... project"
+	@echo "... liked.o"
+	@echo "... liked.i"
+	@echo "... liked.s"
 	@echo "... login.o"
 	@echo "... login.i"
 	@echo "... login.s"

@@ -1,5 +1,5 @@
-/Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/project_autogen/EWIEGA46WW/moc_lyrics.cpp: /Users/mansur/project/lyrics.h \
-  /Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/project_autogen/moc_predefs.h \
+/Users/mansur/Desktop/Spotify_projectMisha/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/project_autogen/EWIEGA46WW/moc_lyrics.cpp: /Users/mansur/Desktop/Spotify_projectMisha/lyrics.h \
+  /Users/mansur/Desktop/Spotify_projectMisha/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/project_autogen/moc_predefs.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/Availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/AvailabilityInternal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/AvailabilityInternalLegacy.h \

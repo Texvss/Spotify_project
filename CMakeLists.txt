@@ -38,6 +38,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         lyrics.h lyrics.cpp lyrics.ui
         login.h login.cpp login.ui
         src.qrc
+        liked.h liked.cpp liked.ui
 
 
 

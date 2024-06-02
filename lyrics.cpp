@@ -9,26 +9,26 @@ Lyrics::Lyrics(QWidget *parent, Spotify *spotifyInstance)
     : QWidget(parent)
     , ui(new Ui::Lyrics)
     , model(new QStringListModel(this))
-    , contextMenu(new QMenu(this)) // Initialize context menu as a pointer
-    , spotify(spotifyInstance) // Initialize Spotify instance
+    , contextMenu(new QMenu(this))
+    , spotify(spotifyInstance)
 {
     ui->setupUi(this);
-    this->setStyleSheet("QWidget { background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #4C4C4C, stop:1 black); }");
-    ui->clusterList->setModel(model); // Assuming you have a clusterList in the UI to show the song list
+    ui->clusterList->setModel(model);
     connect(ui->lyricsBack, &QPushButton::clicked, this, &Lyrics::on_lyricsBack_clicked);
 
-    // Add context menu action
     QAction *viewAction = new QAction("View", this);
     connect(viewAction, &QAction::triggered, this, &Lyrics::onViewLyrics);
     contextMenu->addAction(viewAction);
 
-    // Enable custom context menu for clusterList
     ui->clusterList->setContextMenuPolicy(Qt::CustomContextMenu);
     connect(ui->clusterList, &QListView::customContextMenuRequested, this, &Lyrics::showContextMenu);
 
-    // Initialize the artist - songname label
     artistSongLabel = new QLabel(this);
-    artistSongLabel->setStyleSheet("color: white; font-size: 16px;"); // Style as needed
+    artistSongLabel->setStyleSheet("color: white; font-size: 16px;");
+    ui->lyricsBack->setStyleSheet("QPushButton:!hover{border: 1px solid black;border-radius: "
+                                  "5px;background-color: #b83030;color:white;}"
+                                  "QPushButton:hover{border: 1px solid black;border-radius: "
+                                  "5px;background-color: #3d010e;color:#c0c0c0;}");
 }
 
 Lyrics::~Lyrics()
@@ -43,7 +43,7 @@ void Lyrics::setLyrics(const QString &text)
 
 void Lyrics::updateSongList(int cluster)
 {
-    QList<QList<QString>> songs = spotify->filterByCluster(cluster); // Use the Spotify instance
+    QList<QList<QString>> songs = spotify->filterByCluster(cluster);
     QStringList songNames;
     for (const auto &song : songs) {
         if (song.size() > static_cast<int>(COLUMNS::track_name) && song.size() > static_cast<int>(COLUMNS::artist_name)) {
@@ -52,7 +52,7 @@ void Lyrics::updateSongList(int cluster)
         }
     }
     model->setStringList(songNames);
-    ui->clusterList->setModel(model); // Set the model for the clusterList view
+    ui->clusterList->setModel(model);
 }
 
 void Lyrics::showClusterForSong(const QString &artistName, const QString &songName)
@@ -64,12 +64,10 @@ void Lyrics::showClusterForSong(const QString &artistName, const QString &songNa
             break;
         }
     }
-    setArtistSongName(artistName, songName); // Set the label text
 }
 
 void Lyrics::contextMenuEvent(QContextMenuEvent *event)
 {
-    // This method can be empty if not needed
 }
 
 void Lyrics::showContextMenu(const QPoint &pos)
@@ -93,21 +91,19 @@ void Lyrics::onViewLyrics()
         QString artistName = nameParts[0].trimmed();
         QString songName = nameParts[1].trimmed();
 
-        // Create a new Lyrics window for the selected song
         Lyrics *lyricsWindow = new Lyrics(nullptr, spotify);
         lyricsWindow->showClusterForSong(artistName, songName);
-        lyricsWindow->setArtistSongName(artistName, songName); // Ensure label is set
         lyricsWindow->show();
     }
+}
+void Lyrics::setHeaderAndLyrics(const QString &header, const QString &text)
+{
+    ui->trackInfo->setText(header);
+    ui->lyricsList->setPlainText(text);
 }
 
 void Lyrics::on_lyricsBack_clicked()
 {
     emit backLyricsClicked();
-    this->close(); // Close the lyrics window when back button is clicked
-}
-
-void Lyrics::setArtistSongName(const QString &artistName, const QString &songName)
-{
-    artistSongLabel->setText(artistName + " - " + songName);
+    this->close();
 }

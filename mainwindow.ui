@@ -6,111 +6,356 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>870</width>
-    <height>736</height>
+    <width>1054</width>
+    <height>937</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="styleSheet">
+    <string notr="true">background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #404040, stop:1 #000000);</string>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_5">
     <item>
-     <layout class="QVBoxLayout" name="verticalLayout_2">
+     <spacer name="horizontalSpacer_6">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
-         <widget class="QLineEdit" name="searchLine">
-          <property name="maximumSize">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
            <size>
-            <width>960</width>
-            <height>33</height>
+            <width>0</width>
+            <height>20</height>
            </size>
           </property>
-          <property name="styleSheet">
-           <string notr="true">background-color: #696969;
-color: white; 
-border: 2px solid black;
-border-radius: 5px; 
-padding: 5px;</string>
-          </property>
-          <property name="dragEnabled">
-           <bool>false</bool>
-          </property>
-          <property name="readOnly">
-           <bool>false</bool>
-          </property>
-         </widget>
+         </spacer>
         </item>
         <item>
-         <widget class="QLabel" name="userLabel">
-          <property name="maximumSize">
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <property name="spacing">
+           <number>-1</number>
+          </property>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <property name="spacing">
+             <number>-1</number>
+            </property>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_2">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_2">
+                <item>
+                 <widget class="QLineEdit" name="searchLine">
+                  <property name="minimumSize">
+                   <size>
+                    <width>230</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>250</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>13</pointsize>
+                   </font>
+                  </property>
+                  <property name="mouseTracking">
+                   <bool>true</bool>
+                  </property>
+                  <property name="tabletTracking">
+                   <bool>false</bool>
+                  </property>
+                  <property name="statusTip">
+                   <string/>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border: 2px solid black;
+border-radius: 5px;
+background-color: #717072;</string>
+                  </property>
+                  <property name="cursorPosition">
+                   <number>0</number>
+                  </property>
+                  <property name="dragEnabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="readOnly">
+                   <bool>false</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_3">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>148</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="likedButton">
+                  <property name="minimumSize">
+                   <size>
+                    <width>70</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>150</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>13</pointsize>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Favourite</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_4">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>217</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="userLabel">
+                  <property name="minimumSize">
+                   <size>
+                    <width>150</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>200</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background:transparent;
+border-bottom: 1px solid #717072;
+color:#717072;
+</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="textFormat">
+                   <enum>Qt::PlainText</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_8">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>0</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_3">
+                <property name="spacing">
+                 <number>-1</number>
+                </property>
+                <item>
+                 <widget class="QListView" name="searchList">
+                  <property name="minimumSize">
+                   <size>
+                    <width>410</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>410</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="mouseTracking">
+                   <bool>true</bool>
+                  </property>
+                  <property name="tabletTracking">
+                   <bool>true</bool>
+                  </property>
+                  <property name="autoFillBackground">
+                   <bool>true</bool>
+                  </property>
+                  <property name="editTriggers">
+                   <set>QAbstractItemView::NoEditTriggers</set>
+                  </property>
+                  <property name="tabKeyNavigation">
+                   <bool>true</bool>
+                  </property>
+                  <property name="dragEnabled">
+                   <bool>true</bool>
+                  </property>
+                  <property name="dragDropOverwriteMode">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alternatingRowColors">
+                   <bool>true</bool>
+                  </property>
+                  <property name="uniformItemSizes">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_5">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>600</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>0</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
            <size>
-            <width>240</width>
-            <height>33</height>
+            <width>0</width>
+            <height>20</height>
            </size>
           </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="textFormat">
-           <enum>Qt::RichText</enum>
-          </property>
-         </widget>
+         </spacer>
         </item>
        </layout>
       </item>
       <item>
-       <widget class="QListView" name="searchList">
-        <property name="maximumSize">
-         <size>
-          <width>960</width>
-          <height>458</height>
-         </size>
-        </property>
-        <property name="mouseTracking">
-         <bool>true</bool>
-        </property>
-        <property name="tabletTracking">
-         <bool>true</bool>
-        </property>
-        <property name="autoFillBackground">
-         <bool>true</bool>
-        </property>
-        <property name="editTriggers">
-         <set>QAbstractItemView::NoEditTriggers</set>
-        </property>
-        <property name="tabKeyNavigation">
-         <bool>true</bool>
-        </property>
-        <property name="dragEnabled">
-         <bool>true</bool>
-        </property>
-        <property name="dragDropOverwriteMode">
-         <bool>true</bool>
-        </property>
-        <property name="alternatingRowColors">
-         <bool>true</bool>
-        </property>
-        <property name="uniformItemSizes">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <layout class="QVBoxLayout" name="verticalLayout_3">
-      <item>
-       <layout class="QGridLayout" name="gridLayout">
+       <layout class="QGridLayout" name="gridLayout_2">
         <property name="sizeConstraint">
          <enum>QLayout::SetDefaultConstraint</enum>
         </property>
+        <property name="topMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>130</number>
+        </property>
         <property name="horizontalSpacing">
-         <number>1</number>
+         <number>35</number>
         </property>
         <property name="verticalSpacing">
-         <number>25</number>
+         <number>20</number>
         </property>
         <item row="0" column="1">
          <widget class="QPushButton" name="rockButton">
@@ -122,14 +367,14 @@ padding: 5px;</string>
           </property>
           <property name="minimumSize">
            <size>
-            <width>100</width>
-            <height>100</height>
+            <width>125</width>
+            <height>125</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>150</width>
-            <height>150</height>
+            <width>125</width>
+            <height>125</height>
            </size>
           </property>
           <property name="text">
@@ -156,14 +401,14 @@ padding: 5px;</string>
           </property>
           <property name="minimumSize">
            <size>
-            <width>100</width>
-            <height>100</height>
+            <width>125</width>
+            <height>125</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>150</width>
-            <height>150</height>
+            <width>125</width>
+            <height>125</height>
            </size>
           </property>
           <property name="text">
@@ -190,14 +435,14 @@ padding: 5px;</string>
           </property>
           <property name="minimumSize">
            <size>
-            <width>100</width>
-            <height>100</height>
+            <width>125</width>
+            <height>125</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>150</width>
-            <height>150</height>
+            <width>125</width>
+            <height>125</height>
            </size>
           </property>
           <property name="text">
@@ -224,14 +469,14 @@ padding: 5px;</string>
           </property>
           <property name="minimumSize">
            <size>
-            <width>100</width>
-            <height>100</height>
+            <width>125</width>
+            <height>125</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>150</width>
-            <height>150</height>
+            <width>125</width>
+            <height>125</height>
            </size>
           </property>
           <property name="styleSheet">
@@ -261,14 +506,14 @@ padding: 5px;</string>
           </property>
           <property name="minimumSize">
            <size>
-            <width>100</width>
-            <height>100</height>
+            <width>125</width>
+            <height>125</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>150</width>
-            <height>150</height>
+            <width>125</width>
+            <height>125</height>
            </size>
           </property>
           <property name="text">
@@ -295,14 +540,14 @@ padding: 5px;</string>
           </property>
           <property name="minimumSize">
            <size>
-            <width>100</width>
-            <height>100</height>
+            <width>125</width>
+            <height>125</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>150</width>
-            <height>150</height>
+            <width>125</width>
+            <height>125</height>
            </size>
           </property>
           <property name="text">
@@ -329,14 +574,14 @@ padding: 5px;</string>
           </property>
           <property name="minimumSize">
            <size>
-            <width>100</width>
-            <height>100</height>
+            <width>125</width>
+            <height>125</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>150</width>
-            <height>150</height>
+            <width>125</width>
+            <height>125</height>
            </size>
           </property>
           <property name="text">
@@ -363,14 +608,14 @@ padding: 5px;</string>
           </property>
           <property name="minimumSize">
            <size>
-            <width>100</width>
-            <height>100</height>
+            <width>125</width>
+            <height>125</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>150</width>
-            <height>150</height>
+            <width>125</width>
+            <height>125</height>
            </size>
           </property>
           <property name="text">
@@ -397,14 +642,14 @@ padding: 5px;</string>
           </property>
           <property name="minimumSize">
            <size>
-            <width>100</width>
-            <height>100</height>
+            <width>125</width>
+            <height>125</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>150</width>
-            <height>150</height>
+            <width>125</width>
+            <height>125</height>
            </size>
           </property>
           <property name="text">
@@ -431,14 +676,14 @@ padding: 5px;</string>
           </property>
           <property name="minimumSize">
            <size>
-            <width>100</width>
-            <height>100</height>
+            <width>125</width>
+            <height>125</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>150</width>
-            <height>150</height>
+            <width>125</width>
+            <height>125</height>
            </size>
           </property>
           <property name="text">
@@ -465,14 +710,14 @@ padding: 5px;</string>
           </property>
           <property name="minimumSize">
            <size>
-            <width>100</width>
-            <height>100</height>
+            <width>125</width>
+            <height>125</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>150</width>
-            <height>150</height>
+            <width>125</width>
+            <height>125</height>
            </size>
           </property>
           <property name="text">
@@ -505,8 +750,8 @@ padding: 5px;</string>
           </property>
           <property name="maximumSize">
            <size>
-            <width>150</width>
-            <height>150</height>
+            <width>125</width>
+            <height>125</height>
            </size>
           </property>
           <property name="text">
@@ -533,14 +778,14 @@ padding: 5px;</string>
           </property>
           <property name="minimumSize">
            <size>
-            <width>100</width>
-            <height>100</height>
+            <width>125</width>
+            <height>125</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>150</width>
-            <height>150</height>
+            <width>125</width>
+            <height>125</height>
            </size>
           </property>
           <property name="text">
@@ -567,14 +812,14 @@ padding: 5px;</string>
           </property>
           <property name="minimumSize">
            <size>
-            <width>100</width>
+            <width>125</width>
             <height>100</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>150</width>
-            <height>150</height>
+            <width>125</width>
+            <height>125</height>
            </size>
           </property>
           <property name="text">
@@ -601,14 +846,14 @@ padding: 5px;</string>
           </property>
           <property name="minimumSize">
            <size>
-            <width>100</width>
-            <height>100</height>
+            <width>125</width>
+            <height>125</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>150</width>
-            <height>150</height>
+            <width>125</width>
+            <height>125</height>
            </size>
           </property>
           <property name="text">
@@ -635,14 +880,14 @@ padding: 5px;</string>
           </property>
           <property name="minimumSize">
            <size>
-            <width>100</width>
-            <height>100</height>
+            <width>125</width>
+            <height>125</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>150</width>
-            <height>150</height>
+            <width>125</width>
+            <height>125</height>
            </size>
           </property>
           <property name="text">
@@ -663,6 +908,22 @@ padding: 5px;</string>
       </item>
      </layout>
     </item>
+    <item>
+     <spacer name="horizontalSpacer_7">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
    </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -670,12 +931,11 @@ padding: 5px;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>870</width>
-     <height>24</height>
+     <width>1054</width>
+     <height>37</height>
     </rect>
    </property>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>

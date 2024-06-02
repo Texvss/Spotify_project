@@ -22,7 +22,7 @@ public:
     void setLyrics(const QString &text);
     void updateSongList(int cluster);
     void showClusterForSong(const QString &artistName, const QString &songName);
-    void setArtistSongName(const QString &artistName, const QString &songName);
+    void setHeaderAndLyrics(const QString &header, const QString &text);
 
 signals:
     void backLyricsClicked();

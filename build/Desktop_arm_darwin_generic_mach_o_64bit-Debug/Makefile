@@ -57,10 +57,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/mansur/project
+CMAKE_SOURCE_DIR = /Users/mansur/Desktop/Spotify_projectMisha
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug
+CMAKE_BINARY_DIR = /Users/mansur/Desktop/Spotify_projectMisha/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/CMakeFiles /Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mansur/Desktop/Spotify_projectMisha/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/CMakeFiles /Users/mansur/Desktop/Spotify_projectMisha/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mansur/Desktop/Spotify_projectMisha/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -199,6 +199,54 @@ project_autogen: cmake_check_build_system
 project_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_autogen.dir/build.make CMakeFiles/project_autogen.dir/build
 .PHONY : project_autogen/fast
+
+liked.o: liked.cpp.o
+.PHONY : liked.o
+
+# target to build an object file
+liked.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/liked.cpp.o
+.PHONY : liked.cpp.o
+
+liked.i: liked.cpp.i
+.PHONY : liked.i
+
+# target to preprocess a source file
+liked.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/liked.cpp.i
+.PHONY : liked.cpp.i
+
+liked.s: liked.cpp.s
+.PHONY : liked.s
+
+# target to generate assembly for a file
+liked.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/liked.cpp.s
+.PHONY : liked.cpp.s
+
+login.o: login.cpp.o
+.PHONY : login.o
+
+# target to build an object file
+login.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/login.cpp.o
+.PHONY : login.cpp.o
+
+login.i: login.cpp.i
+.PHONY : login.i
+
+# target to preprocess a source file
+login.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/login.cpp.i
+.PHONY : login.cpp.i
+
+login.s: login.cpp.s
+.PHONY : login.s
+
+# target to generate assembly for a file
+login.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/login.cpp.s
+.PHONY : login.cpp.s
 
 lyrics.o: lyrics.cpp.o
 .PHONY : lyrics.o
@@ -271,6 +319,30 @@ mainwindow.s: mainwindow.cpp.s
 mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
+
+project_autogen/EWIEGA46WW/qrc_src.o: project_autogen/EWIEGA46WW/qrc_src.cpp.o
+.PHONY : project_autogen/EWIEGA46WW/qrc_src.o
+
+# target to build an object file
+project_autogen/EWIEGA46WW/qrc_src.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/project_autogen/EWIEGA46WW/qrc_src.cpp.o
+.PHONY : project_autogen/EWIEGA46WW/qrc_src.cpp.o
+
+project_autogen/EWIEGA46WW/qrc_src.i: project_autogen/EWIEGA46WW/qrc_src.cpp.i
+.PHONY : project_autogen/EWIEGA46WW/qrc_src.i
+
+# target to preprocess a source file
+project_autogen/EWIEGA46WW/qrc_src.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/project_autogen/EWIEGA46WW/qrc_src.cpp.i
+.PHONY : project_autogen/EWIEGA46WW/qrc_src.cpp.i
+
+project_autogen/EWIEGA46WW/qrc_src.s: project_autogen/EWIEGA46WW/qrc_src.cpp.s
+.PHONY : project_autogen/EWIEGA46WW/qrc_src.s
+
+# target to generate assembly for a file
+project_autogen/EWIEGA46WW/qrc_src.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/project_autogen/EWIEGA46WW/qrc_src.cpp.s
+.PHONY : project_autogen/EWIEGA46WW/qrc_src.cpp.s
 
 project_autogen/mocs_compilation.o: project_autogen/mocs_compilation.cpp.o
 .PHONY : project_autogen/mocs_compilation.o
@@ -359,6 +431,12 @@ help:
 	@echo "... project_autogen"
 	@echo "... project_autogen_timestamp_deps"
 	@echo "... project"
+	@echo "... liked.o"
+	@echo "... liked.i"
+	@echo "... liked.s"
+	@echo "... login.o"
+	@echo "... login.i"
+	@echo "... login.s"
 	@echo "... lyrics.o"
 	@echo "... lyrics.i"
 	@echo "... lyrics.s"
@@ -368,6 +446,9 @@ help:
 	@echo "... mainwindow.o"
 	@echo "... mainwindow.i"
 	@echo "... mainwindow.s"
+	@echo "... project_autogen/EWIEGA46WW/qrc_src.o"
+	@echo "... project_autogen/EWIEGA46WW/qrc_src.i"
+	@echo "... project_autogen/EWIEGA46WW/qrc_src.s"
 	@echo "... project_autogen/mocs_compilation.o"
 	@echo "... project_autogen/mocs_compilation.i"
 	@echo "... project_autogen/mocs_compilation.s"

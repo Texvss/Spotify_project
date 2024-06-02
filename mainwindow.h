@@ -5,10 +5,12 @@
 #include <QProcess>
 #include <QStackedWidget>
 #include <QStringListModel>
+#include "liked.h"
 #include "login.h"
 #include "lyrics.h"
 #include "spotify.h"
 #include "trackview.h"
+#include <QStandardItemModel>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -26,7 +28,7 @@ public:
     void showUsername(const QString &username);
 
 private slots:
-    // PLAYLIST
+    // PLAYLISTS
     void on_popButton_clicked();            // POP
     void on_rapButton_clicked();            // RAP
     void on_rockButton_clicked();           // ROCK
@@ -48,12 +50,18 @@ private slots:
     void on_searchList_clicked(const QModelIndex &index);
     // BACK
     void on_backButton_clicked();
-    void on_lyricsBack_clicked();
-    // PARSER
+    void on_backLiked_clicked();
+    //PARSER
     void fetchLyrics(const QString &artistName, const QString &songName);
     void onLyricsFetched(int exitCode, QProcess::ExitStatus exitStatus);
-    // AUTH
-    void showMainWindow();
+    //AUTH
+    // void backLyricsClicked();
+
+    // void on_lyricsBack_clicked();
+    // void on_searchButton_clicked();
+    void on_likedButton_clicked();
+
+    // void showUsername(const QString &username);
 
 private:
     Ui::MainWindow *ui;
@@ -67,6 +75,9 @@ private:
     Lyrics *lyricsView;
     QProcess *process;
     Login *login;
+    Liked *liked;
+    QString username;
+    void setLikedUsername(const QString &username);
 };
 
 #endif // MAINWINDOW_H

@@ -5,7 +5,7 @@
 #include <QWidget>
 #include <QtDebug>
 #include <QtSql>
-
+#include "trackview.h"
 namespace Ui {
 class Login;
 }
@@ -25,12 +25,14 @@ signals:
 
 private slots:
     void on_loginButton_clicked();
-
     void on_signupButton_clicked();
 
 private:
     Ui::Login *ui;
     QSqlDatabase database;
+    Liked *likedTracks;
+    QString username;
+    TrackView *trackView;
 };
 
 #endif // LOGIN_H

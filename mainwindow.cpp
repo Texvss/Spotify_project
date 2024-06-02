@@ -17,14 +17,14 @@ MainWindow::MainWindow(QWidget *parent)
     , trackView(nullptr)
     , stackedWidget(new QStackedWidget(this))
     , searchModel(new QStandardItemModel(this))
-    , lyricsView(nullptr)
+    , lyricsView(new Lyrics(this))
     , process(new QProcess(this))
-    , login(new Login)
+    , login(nullptr)
+    , liked(new Liked(this))
 {
     ui->setupUi(this);
     this->setStyleSheet("QWidget { background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #4C4C4C, stop:1 black); }");
     this->hide();
-    login->show();
     ui->searchList->setVisible(false);
 
     // Add connections for buttons
@@ -46,16 +46,23 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->edmButton, &QPushButton::clicked, this, &MainWindow::on_edmButton_clicked);
     connect(ui->searchLine, &QLineEdit::textChanged, this, &MainWindow::on_searchLine_textChanged);
     connect(ui->searchList, &QListView::clicked, this, &MainWindow::on_searchList_clicked);
-
     connect(process, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), this, &MainWindow::onLyricsFetched);
+    connect(lyricsView, &Lyrics::backLyricsClicked, this, &MainWindow::on_backButton_clicked);
+    connect(liked, &Liked::backLikedClicked, this, &MainWindow::on_backButton_clicked);
+
     listModel->setStringList(spotifyData->getTrackNames());
     ui->searchLine->setPlaceholderText("Search...");
+    ui->searchLine->setStyleSheet("border: 1px solid black;border-radius: 5px;background-color: #717072;color:white;");
+
+    ui->searchList->setStyleSheet("QListView { padding: 5px; border: 1px solid gray; border-radius: 5px; }");
+    ui->likedButton->setStyleSheet("QPushButton:!hover{border: 1px solid black;border-radius: 5px;background-color: #717072;color:white;}"
+                                   "QPushButton:hover{border: 1px solid black;border-radius: 5px;background-color: #33322e;color:#c0c0c0;}");
 
     stackedWidget->addWidget(ui->centralwidget);
+    stackedWidget->addWidget(lyricsView);
+    stackedWidget->addWidget(liked);
     setCentralWidget(stackedWidget);
 
-    connect(login, &Login::loginSuccess, this, &MainWindow::showMainWindow);
-    connect(login, &Login::signUpSuccess, this, &MainWindow::showMainWindow);
 }
 
 
@@ -67,22 +74,22 @@ MainWindow::~MainWindow()
     delete trackView;
     delete searchModel;
     delete stackedWidget;
-    delete login;
+    delete process;
 }
 
 void MainWindow::showUsername(const QString &username)
 {
-    // currentUsername = username;
+    this->username = username;
     ui->userLabel->setText("User: " + username);
-}
+    if (trackView) {
+        trackView->setUsername(username);
+    }
 
-void MainWindow::showMainWindow()
-{
-    this->show();
-    login->hide();
-    showUsername(login->showUsername());
+    if (liked) {
+        liked->loadPlaylist(username);
+    }
+    qDebug() << username;
 }
-
 void MainWindow::showTracks(const QStringList &trackNames)
 {
     if (!trackView) {
@@ -90,7 +97,7 @@ void MainWindow::showTracks(const QStringList &trackNames)
         connect(trackView, &TrackView::backButtonClicked, this, &MainWindow::on_backButton_clicked);
         stackedWidget->addWidget(trackView);
     }
-
+    trackView->setUsername(username);
     trackView->genreTracks(trackNames);
     stackedWidget->setCurrentWidget(trackView);
 }
@@ -254,20 +261,15 @@ void MainWindow::on_edmButton_clicked()
 
 void MainWindow::fetchLyrics(const QString &artistName, const QString &songName)
 {
-    // QStringList arguments;
-    // arguments << "/Users/mansur/PycharmProjects/genius_parser/.venv/bin/activate";
-    // process->start("source", arguments);
+    QStringList arguments;
+    arguments << artistName << songName;
 
-    // arguments.clear();
-    // arguments << "/Users/mansur/PycharmProjects/genius_parser/parser.py" << artistName << songName;
-
-    // qDebug() << "Starting process with arguments:" << "/n" << arguments;
-    // QString program = "python3";
-    // process->start(program, arguments);
-    // process->start("sh", {"/Users/mansur/PycharmProjects/genius_parser/run.sh"});
-    // process->waitForFinished();
-    // qDebug() << "Results: "
-    //          << "/n" << process->readAllStandardOutput();
+    qDebug() << "Fetching lyrics for:" << artistName << "-" << songName;
+    process->start("sh",
+                   QStringList() << "/Users/mansur/PycharmProjects/genius_parser/run.sh" << arguments);
+    process->waitForFinished();
+    qDebug() << "Results: "
+             << "/n" << process->readAllStandardOutput();
 }
 
 void MainWindow::on_searchLine_textChanged(const QString &text)
@@ -275,55 +277,46 @@ void MainWindow::on_searchLine_textChanged(const QString &text)
     searchModel->clear();
     if (text.isEmpty()) {
         ui->searchList->setVisible(false);
-    } else {
+    } else
+    {
         for (const auto &row : spotifyData->data) {
             if (row[static_cast<int>(COLUMNS::track_name)].contains(text, Qt::CaseInsensitive)) {
                 QString displayText = row[static_cast<int>(COLUMNS::track_name)];
                 searchModel->appendRow(new QStandardItem(displayText));
                 ui->searchList->setModel(searchModel);
-            } else if (row[static_cast<int>(COLUMNS::artist_name)].contains(text,
-                                                                            Qt::CaseInsensitive)) {
-                QString displayText = row[static_cast<int>(COLUMNS::artist_name)];
-                searchModel->appendRow(new QStandardItem(displayText));
-                ui->searchList->setModel(searchModel);
-            } else if (row[static_cast<int>(COLUMNS::album)].contains(text, Qt::CaseInsensitive)) {
-                QString displayText = row[static_cast<int>(COLUMNS::album)];
-                searchModel->appendRow(new QStandardItem(displayText));
-                ui->searchList->setModel(searchModel);
             }
+            ui->searchList->setVisible(true);
         }
-        ui->searchList->setVisible(true);
     }
 }
+
+
 
 void MainWindow::on_searchList_clicked(const QModelIndex &index)
 {
     QString trackName = searchModel->data(index, Qt::DisplayRole).toString();
-    QString artistName = "Eminem";
+    QString artistName;
+    for (const auto &row : spotifyData->data) {
+        if (row[static_cast<int>(COLUMNS::track_name)].compare(trackName, Qt::CaseInsensitive)
+            == 0) {
+            artistName = row[static_cast<int>(COLUMNS::artist_name)];
+            break;
+        }
+    }
+
     fetchLyrics(artistName, trackName);
 }
 
 void MainWindow::onLyricsFetched(int exitCode, QProcess::ExitStatus exitStatus)
 {
-    qDebug() << "Process finished with exit code:"
-             << "/n" << exitCode << "and exit status:" << exitStatus;
-
     if (exitStatus == QProcess::NormalExit && exitCode == 0) {
         QString lyrics = process->readAllStandardOutput();
-        qDebug() << "Lyrics fetched:" << lyrics;
 
-        if (!lyricsView) {
-            lyricsView = new Lyrics(this);
-        }
         lyricsView->setLyrics(lyrics);
-        lyricsView->show();
-        setCentralWidget(lyricsView);
-    } else {
+        stackedWidget->setCurrentWidget(lyricsView);
         QString errorOutput = process->readAllStandardError();
-        qDebug() << "Failed to fetch lyrics. Error:"
-                 << "/n" << errorOutput;
 
-        QMessageBox::critical(this, "Error", "Failed to fetch lyrics");
+        // QMessageBox::critical(this, "Error", "Failed to fetch lyrics");
     }
 }
 
@@ -332,15 +325,17 @@ void MainWindow::on_backButton_clicked()
     stackedWidget->setCurrentWidget(ui->centralwidget);
 }
 
-void MainWindow::on_lyricsBack_clicked()
+void MainWindow::on_likedButton_clicked()
 {
-    this->show();
+    if (!liked) {
+        stackedWidget->addWidget(liked);
+    }
+    liked->loadPlaylist(username);
+    liked->show();
+    stackedWidget->setCurrentWidget(liked);
 }
 
-// void MainWindow::on_registerButton_clicked()
-// {
-//     if (auth)
-//     {
-//         stackedWidget->setCurrentWidget(trackView);
-//     }
-// }
+void MainWindow::on_backLiked_clicked()
+{
+    stackedWidget->setCurrentWidget(ui->centralwidget);
+}

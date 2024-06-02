@@ -1,17 +1,17 @@
 {
-	"BUILD_DIR" : "/Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/project_autogen",
-	"CMAKE_BINARY_DIR" : "/Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug",
-	"CMAKE_CURRENT_BINARY_DIR" : "/Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/mansur/project",
+	"BUILD_DIR" : "/Users/mansur/Desktop/Spotify_projectMisha/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/project_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/mansur/Desktop/Spotify_projectMisha/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/mansur/Desktop/Spotify_projectMisha/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/mansur/Desktop/Spotify_projectMisha",
 	"CMAKE_EXECUTABLE" : "/Applications/CMake.app/Contents/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/Users/mansur/project/CMakeLists.txt",
-		"/Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/.qtc/package-manager/auto-setup.cmake",
-		"/Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/CMakeFiles/3.29.2/CMakeSystem.cmake",
+		"/Users/mansur/Desktop/Spotify_projectMisha/CMakeLists.txt",
+		"/Users/mansur/Desktop/Spotify_projectMisha/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/.qtc/package-manager/auto-setup.cmake",
+		"/Users/mansur/Desktop/Spotify_projectMisha/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/CMakeFiles/3.29.2/CMakeSystem.cmake",
 		"/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake",
 		"/Applications/CMake.app/Contents/share/cmake-3.29/Modules/Platform/Darwin-Initialize.cmake",
-		"/Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/CMakeFiles/3.29.2/CMakeCXXCompiler.cmake",
+		"/Users/mansur/Desktop/Spotify_projectMisha/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/CMakeFiles/3.29.2/CMakeCXXCompiler.cmake",
 		"/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake",
 		"/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeGenericSystem.cmake",
 		"/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake",
@@ -345,44 +345,72 @@
 		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets.cmake",
 		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets-release.cmake",
 		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginAdditionalTargetInfo.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Sql/Qt6SqlConfigVersion.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Sql/Qt6SqlConfigVersionImpl.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Sql/Qt6SqlConfig.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Sql/Qt6SqlDependencies.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Sql/Qt6SqlTargets.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Sql/Qt6SqlTargets-release.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Sql/Qt6SqlAdditionalTargetInfo.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Sql/Qt6SqlVersionlessTargets.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Sql/Qt6SqlPlugins.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginConfig.cmake",
+		"/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginTargets.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginTargets-release.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginAdditionalTargetInfo.cmake",
 		"/Applications/CMake.app/Contents/share/cmake-3.29/Modules/GNUInstallDirs.cmake",
-		"/opt/homebrew/Cellar/qt/6.7.0_1/lib/cmake/Qt6/macos/Info.plist.app.in"
+		"/opt/homebrew/Cellar/qt/6.7.0_1/lib/cmake/Qt6/macos/Info.plist.app.in",
+		"/Users/mansur/Desktop/Spotify_projectMisha/src.qrc"
 	],
-	"CMAKE_SOURCE_DIR" : "/Users/mansur/project",
+	"CMAKE_SOURCE_DIR" : "/Users/mansur/Desktop/Spotify_projectMisha",
 	"CROSS_CONFIG" : false,
-	"DEP_FILE" : "/Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/project_autogen/deps",
+	"DEP_FILE" : "/Users/mansur/Desktop/Spotify_projectMisha/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/project_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "project_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
-			"/Users/mansur/project/lyrics.h",
+			"/Users/mansur/Desktop/Spotify_projectMisha/liked.h",
+			"MU",
+			"EWIEGA46WW/moc_liked.cpp",
+			null
+		],
+		[
+			"/Users/mansur/Desktop/Spotify_projectMisha/login.h",
+			"MU",
+			"EWIEGA46WW/moc_login.cpp",
+			null
+		],
+		[
+			"/Users/mansur/Desktop/Spotify_projectMisha/lyrics.h",
 			"MU",
 			"EWIEGA46WW/moc_lyrics.cpp",
 			null
 		],
 		[
-			"/Users/mansur/project/mainwindow.h",
+			"/Users/mansur/Desktop/Spotify_projectMisha/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
 			null
 		],
 		[
-			"/Users/mansur/project/spotify.h",
+			"/Users/mansur/Desktop/Spotify_projectMisha/spotify.h",
 			"MU",
 			"EWIEGA46WW/moc_spotify.cpp",
 			null
 		],
 		[
-			"/Users/mansur/project/trackview.h",
+			"/Users/mansur/Desktop/Spotify_projectMisha/trackview.h",
 			"MU",
 			"EWIEGA46WW/moc_trackview.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/project_autogen/include",
-	"MOC_COMPILATION_FILE" : "/Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/project_autogen/mocs_compilation.cpp",
-	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
+	"INCLUDE_DIR" : "/Users/mansur/Desktop/Spotify_projectMisha/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/project_autogen/include",
+	"MOC_COMPILATION_FILE" : "/Users/mansur/Desktop/Spotify_projectMisha/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/project_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_SQL_LIB", "QT_WIDGETS_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
 		[
@@ -392,6 +420,7 @@
 	],
 	"MOC_INCLUDES" : 
 	[
+		"/Users/mansur/Desktop/Spotify_projectMisha",
 		"/opt/homebrew/lib/QtCore.framework/Headers",
 		"/opt/homebrew/lib/QtCore.framework",
 		"/opt/homebrew/share/qt/mkspecs/macx-clang",
@@ -400,6 +429,8 @@
 		"/opt/homebrew/lib/QtWidgets.framework",
 		"/opt/homebrew/lib/QtGui.framework/Headers",
 		"/opt/homebrew/lib/QtGui.framework",
+		"/opt/homebrew/lib/QtSql.framework/Headers",
+		"/opt/homebrew/lib/QtSql.framework",
 		"/usr/include",
 		"/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include"
 	],
@@ -423,24 +454,34 @@
 		"-c",
 		"/Applications/CMake.app/Contents/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/project_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/Users/mansur/Desktop/Spotify_projectMisha/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/project_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 11,
-	"PARSE_CACHE_FILE" : "/Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/CMakeFiles/project_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/Users/mansur/Desktop/Spotify_projectMisha/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/CMakeFiles/project_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/opt/homebrew/share/qt/libexec/moc",
 	"QT_UIC_EXECUTABLE" : "/opt/homebrew/share/qt/libexec/uic",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 7,
-	"SETTINGS_FILE" : "/Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/CMakeFiles/project_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/Users/mansur/Desktop/Spotify_projectMisha/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/CMakeFiles/project_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "/Users/mansur/project/lyrics.cpp", "MU", null ],
-		[ "/Users/mansur/project/main.cpp", "MU", null ],
-		[ "/Users/mansur/project/mainwindow.cpp", "MU", null ],
-		[ "/Users/mansur/project/spotify.cpp", "MU", null ],
-		[ "/Users/mansur/project/trackview.cpp", "MU", null ]
+		[ "/Users/mansur/Desktop/Spotify_projectMisha/liked.cpp", "MU", null ],
+		[ "/Users/mansur/Desktop/Spotify_projectMisha/login.cpp", "MU", null ],
+		[ "/Users/mansur/Desktop/Spotify_projectMisha/lyrics.cpp", "MU", null ],
+		[ "/Users/mansur/Desktop/Spotify_projectMisha/main.cpp", "MU", null ],
+		[
+			"/Users/mansur/Desktop/Spotify_projectMisha/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[ "/Users/mansur/Desktop/Spotify_projectMisha/spotify.cpp", "MU", null ],
+		[
+			"/Users/mansur/Desktop/Spotify_projectMisha/trackview.cpp",
+			"MU",
+			null
+		]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

@@ -53,10 +53,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/mansur/project
+CMAKE_SOURCE_DIR = /Users/mansur/Desktop/Spotify_projectMisha
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug
+CMAKE_BINARY_DIR = /Users/mansur/Desktop/Spotify_projectMisha/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug
 
 # Utility rule file for project_autogen_timestamp_deps.
 
@@ -78,6 +78,6 @@ CMakeFiles/project_autogen_timestamp_deps.dir/clean:
 .PHONY : CMakeFiles/project_autogen_timestamp_deps.dir/clean
 
 CMakeFiles/project_autogen_timestamp_deps.dir/depend:
-	cd /Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/mansur/project /Users/mansur/project /Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug /Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug /Users/mansur/project/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/CMakeFiles/project_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/mansur/Desktop/Spotify_projectMisha/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/mansur/Desktop/Spotify_projectMisha /Users/mansur/Desktop/Spotify_projectMisha /Users/mansur/Desktop/Spotify_projectMisha/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug /Users/mansur/Desktop/Spotify_projectMisha/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug /Users/mansur/Desktop/Spotify_projectMisha/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/CMakeFiles/project_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/project_autogen_timestamp_deps.dir/depend
 
